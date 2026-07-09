@@ -1,0 +1,1314 @@
+{
+  "settings": {
+    "title": "设置",
+    "back": "返回",
+    "general": {
+      "title": "常规设置",
+      "description": "在这里，您可以配置基本的应用程序设置，包括界面主题、语言和其他选项。",
+      "interface": {
+        "title": "界面设置",
+        "theme": {
+          "title": "主题",
+          "description": "选择应用程序的外观主题"
+        },
+        "themePreset": {
+          "title": "配色方案",
+          "description": "选择应用程序的配色方案预设",
+          "default": "默认",
+          "custom": "自定义"
+        },
+        "language": {
+          "title": "语言",
+          "description": "选择应用程序的显示语言"
+        },
+        "interfaceScale": {
+          "title": "界面缩放",
+          "description": "调整应用程序界面的整体缩放比例"
+        },
+        "contentScale": {
+          "title": "内容缩放",
+          "description": "调整编辑器和聊天 Markdown 内容中的文本大小",
+          "sizes": {
+            "sm": "小",
+            "base": "标准",
+            "lg": "大",
+            "xl": "特大",
+            "2xl": "超大"
+          }
+        },
+        "codeWrap": {
+          "title": "代码块溢出",
+          "description": "选择代码块中长行的显示方式",
+          "scroll": "滚动",
+          "wrap": "换行"
+        },
+        "showFolderNoteCount": {
+          "title": "显示文件夹笔记数量",
+          "description": "在侧边栏的文件夹名称旁显示笔记数量"
+        },
+        "showCharacterCount": {
+          "title": "显示字符数",
+          "description": "在编辑器中显示字符和单词统计"
+        }
+      },
+      "data": {
+        "title": "数据管理",
+        "import": {
+          "title": "导入 Markdown 文件夹",
+          "description": "从本地目录导入嵌套的 Markdown 文件到您的笔记中。",
+          "success": "成功导入 {{count}} 篇笔记。"
+        },
+        "importFiles": {
+          "title": "导入 Markdown 文件",
+          "description": "选择一个或多个本地 Markdown 文件并直接导入到您的笔记中。",
+          "success": "成功导入 {{count}} 个 Markdown 文件。"
+        },
+        "export": {
+          "title": "导出为 Markdown",
+          "description": "将所有笔记导出到本地目录作为 Markdown 文件。",
+          "success": "成功导出 {{count}} 篇笔记。"
+        },
+        "cleanupDirectories": {
+          "title": "清理空文件夹",
+          "description": "删除其整个子树中都不包含笔记的文件夹。",
+          "action": "清理",
+          "previewTitle": "删除空文件夹",
+          "previewDescription_zero": "没有文件夹会被删除。",
+          "previewDescription_one": "以下文件夹将被删除。",
+          "previewDescription_other": "以下 {{count}} 个文件夹将被删除。",
+          "confirmAction": "删除文件夹",
+          "success_zero": "未找到空文件夹。",
+          "success_one": "已删除 1 个空文件夹。",
+          "success_other": "已删除 {{count}} 个空文件夹。",
+          "error": "清理空文件夹失败。"
+        },
+        "cleanupTags": {
+          "title": "清理未使用标签",
+          "description": "删除未关联到任何笔记的标签。",
+          "action": "清理",
+          "previewTitle": "删除未使用标签",
+          "previewDescription_zero": "没有标签会被删除。",
+          "previewDescription_one": "以下标签将被删除。",
+          "previewDescription_other": "以下 {{count}} 个标签将被删除。",
+          "confirmAction": "删除标签",
+          "success_zero": "未找到未使用标签。",
+          "success_one": "已删除 1 个未使用标签。",
+          "success_other": "已删除 {{count}} 个未使用标签。",
+          "error": "清理未使用标签失败。"
+        }
+      }
+    },
+    "editor": {
+      "title": "编辑器",
+      "description": "通过启用或禁用按钮组来自定义编辑器工具栏。",
+      "toolbar": {
+        "title": "工具栏",
+        "history": {
+          "title": "历史记录",
+          "description": "撤销和重做按钮"
+        },
+        "headings": {
+          "title": "标题",
+          "description": "一级、二级和三级标题按钮"
+        },
+        "formatting": {
+          "title": "格式化",
+          "description": "加粗、斜体、下划线、删除线、高亮和文字颜色按钮"
+        },
+        "lists": {
+          "title": "列表",
+          "description": "无序列表、有序列表和任务列表按钮"
+        },
+        "block": {
+          "title": "块级元素",
+          "description": "引用、行内代码、代码块和分隔线按钮"
+        },
+        "insert": {
+          "title": "插入",
+          "description": "链接、表格、行内公式和公式块按钮"
+        },
+        "tools": {
+          "title": "AI 与绘图",
+          "description": "复制 Markdown、AI 助手、Excalidraw 和 Mermaid 按钮"
+        }
+      }
+    },
+    "ai": {
+      "title": "AI 设置",
+      "apiKey": "API 密钥",
+      "apiKeyPlaceholder": "请输入您的 API 密钥...",
+      "apiKeyNotice": "您的密钥本地存储在您的设备上。",
+      "baseUrl": "基础 URL",
+      "modelName": "模型名称",
+      "modelNamePlaceholder": "例如：gemini-1.5-flash",
+      "models": "模型",
+      "saveSettings": "保存设置",
+      "savedSuccessfully": "AI 设置已成功保存",
+      "failedToSave": "保存设置失败"
+    },
+    "theme": {
+      "licenseGate": {
+        "required": "需要有效许可证",
+        "description": "主题自定义需要有效的 ZeroSort 许可证。请激活您的许可证以解锁此功能。",
+        "activateButton": "前往许可证设置",
+        "featureLocked": "主题自定义需要有效许可证"
+      },
+      "editingMode": {
+        "label": "编辑模式",
+        "light": "浅色",
+        "dark": "深色"
+      },
+      "tabs": {
+        "presets": "预设",
+        "colors": "颜色",
+        "other": "其他"
+      },
+      "sections": {
+        "primaryColors": "主色",
+        "secondaryColors": "次要颜色",
+        "accentColors": "强调色",
+        "baseColors": "基础颜色",
+        "cardColors": "卡片颜色",
+        "popoverColors": "弹出层颜色",
+        "mutedColors": "柔和颜色",
+        "destructiveColors": "危险颜色",
+        "borderColors": "边框与输入颜色",
+        "chartColors": "图表颜色",
+        "sidebarColors": "侧边栏颜色",
+        "hslAdjustments": "HSL 调整",
+        "radius": "圆角",
+        "spacing": "间距",
+        "letterSpacing": "字间距",
+        "fonts": "字体",
+        "shadow": "阴影"
+      }
+    },
+    "models": {
+      "title": "模型管理",
+      "modelSelect": "选择模型",
+      "description": "配置为 ZeroSort 提供功能的 AI 模型。",
+      "custom": "自定义",
+      "providers": "服务商",
+      "addNew": "新增服务商",
+      "noProviderSelected": "未选择服务商",
+      "selectOrCreate": "在侧边栏创建一个新服务商或选择一个现有服务商。",
+      "createProvider": "创建服务商",
+      "createDescription": "使用服务商模板创建一个新配置。",
+      "templates": "服务商模板",
+      "addModel": "添加模型",
+      "editModel": "编辑模型",
+      "modelName": "模型名称",
+      "modelId": "模型 ID",
+      "familyGroup": "系列",
+      "providerName": "服务商名称",
+      "providerNamePlaceholder": "例如：我的自定义服务商",
+      "testConnection": "测试连接",
+      "testing": "测试中...",
+      "connectionSuccess": "连接成功",
+      "connectionFailed": "连接失败：{{error}}"
+    }
+  },
+  "common": {
+    "title": "标题",
+    "add": "添加",
+    "alreadyAdded": "已添加",
+    "english": "英语",
+    "chinese": "中文",
+    "languages": {
+      "ar": "阿拉伯语",
+      "de": "德语",
+      "en": "英语",
+      "es": "西班牙语",
+      "fr": "法语",
+      "it": "意大利语",
+      "ja": "日语",
+      "ko": "韩语",
+      "pt": "葡萄牙语",
+      "ru": "俄语",
+      "zh": "中文"
+    },
+    "tryAgain": "重试",
+    "home": "首页",
+    "goBack": "返回",
+    "cancel": "取消",
+    "delete": "删除",
+    "export": "导出",
+    "exporting": "导出中...",
+    "import": "导入",
+    "importing": "导入中...",
+    "loading": "加载中...",
+    "cleaning": "清理中...",
+    "save": "保存",
+    "saving": "保存中...",
+    "close": "关闭",
+    "hide": "隐藏",
+    "comingSoon": "即将推出",
+    "uncategorized": "未分类",
+    "current": "当前",
+    "beforeUpdate": "更改前",
+    "afterUpdate": "更改后",
+    "on": "开启",
+    "off": "关闭",
+    "showMore": "展开",
+    "showLess": "收起",
+    "regenerating": "重新生成中",
+    "tags": "标签",
+    "sortBy": "排序方式",
+    "createdAt": "创建日期",
+    "updatedAt": "更新日期",
+    "months": {
+      "1": "一月",
+      "2": "二月",
+      "3": "三月",
+      "4": "四月",
+      "5": "五月",
+      "6": "六月",
+      "7": "七月",
+      "8": "八月",
+      "9": "九月",
+      "10": "十月",
+      "11": "十一月",
+      "12": "十二月"
+    },
+    "datePicker": {
+      "pickDate": "选择日期",
+      "clearFilter": "清除日期筛选",
+      "modalTitle": "按日期筛选",
+      "noDateSelected": "未选择日期",
+      "notesOnDate": "{{date}} 有 {{count}} 篇笔记"
+    }
+  },
+  "folder": {
+    "newFolder": "新建文件夹",
+    "renameFolder": "重命名文件夹",
+    "deleteFolder": "删除文件夹",
+    "deleteConfirmation": "您确定要删除 \"{{name}}\" 吗？",
+    "deleteWarning": "请选择如何处理此文件夹内的笔记。",
+    "deleteOptionMoveToUncategorized": "将笔记移动到未分类",
+    "deleteOptionDeleteAll": "永久删除所有笔记",
+    "folderName": "文件夹名称",
+    "placeholder": "请输入文件夹名称...",
+    "create": "创建文件夹",
+    "rename": "重命名",
+    "addSubfolder": "添加子文件夹",
+    "delete": "删除",
+    "alreadyExists": "文件夹已存在",
+    "moveFolder": "移动文件夹",
+    "selectDestination": "选择目标文件夹",
+    "root": "根目录 (顶层)",
+    "move": "移动",
+    "noOtherFolders": "没有其他可用的文件夹"
+  },
+  "note": {
+    "moveNote": "移动笔记",
+    "searchDirectories": "搜索目录...",
+    "noDirectoriesFound": "未找到目录",
+    "deleted": "笔记已删除",
+    "failedToDelete": "删除笔记失败",
+    "deleteTitle": "删除笔记？",
+    "deleteDescription": "此操作无法撤销。您确定要删除此笔记吗？",
+    "editorPlaceholder": "开始写作...",
+    "savedSuccessfully": "笔记已成功保存",
+    "savedWithWarnings": "笔记已保存，但部分图片清理未能完成",
+    "failedToSave": "保存笔记失败",
+    "hideSummary": "隐藏摘要",
+    "showSummary": "显示摘要",
+    "summary": "摘要",
+    "editTitle": "编辑标题",
+    "created": "创建于",
+    "updated": "更新于",
+    "editSummary": "编辑摘要",
+    "editCreatedAt": "编辑创建日期",
+    "createdAtUpdated": "创建日期已更新",
+    "createdAtUpdatedWithWarnings": "创建日期已更新，但部分图片清理未能完成",
+    "failedToUpdateCreatedAt": "更新创建日期失败",
+    "createdAtHour": "小时",
+    "createdAtMinute": "分钟",
+    "createdAtSecond": "秒",
+    "createdAtHourPlaceholder": "时",
+    "createdAtMinutePlaceholder": "分",
+    "createdAtSecondPlaceholder": "秒",
+    "summaryPlaceholder": "请输入摘要...",
+    "unsavedChanges": "未保存的更改",
+    "unsavedChangesDescription": "您的笔记有未保存的更改。您想在移动前保存它们吗？",
+    "saveAndContinue": "保存并继续",
+    "discardChanges": "放弃更改",
+    "regenerateTitle": "重新生成标题",
+    "titleRegenerated": "标题已重新生成",
+    "regenerateSummary": "重新生成摘要",
+    "summaryRegenerated": "摘要已重新生成",
+    "regenerateCatalog": "重新生成目录层级",
+    "catalogRegenerated": "目录层级已重新生成",
+    "regenerateTags": "重新生成标签",
+    "tagsRegenerated": "标签已重新生成",
+    "untitled": "无标题",
+    "sort": "整理",
+    "regenerate": "重新生成",
+    "regenerateAll": "全部重新生成",
+    "regenerateSelected": "重新生成所选",
+    "selectToRegenerate": "选择要重新生成的项",
+    "regeneratedSuccessfully": "重新生成成功",
+    "reviewChanges": "预览更改",
+    "applyChanges": "应用更改",
+    "discardRegeneration": "放弃",
+    "noChange": "无变化",
+    "createNote": "创建"
+  },
+  "links": {
+    "title": "链接"
+  },
+  "backlinks": {
+    "loading": "正在加载反向链接...",
+    "empty": "还没有反向链接",
+    "hint": "其他笔记中指向此笔记的链接会显示在这里",
+    "title": "反向链接",
+    "link": "条链接",
+    "links": "条链接",
+    "mention": "处提及",
+    "mentions": "处提及"
+  },
+  "outgoingLinks": {
+    "loading": "正在加载链接...",
+    "empty": "没有出站链接",
+    "hint": "使用 [[笔记标题]] 来链接到其他笔记",
+    "title": "出站链接",
+    "link": "条链接",
+    "links": "条链接",
+    "broken": "失效链接",
+    "valid": "有效链接",
+    "createNote": "创建"
+  },
+  "wikiLinks": {
+    "noNotesFound": "未找到笔记"
+  },
+  "notFound": {
+    "description": "您查找的页面不存在。",
+    "startOver": "返回首页"
+  },
+  "sidebar": {
+    "folders": "文件夹",
+    "expandAll": "全部展开",
+    "collapseAll": "全部收起",
+    "showSidebar": "显示侧边栏",
+    "hideSidebar": "隐藏侧边栏",
+    "searchPlaceholder": "搜索笔记和文件夹...",
+    "tags": "标签",
+    "clearTagFilters": "清除标签过滤",
+    "matchAll": "匹配全部",
+    "matchAny": "匹配任一",
+    "noTags": "暂无标签",
+    "manageTags": "管理标签"
+  },
+  "tags": {
+    "title": "标签管理",
+    "filters": "活跃过滤",
+    "allTags": "所有标签",
+    "create": "创建标签",
+    "rename": "重命名",
+    "delete": "删除",
+    "selectMultiple": "选择标签",
+    "cancelSelection": "取消",
+    "selectAll": "全选",
+    "clearSelection": "清除选择",
+    "selectedCount": "已选择 {{count}} 个",
+    "selectedCount_other": "已选择 {{count}} 个",
+    "deleteSelected": "删除所选",
+    "deleteSelectedConfirm": "删除已选择的 {{count}} 个标签？它们将从所有笔记中移除。",
+    "deleteSelectedConfirm_other": "删除已选择的 {{count}} 个标签？它们将从所有笔记中移除。",
+    "deleteConfirm": "删除此标签？它将从所有笔记中移除。",
+    "color": "颜色",
+    "noTags": "暂无标签。创建一个以开始使用。",
+    "namePlaceholder": "标签名称...",
+    "noteCount": "{{count}} 篇笔记",
+    "noteCount_other": "{{count}} 篇笔记",
+    "searchPlaceholder": "搜索标签...",
+    "dateFilter": "显示 {{date}} 的标签"
+  },
+  "home": {
+    "tagline": "随心所记，AI 整理。",
+    "analyzing": "分析中...",
+    "sorting": "正在分类...",
+    "noNotes": "暂无笔记。开始在下方创建吧！",
+    "notesCount": "{{count}} 篇笔记",
+    "viewMode": {
+      "timeline": "时间线"
+    }
+  },
+  "about": {
+    "title": "关于",
+    "version": "版本",
+    "description": "ZeroSort 是一款 AI 驱动的笔记应用，旨在帮助您轻松组织思绪。把思考留给自己，把整理交给 AI。",
+    "website": "网站",
+    "websiteDesc": "访问我们的官方网站获取新闻和文档。",
+    "visitWebsite": "访问 zerosort.app",
+    "updater": {
+      "title": "应用更新",
+      "description": "检查新的桌面版本，并在 ZeroSort 内直接完成安装。",
+      "releaseNotes": "更新说明",
+      "releaseDate": "发布时间：{{date}}",
+      "actions": {
+        "check": "检查更新",
+        "install": "安装更新"
+      },
+      "status": {
+        "idle": "可以开始检查更新。",
+        "checking": "正在检查更新...",
+        "upToDate": "当前已经是最新版本。",
+        "available": "版本 {{version}} 已可安装。",
+        "availableUnknown": "有新的更新可用。",
+        "downloading": "正在下载更新包...",
+        "installing": "正在安装更新...",
+        "completed": "正在重新启动以完成更新...",
+        "unsupported": "更新功能仅在桌面应用内可用。"
+      },
+      "progress": {
+        "percent": "已下载 {{percent}}%",
+        "unknown": "正在下载更新..."
+      },
+      "toast": {
+        "upToDate": "ZeroSort 已是最新版本。",
+        "available": "发现可用更新 {{version}}。"
+      },
+      "errors": {
+        "network": "无法连接到更新服务器。请检查网络连接后重试。",
+        "check": "检查更新失败。",
+        "install": "安装更新失败。"
+      }
+    },
+    "footer": "© 2026 ZeroSort。保留所有权利。"
+  },
+  "editor": {
+    "undo": "撤销",
+    "redo": "重做",
+    "heading1": "一级标题",
+    "heading2": "二级标题",
+    "heading3": "三级标题",
+    "bold": "加粗",
+    "italic": "斜体",
+    "underline": "下划线",
+    "strikethrough": "删除线",
+    "bulletList": "无序列表",
+    "orderedList": "有序列表",
+    "taskList": "任务列表",
+    "indent": "增加缩进",
+    "outdent": "减少缩进",
+    "quote": "引用",
+    "inlineCode": "行内代码",
+    "codeBlock": "代码块",
+    "horizontalRule": "分隔线",
+    "link": "链接",
+    "insertLink": "插入链接",
+    "removeLink": "移除链接",
+    "insertTable": "表格",
+    "image": "图片",
+    "insertImage": "插入图片",
+    "editImage": "编辑图片",
+    "imageFromUrl": "来自链接",
+    "imageFromFile": "来自文件",
+    "imageUrl": "图片链接",
+    "imageSelectFile": "选择图片文件",
+    "imageChooseFile": "选择文件",
+    "imageDropHere": "将图片拖到这里",
+    "imageDropHint": "把本地图片拖放到此区域",
+    "imageFileLimit": "最大文件大小：5 MB",
+    "imageFileTooLarge": "图片必须小于或等于 5 MB。",
+    "imageFileReadFailed": "读取图片文件失败。",
+    "imageFileSaveFailed": "保存图片文件失败。",
+    "imageAlt": "替代文本（可选）",
+    "deleteImage": "删除图片",
+    "displayInline": "行内",
+    "displayBlock": "块级",
+    "moreActions": "更多操作",
+    "copyMarkdown": "复制为 Markdown",
+    "copiedMarkdown": "笔记 Markdown 已复制到剪贴板",
+    "aiAssistant": "AI 助手",
+    "aiModeOffLabel": "AI 关闭",
+    "aiModeSelectionLabel": "选中",
+    "aiModeAskAiLabel": "问答",
+    "aiModeSelection": "AI: 选中模式（点击切换）",
+    "aiModeAskAi": "AI: 问答模式（点击切换）",
+    "inlineMath": "行内公式",
+    "blockMath": "公式块",
+    "enterLatex": "输入 LaTeX 表达式：",
+    "highlight": "高亮",
+    "textColor": "文字颜色",
+    "removeColor": "移除颜色",
+    "applyColor": "应用",
+    "excalidraw": {
+      "insert": "Excalidraw 绘图",
+      "placeholder": "点击左上角开始绘图",
+      "edit": "编辑",
+      "done": "完成",
+      "copy": "复制绘图块",
+      "copied": "绘图块已复制到剪贴板",
+      "delete": "删除绘图",
+      "loading": "加载绘图中..."
+    },
+    "markmap": {
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
+      "fit": "适应视图",
+      "copy": "复制思维导图块",
+      "copied": "思维导图块已复制到剪贴板",
+      "delete": "删除思维导图"
+    },
+    "mermaid": {
+      "insert": "Mermaid 图表",
+      "edit": "编辑",
+      "preview": "预览",
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
+      "fit": "适应视图",
+      "copy": "复制图表块",
+      "copied": "图表块已复制到剪贴板",
+      "delete": "删除图表"
+    },
+    "chart": {
+      "copy": "复制图表块",
+      "copied": "图表块已复制到剪贴板"
+    },
+    "calendar": {
+      "insert": "日历",
+      "blockLabel": "日历",
+      "copy": "复制日历块",
+      "copied": "日历块已复制到剪贴板",
+      "delete": "删除日历",
+      "resize": "调整日历大小",
+      "previousMonth": "上个月",
+      "nextMonth": "下个月",
+      "newEvent": "新建事件",
+      "add": "添加",
+      "selectedDate": "选定日期",
+      "titlePlaceholder": "事件标题",
+      "descriptionPlaceholder": "备注",
+      "allDay": "全天",
+      "noEvents": "该日期暂无事件",
+      "deleteEvent": "删除事件",
+      "weekDays": {
+        "sun": "日",
+        "mon": "一",
+        "tue": "二",
+        "wed": "三",
+        "thu": "四",
+        "fri": "五",
+        "sat": "六"
+      },
+      "colors": {
+        "blue": "蓝色",
+        "green": "绿色",
+        "yellow": "黄色",
+        "pink": "粉色",
+        "purple": "紫色",
+        "orange": "橙色",
+        "red": "红色",
+        "teal": "青色",
+        "indigo": "靛蓝"
+      }
+    },
+    "copyFailed": "复制到剪贴板失败",
+    "table": {
+      "addRowBefore": "在上方添加行",
+      "addRowAfter": "在下方添加行",
+      "addColumnBefore": "在左侧添加列",
+      "addColumnAfter": "在右侧添加列",
+      "deleteRow": "删除行",
+      "deleteColumn": "删除列",
+      "mergeOrSplit": "合并或拆分单元格",
+      "deleteTable": "删除表格",
+      "createChart": "从表格创建图表"
+    },
+    "characterCount": {
+      "characters": "字符",
+      "words": "词"
+    },
+    "kanban": {
+      "insert": "看板",
+      "blockLabel": "看板",
+      "copy": "复制看板",
+      "copied": "看板已复制",
+      "delete": "删除看板",
+      "resize": "调整看板大小"
+    }
+  },
+  "ai": {
+    "prompts": {
+      "system": "你是 ZeroSort AI，一个极简主义的笔记整理助手。\n分析用户输入并返回一个结构化的 JSON 对象。**用中文回答**。",
+      "input": "输入：",
+      "content": "内容：",
+      "contentBefore": "<内容>",
+      "contentAfter": "</内容>",
+      "regenerateTitle": "为此内容重新生成一个简短、清晰的标题（最多 10 个字）。",
+      "regenerateSummary": "为此内容重新生成 2-3 句的摘要/预览。**用中文回答**",
+      "regenerateCatalog": "为此内容重新生成文件夹层级（目录），以字符串数组形式返回。要求简洁准确，且不多于3个目录层级。例如：[\"工作\", \"会议\", \"摘要\"] 或 [\"个人\", \"食谱\", \"沙拉\"]",
+      "regenerateTags": "为此内容建议相关标签。返回一个短小描述性标签名称的数组（每个1-3个字），建议2-5个能捕捉关键主题的标签。",
+      "existingDirectories": "用户已有以下目录结构：\n{{directories}}\n\n请对当前笔记进行归类。请遵循以下逻辑：\n 1. 如果笔记内容与已有目录主题高度匹配，请直接归入已有目录。\n 2. 如果笔记属于已有目录的细分领域，可以在已有目录下创建**新子目录**。\n 3. 如果笔记的主题与所有已有目录均不相关，请不要勉强塞入已有目录，必须为其创建一个全新的、独立的顶级目录（Root Directory）。",
+      "schema": {
+        "title": "一个简短、清晰的笔记名称（最多 10 个字）。",
+        "catalog": "一个简洁的文件夹层级（目录），以字符串数组形式返回。要求简洁准确，且不多于3个目录层级。例如：[\"工作\", \"会议\", \"摘要\"] 或 [\"个人\", \"食谱\", \"沙拉\"]",
+        "summary": "用于笔记卡片的 2-3 句预览。",
+        "tags": "一个短小描述性标签名称的数组（每个1-3个字，2-5个标签），用于捕捉笔记的关键主题。"
+      }
+    },
+    "enabled": "AI 已启用",
+    "disabled": "AI 已禁用",
+    "includeExistingDirs": "参考目录",
+    "includeExistingDirsTooltip": "参考现有目录结构",
+    "noModelSelected": "请在设置中选择一个 AI 模型。",
+    "requestFailed": "AI 请求失败，请检查模型设置后重试。"
+  },
+  "aiMenu": {
+    "editWithAi": "使用 AI 编辑",
+    "placeholder": "向 AI 提问...",
+    "send": "发送",
+    "preview": "AI 回复",
+    "mindmapPreview": "思维导图",
+    "mermaidPreview": "Mermaid 图表",
+    "chartPreview": "图表",
+    "insertBelow": "插入到下方",
+    "insertMindmap": "插入思维导图",
+    "insertMermaid": "插入图表",
+    "insertChart": "插入图表",
+    "mindmapInserted": "思维导图已插入",
+    "mermaidInserted": "图表已插入",
+    "chartInserted": "图表已插入",
+    "chartParseError": "图表数据解析失败",
+    "copy": "复制结果",
+    "copied": "已复制到剪贴板",
+    "discard": "放弃",
+    "useFullContext": "使用完整文档作为上下文",
+    "sections": {
+      "suggested": "建议",
+      "charts": "图表",
+      "edit": "编辑"
+    },
+    "actions": {
+      "improve": "改进文字",
+      "proofread": "校对",
+      "explain": "解释",
+      "translate": "翻译为",
+      "longer": "扩展内容",
+      "shorter": "精简内容",
+      "tone": "更改语气",
+      "simplify": "简化语言",
+      "mindmap": "生成思维导图",
+      "mermaid": "生成mermaid",
+      "chart": "生成图表"
+    },
+    "languages": {
+      "arabic": "阿拉伯语",
+      "english": "英语",
+      "chinese": "中文",
+      "italian": "意大利语",
+      "korean": "韩语",
+      "portuguese": "葡萄牙语",
+      "russian": "俄语",
+      "spanish": "西班牙语",
+      "french": "法语",
+      "german": "德语",
+      "japanese": "日语"
+    },
+    "chartTypes": {
+      "line": "折线图",
+      "bar": "柱状图",
+      "pie": "饼图",
+      "radar": "雷达图",
+      "bubble": "气泡图"
+    },
+    "tones": {
+      "professional": "专业",
+      "casual": "随意",
+      "friendly": "友好",
+      "confident": "自信",
+      "formal": "正式"
+    },
+    "generating": "生成中...",
+    "loading": "AI 思考中...",
+    "success": "文本已更新",
+    "errors": {
+      "noSelection": "请先选择一些文字",
+      "failed": "AI 请求失败，请重试",
+      "emptyResponse": "AI 返回了空响应"
+    },
+    "prompts": {
+      "contextPrefix": "以下是完整文档供参考：\n\n{{fullDocument}}\n\n---\n\n现在，请专注于以下选中的部分：\n\n",
+      "improve": "{{contextPrefix}}改进以下文字，保持原意不变。只返回改进后的文字，不要解释：\n\n{{text}}",
+      "proofread": "{{contextPrefix}}校对以下文字，修正语法、拼写或标点错误。只返回修正后的文字：\n\n{{text}}",
+      "translate": "{{contextPrefix}}将以下文字翻译为{{option}}。只返回翻译结果：\n\n{{text}}",
+      "longer": "{{contextPrefix}}扩展以下文字，添加更多细节，保持原意不变。只返回扩展后的文字：\n\n{{text}}",
+      "shorter": "{{contextPrefix}}精简以下文字，保持原意不变。只返回精简后的文字：\n\n{{text}}",
+      "tone": "{{contextPrefix}}用{{option}}的语气重写以下文字。只返回重写后的文字：\n\n{{text}}",
+      "simplify": "{{contextPrefix}}简化以下文字，使其更容易理解。只返回简化后的文字：\n\n{{text}}",
+      "explain": "{{contextPrefix}}用简单的语言解释以下文字。提供清晰简洁的解释：\n\n{{text}}",
+      "mindmap": "将以下文字转换为使用 Markdown 的层级思维导图结构。使用标题（##、###）表示主要主题，使用嵌套的项目符号（-）表示子主题。保持简洁有序。只返回 Markdown，不要解释：\n\n{{text}}",
+      "mermaid": "将以下文字转换为 Mermaid 图表。选择最合适的图表类型（流程图、时序图、类图、状态图、ER 图、甘特图或饼图）。只返回有效的 Mermaid 语法——不要 Markdown 代码块，不要解释，只要原始 Mermaid 代码。以图表类型关键字开头（如 graph TD、sequenceDiagram、classDiagram 等）：\n\n{{text}}",
+      "custom": "{{contextPrefix}}{{option}}\n\n需要处理的文字：\n{{text}}",
+      "chart": {
+        "base": "分析以下文字并提取数值数据，创建一个 Chart.js {{chartType}} 图表配置。只返回有效的 JSON 对象（不要 Markdown 代码块，不要解释，只要原始 JSON）。JSON 必须包含 \"type\" 字段，值为 \"{{chartType}}\"。使用从文字中提取的描述性标签。如果有多个数据系列，请创建多个数据集并使用不同的颜色。{{colorsHint}}"
+      }
+    }
+  },
+  "proFeatures": {
+    "licenseGate": {
+      "required": "需要有效的许可证密钥",
+      "description": "{{feature}} 是 Pro 功能。激活你的 ZeroSort 许可证密钥即可解锁。",
+      "activateButton": "前往许可证设置",
+      "featureLocked": "{{feature}} 需要有效的许可证密钥",
+      "featureTooltip": "{{feature}} 需要 Pro"
+    }
+  },
+  "askAi": {
+    "title": "问 AI",
+    "placeholder": "随便问点什么... 输入 @ 引用已打开的笔记",
+    "mentionHint": "按 @ 引用已打开的笔记作为上下文",
+    "contextPrefix": "以下是一些笔记供参考：",
+    "pickLocation": "点击编辑器中的位置以插入回复",
+    "insertInNote": "插入笔记",
+    "insertResponse": "插入此回复",
+    "inserted": "已插入",
+    "newChat": "新对话",
+    "noOpenNotes": "没有可引用的已打开笔记",
+    "noMatchingNotes": "未找到匹配的笔记"
+  },
+  "license": {
+    "title": "许可证",
+    "description": "管理 ZeroSort 的软件许可证。",
+    "status": "许可证状态",
+    "active": "已激活",
+    "inactive": "无许可证",
+    "invalid": "无效许可证",
+    "machineId": "机器 ID",
+    "machineIdCopied": "机器 ID 已复制到剪贴板",
+    "activate": "激活许可证",
+    "activatePlaceholder": "在此粘贴您的许可证密钥...",
+    "activateButton": "激活",
+    "purchaseLink": "获取许可证密钥",
+    "activateSuccess": "许可证激活成功",
+    "deactivate": "停用许可证",
+    "deactivateConfirm": "您确定要停用您的许可证吗？",
+    "deactivateSuccess": "许可证已停用",
+    "errors": {
+      "invalidSignature": "无效的许可证密钥 - 签名验证失败",
+      "expired": "许可证密钥已过期",
+      "hardwareMismatch": "此许可证不适用于此机器",
+      "clockTampered": "检测到系统时钟篡改，请更正系统时间。",
+      "activationFailed": "许可证激活失败"
+    }
+  },
+  "sync": {
+    "title": "云同步",
+    "description": "将笔记同步到兼容 S3 的存储服务，实现备份和多设备访问。",
+    "connected": "连接成功",
+    "notConnected": "未连接到 S3",
+    "connect": "连接",
+    "disconnect": "断开连接",
+    "upload": "上传到云端",
+    "download": "从云端下载",
+    "uploadSuccess": "备份上传成功",
+    "downloadSuccess": "备份下载成功",
+    "syncing": "同步中...",
+    "connecting": "连接中...",
+    "restoring": "恢复连接中...",
+    "lastSync": "上次同步：{{time}}",
+    "never": "从未",
+    "syncNow": "同步",
+    "preview": "预览",
+    "syncComplete": "同步完成：上传 {{uploaded}} 项，下载 {{downloaded}} 项",
+    "recoveryComplete": "远程恢复完成",
+    "refreshPartialTags": "同步已完成，但标签未能刷新。",
+    "refreshFailed": "同步已完成，但本地数据未能刷新。请重新加载应用以查看最新更改。",
+    "blockedBySafety": "同步被安全检查阻止",
+    "recovery": {
+      "title": "建议从远程恢复",
+      "description": "ZeroSort 检测到本地同步状态异常为空。请从远程恢复，以重建本地数据并避免删除云端数据。",
+      "action": "从远程恢复"
+    },
+    "safetyDialog": {
+      "common": {
+        "totalItems": "项目总数",
+        "confirm": "仍然继续",
+        "cancel": "取消同步",
+        "close": "关闭"
+      },
+      "deletion": {
+        "title": "检测到高删除率",
+        "description": "{{total}} 个项目中有 {{count}} 个（{{percentage}}%）将被删除，超过了 {{threshold}}% 的安全阈值。这可能表示配置问题或意外数据丢失。",
+        "localDeletes": "本地删除",
+        "remoteDeletes": "远程删除"
+      },
+      "unsafe": {
+        "title": "因本地状态不安全而阻止同步",
+        "description": "仍有 {{count}} 个托管项目在本地被引用，但 ZeroSort 无法验证对应的本地文件。为防止意外数据丢失，同步已被阻止。",
+        "unsafeItems": "不安全项目",
+        "details": "详情"
+      }
+    },
+    "noChanges": "没有需要同步的更改",
+    "phase": {
+      "idle": "就绪",
+      "connecting": "连接中...",
+      "collecting": "收集数据中...",
+      "planning": "规划变更中...",
+      "executing": "同步中...",
+      "directories": "准备文件夹和标签中...",
+      "uploading": "上传更改中...",
+      "downloading": "下载更改中...",
+      "deleting": "移除过期项目中...",
+      "cleanup": "正在完成同步收尾...",
+      "completing": "完成同步中..."
+    },
+    "progress": {
+      "preparing": "正在准备同步..."
+    },
+    "preview_section": {
+      "title": "同步预览",
+      "uploads": "待上传",
+      "downloads": "待下载",
+      "deletes": "待本地删除",
+      "remoteDeletes": "待远程删除",
+      "conflicts": "冲突",
+      "unsafe": "阻止项目",
+      "unchanged": "无变化"
+    },
+    "configuration": {
+      "title": "S3 配置",
+      "label": "连接名称",
+      "labelPlaceholder": "我的 S3 备份",
+      "bucketName": "存储桶名称",
+      "bucketPlaceholder": "请输入存储桶名称...",
+      "accessKeyId": "访问密钥 ID",
+      "secretAccessKey": "秘密访问密钥",
+      "region": "区域",
+      "regionPlaceholder": "us-east-1",
+      "endpointUrl": "终端节点 URL",
+      "endpointPlaceholder": "https://s3.{region}.amazonaws.com 或您的自定义终端节点"
+    },
+    "concurrency": {
+      "title": "同步并发数",
+      "description": "同步时的并行操作数量。值越大同步越快，但会占用更多带宽。"
+    },
+    "encryption": {
+      "title": "加密密码",
+      "description": "用于在上传到云端之前加密笔记的密码。请妥善保管此密码 - 您需要它来解密数据。",
+      "configured": "加密密码已设置",
+      "notConfigured": "未配置 - 同步将无法工作",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "mismatch": "两次输入的密码不一致",
+      "tooShort": "密码至少需要 8 个字符",
+      "saved": "加密密码已保存",
+      "changeWarning": "更改密码后需要重新同步所有笔记",
+      "configure": "配置",
+      "change": "更改"
+    },
+    "buckets": {
+      "title": "选择存储桶",
+      "refresh": "刷新",
+      "noBuckets": "未找到存储桶",
+      "createBucket": "请先在 S3 控制台创建存储桶"
+    },
+    "errors": {
+      "connectionFailed": "连接到 S3 失败",
+      "uploadFailed": "上传备份失败",
+      "downloadFailed": "下载备份失败",
+      "noBackups": "存储桶中未找到备份"
+    },
+    "licenseGate": {
+      "required": "需要有效许可证",
+      "description": "云同步功能需要有效的 ZeroSort 许可证。请激活您的许可证以解锁此功能。",
+      "activateButton": "前往许可证设置",
+      "featureLocked": "云同步需要有效的许可证"
+    }
+  },
+  "batch": {
+    "multiSelect": "多选",
+    "selectMonth": "选择本月所有笔记",
+    "deselectMonth": "取消选择本月所有笔记",
+    "selectedCount": "已选 {{count}} 项",
+    "regenerate": "重新生成",
+    "regenerateTooltip": "为选中的笔记重新生成（标题、摘要、目录）",
+    "dialogTitle": "批量重新生成",
+    "dialogDescription": "选择要为 {{count}} 条笔记重新生成的项",
+    "startRegeneration": "重新生成 {{count}} 条笔记",
+    "alreadyRunning": "已有批量任务正在运行",
+    "inProgress": "正在重新生成...",
+    "cancelledTitle": "已取消",
+    "completedTitle": "已完成",
+    "progress": "{{completed}} / {{total}}",
+    "failedCount": "{{count}} 个失败",
+    "processing": "正在处理：{{title}}",
+    "processingMultiple": "正在处理 {{count}} 条笔记...",
+    "stop": "停止",
+    "completed": "成功重新生成 {{count}} 条笔记",
+    "completedWithErrors": "重新生成了 {{completed}} 条笔记，{{failed}} 个失败",
+    "cancelled": "已取消 — 已重新生成 {{completed}} / {{total}} 条笔记",
+    "concurrency": "并发数",
+    "concurrencyDescription": "同时处理的笔记数量"
+  },
+  "event-calendar": {
+    "app": {
+      "title": "事件日历"
+    },
+    "language": {
+      "select": "选择语言"
+    },
+    "theme": {
+      "toggle": "切换主题"
+    },
+    "nav": {
+      "previousPeriod": "上一周期",
+      "nextPeriod": "下一周期"
+    },
+    "controls": {
+      "selectDay": "选择日期",
+      "selectMonth": "选择月份",
+      "selectYear": "选择年份"
+    },
+    "view": {
+      "day": "日",
+      "week": "周",
+      "month": "月",
+      "year": "年"
+    },
+    "display": {
+      "calendar": "日历视图",
+      "list": "列表视图",
+      "switchToCalendar": "切换到日历视图",
+      "switchToList": "切换到列表视图"
+    },
+    "period": {
+      "today": "今天",
+      "tomorrow": "明天",
+      "thisWeek": "本周",
+      "thisMonth": "本月",
+      "thisYear": "今年"
+    },
+    "time": {
+      "twelveHour": "12 小时",
+      "twentyFourHour": "24 小时"
+    },
+    "filters": {
+      "filter": "筛选",
+      "byColor": "按颜色筛选"
+    },
+    "actions": {
+      "add": "添加",
+      "addEvent": "添加事件",
+      "cancel": "取消",
+      "confirm": "确认",
+      "createEvent": "创建事件",
+      "delete": "删除",
+      "reset": "重置",
+      "saveEvent": "保存事件"
+    },
+    "notice": {
+      "created": "事件已创建",
+      "updated": "事件已更新",
+      "deleted": "事件已删除"
+    },
+    "calendar": {
+      "allDay": "全天",
+      "allDayCompact": "全天",
+      "createEventAt": "在 {{time}} 创建事件",
+      "createEventOn": "在 {{date}} 创建事件",
+      "currentTime": "当前时间：{{time}}",
+      "eventCount_one": "{{count}} 个事件",
+      "eventCount_other": "{{count}} 个事件",
+      "fullDayEvents_one": "全天事件（{{count}}）",
+      "fullDayEvents_other": "全天事件（{{count}}）",
+      "moreEvents_one": "+{{count}} 个更多",
+      "moreEvents_other": "+{{count}} 个更多",
+      "selectedTime": "已选时间：{{time}}"
+    },
+    "dialog": {
+      "addEvent": "添加事件",
+      "allDayEvent": "全天事件",
+      "color": "颜色",
+      "description": "描述",
+      "descriptionPlaceholder": "添加备注、议程或详情",
+      "editEvent": "编辑事件",
+      "endDate": "结束日期",
+      "endTime": "结束时间",
+      "eventTitle": "事件标题",
+      "eventTitlePlaceholder": "输入事件标题",
+      "invalidEndTime": "结束时间不能早于开始时间。",
+      "startDate": "开始日期",
+      "startTime": "开始时间"
+    },
+    "list": {
+      "emptyHint": "尝试调整筛选条件或添加新事件",
+      "noEvents": "未找到事件"
+    },
+    "colors": {
+      "blue": "蓝色",
+      "green": "绿色",
+      "indigo": "靛蓝",
+      "orange": "橙色",
+      "pink": "粉色",
+      "purple": "紫色",
+      "red": "红色",
+      "teal": "青色",
+      "yellow": "黄色"
+    },
+    "assistant": {
+      "confirmDeletion": "确认删除",
+      "notConfigured": "请在设置中选择一个 AI 模型。",
+      "serviceUnavailable": "我暂时无法连接到 AI 服务：{{error}}",
+      "processingFailed": "我暂时无法处理该请求：{{error}}",
+      "tryAgain": "请再试一次。",
+      "unknownError": "未知错误",
+      "noPendingConfirm": "当前没有待确认的操作。",
+      "deleteSuccess": "已删除 {{eventCount}}。",
+      "deleteFailed": "删除事件失败：{{error}}",
+      "noPendingCancel": "当前没有待取消的操作。",
+      "deleteCanceled": "已取消删除。",
+      "unsupportedAction": "AI 返回了不受支持的操作。",
+      "needsEventTitle": "我可以为你安排，但还需要一个细节：这个事件叫什么名字？",
+      "suggestMeeting": "会议",
+      "suggestAppointment": "约会",
+      "suggestFocusTime": "专注时间",
+      "needsEventDate": "我可以为你安排，但我需要先知道日期。要放在哪一天？",
+      "needsEventTime": "在我安排之前，还需要一个细节：它几点开始？",
+      "suggestShowToday": "给我看今天的安排",
+      "suggestShowWeek": "给我看本周的安排",
+      "needsEventReferenceUpdate": "我可以更新它，但我需要知道你指的是哪个事件。",
+      "eventNotFoundUpdate": "我已经找不到那个事件了。你想改成更新哪个事件？",
+      "needsUpdateChange": "我可以帮你更新它，但我需要知道要改什么。",
+      "suggestMoveTomorrow": "改到明天",
+      "suggestRename": "重命名它",
+      "suggestChangeColor": "更改颜色",
+      "confirmDeleteWhichEvent": "在我删除任何内容之前，请确认要删除哪个事件。",
+      "eventNotFoundDelete": "我找不到匹配的事件来删除。你指的是哪一个？",
+      "listPair": "{{first}} 和 {{second}}",
+      "conflictWarning": "{{message}}\n\n提醒：这与 {{eventNames}}{{extraInfo}} 时间冲突。",
+      "conflictWarningExtra": "，另外还有 {{count}} 个",
+      "defaultPrompt": "我可以帮你管理日历。你想做什么？",
+      "allDay": "全天",
+      "createdEventOnAllDay": "已在 {{date}} 创建“{{title}}”，{{allDay}}。",
+      "createdEventOnAtTime": "已在 {{date}} {{time}} 创建“{{title}}”。",
+      "createdEventFromTo": "已创建“{{title}}”，时间为 {{startDate}} 到 {{endDate}}。",
+      "queryFoundOnDate": "我找到了 {{date}} 的 {{eventCount}}",
+      "queryFoundFromTo": "我找到了 {{dateFrom}} 到 {{dateTo}} 的 {{eventCount}}",
+      "queryFoundThrough": "我找到了截至 {{date}} 的 {{eventCount}}",
+      "queryFoundAny": "我找到了 {{eventCount}}",
+      "eventDateTimeAllDay": "{{dateRange}}，{{allDay}}",
+      "eventDateTimeTimed": "{{dateRange}}，{{startTime}} - {{endTime}}",
+      "changeRenamed": "已重命名为“{{title}}”",
+      "changeDescriptionUpdated": "描述已更新",
+      "changeDescriptionCleared": "描述已清除",
+      "changeRescheduled": "已改期到 {{date}} {{time}}",
+      "changeColor": "颜色已更改为 {{color}}",
+      "changeMarkedAllDay": "已标记为全天",
+      "changeMarkedTimed": "已标记为定时事件",
+      "updatedEvent": "已更新“{{title}}”：{{changes}}。",
+      "confirmDeleteSingle": "确认一下，我要删除 {{date}} 的“{{title}}”吗？",
+      "confirmDeleteMultiple": "确认一下，我要删除这 {{eventCount}} 吗？",
+      "eventOnDate": "{{date}} 的 {{title}}",
+      "emptyResultsForSearch": "我没有看到符合该搜索条件的事件。",
+      "emptyResultsFromTo": "我没有看到从 {{dateFrom}} 到 {{dateTo}} 的事件。",
+      "emptyResultsFromToMatching": "我没有看到从 {{dateFrom}} 到 {{dateTo}} 中匹配“{{searchTerm}}”的事件。",
+      "emptyHint": "试试：“明天下午 2 点安排会议”或“我今天有什么日程？”",
+      "emptyResultsMatching": "我没有看到匹配“{{searchTerm}}”的事件。",
+      "emptyResultsOnDate": "我没有看到 {{date}} 的事件。",
+      "emptyResultsOnDateMatching": "我没有看到 {{date}} 中匹配“{{searchTerm}}”的事件。",
+      "emptyResultsOnOrAfter": "我没有看到 {{date}} 或之后的事件。",
+      "emptyResultsOnOrAfterMatching": "我没有看到 {{date}} 或之后匹配“{{searchTerm}}”的事件。",
+      "emptyResultsThrough": "我没有看到截至 {{date}} 的事件。",
+      "emptyResultsThroughMatching": "我没有看到截至 {{date}} 且匹配“{{searchTerm}}”的事件。",
+      "emptyTitle": "让我管理你的日历",
+      "openAriaLabel": "打开 AI 日历助手",
+      "panelAriaLabel": "AI 日历助手",
+      "title": "日历助手",
+      "subtitle": "创建、更新、删除和查找事件",
+      "closeAriaLabel": "关闭 AI 助手",
+      "thinking": "正在查看你的日历...",
+      "inputAriaLabel": "向 AI 日历助手发送消息",
+      "placeholder": "询问你的日历...",
+      "send": "发送"
+    }
+  },
+  "kanban": {
+    "app": {
+      "eyebrow": "项目看板"
+    },
+    "language": {
+      "label": "语言",
+      "ariaLabel": "更改语言"
+    },
+    "board": {
+      "ariaLabel": "看板",
+      "noCards": "没有卡片"
+    },
+    "summary": {
+      "ariaLabel": "看板摘要",
+      "columns": "列",
+      "cards": "卡片"
+    },
+    "priority": {
+      "urgent": "紧急",
+      "high": "高",
+      "medium": "中",
+      "low": "低"
+    },
+    "actions": {
+      "addColumn": "添加列",
+      "addCard": "添加卡片",
+      "cancel": "取消",
+      "clear": "清除",
+      "confirm": "确认",
+      "deleteCard": "删除 {{title}}",
+      "deleteColumn": "删除 {{title}}",
+      "editCard": "编辑 {{title}}",
+      "editColumn": "编辑 {{title}}",
+      "reset": "重置",
+      "save": "保存",
+      "send": "发送消息"
+    },
+    "dialogs": {
+      "deleteCard": "删除“{{title}}”？",
+      "deleteColumn_one": "删除“{{title}}”及其中 {{count}} 张卡片？",
+      "deleteColumn_other": "删除“{{title}}”及其中 {{count}} 张卡片？"
+    },
+    "forms": {
+      "assignee": "负责人",
+      "cardDescription": "卡片描述",
+      "cardTitle": "卡片标题",
+      "cardTitlePlaceholder": "卡片标题",
+      "columnColor": "列颜色",
+      "columnDescription": "列描述",
+      "columnName": "列名称",
+      "columnTitle": "列标题",
+      "description": "描述",
+      "dueDate": "截止日期",
+      "noDueDate": "无截止日期",
+      "priority": "优先级",
+      "tags": "标签",
+      "useColor": "使用 {{color}}"
+    },
+    "defaults": {
+      "newWorkflowStage": "新的工作流阶段",
+      "unassigned": "未分配"
+    },
+    "aiService": {
+      "notConfigured": "AI 尚未配置。添加 VITE_DEEPSEEK_API_KEY 以启用助手。",
+      "providerUnavailable": "我现在无法连接到 AI 服务：{{message}}",
+      "processingFailed": "我现在无法处理该请求：{{message}}",
+      "tryAgain": "请再试一次。",
+      "noPendingConfirm": "当前没有待确认的操作。",
+      "noPendingCancel": "当前没有待取消的操作。",
+      "canceledDeletion": "已取消删除。",
+      "unsupportedAction": "AI 返回了不受支持的操作。",
+      "confirmDelete": "要删除{{items}}吗？",
+      "confirmDeleteColumnsAndCards": "要删除{{columns}}和{{cards}}吗？",
+      "deleted": "已删除{{items}}。",
+      "deletedColumnsAndCards": "已删除{{columns}}和{{cards}}。",
+      "replyFallback": "我可以帮助你处理这个看板。你想做什么？",
+      "providerRequestFailed": "DeepSeek 请求失败，状态码为 {{status}}。",
+      "providerEmptyResponse": "DeepSeek 返回了空响应。",
+      "providerInvalidJson": "DeepSeek 返回了无效的 JSON。",
+      "count": {
+        "card_one": "{{count}} 张卡片",
+        "card_other": "{{count}} 张卡片",
+        "column_one": "{{count}} 列",
+        "column_other": "{{count}} 列",
+        "matchingItem_one": "{{count}} 个匹配项",
+        "matchingItem_other": "{{count}} 个匹配项"
+      },
+      "createCard": {
+        "missingTitle": "我可以添加这张卡片，但标题应该是什么？",
+        "missingColumn": "要把卡片添加到哪一列？",
+        "failed": "我无法添加这张卡片，因为找不到目标列。",
+        "success": "已在 {{columnTitle}} 中创建“{{title}}”。",
+        "examples": {
+          "launchChecklist": "编写发布检查清单",
+          "followUpWithDesign": "跟进设计团队",
+          "reviewOpenBugs": "检查未关闭的缺陷"
+        }
+      },
+      "createColumn": {
+        "missingTitle": "我可以添加这一列，但它应该叫什么名字？",
+        "failed": "我现在无法添加这一列。",
+        "success": "已创建“{{title}}”列。",
+        "examples": {
+          "backlog": "待办池",
+          "inProgress": "进行中",
+          "readyForReview": "待审核"
+        }
+      },
+      "updateCard": {
+        "missingCard": "要更新哪张卡片？",
+        "missingChanges": "这张卡片需要修改什么？",
+        "missingAfterUpdate": "我已经找不到那张卡片了。",
+        "success": "已更新“{{title}}”。",
+        "examples": {
+          "rename": "重命名它",
+          "changePriority": "更改优先级",
+          "assignToSomeone": "分配给某个人"
+        }
+      },
+      "updateColumn": {
+        "missingColumn": "要更新哪一列？",
+        "missingChanges": "这一列需要修改什么？",
+        "missingAfterUpdate": "我已经找不到那一列了。",
+        "success": "已更新“{{title}}”列。",
+        "examples": {
+          "rename": "重命名它",
+          "changeColor": "更改颜色",
+          "updateDescription": "更新描述"
+        }
+      },
+      "moveCard": {
+        "missingCard": "要移动哪张卡片？",
+        "missingColumn": "要移动到哪一列？",
+        "failed": "我无法按你提供的目标移动这张卡片。",
+        "success": "已将“{{title}}”移动到 {{columnTitle}}。"
+      },
+      "moveColumn": {
+        "missingColumn": "要移动哪一列？",
+        "failed": "我无法按你提供的目标移动这一列。",
+        "success": "已移动“{{title}}”列。"
+      },
+      "deleteCard": {
+        "missingCard": "要删除哪张卡片？"
+      },
+      "deleteColumn": {
+        "missingColumn": "要删除哪一列？"
+      },
+      "localQuery": {
+        "suggestions": {
+          "urgentCards": "显示紧急卡片",
+          "assignedToSamRivera": "显示分配给 Sam Rivera 的卡片",
+          "cardsDueToday": "显示今天到期的卡片"
+        }
+      },
+      "query": {
+        "noResults": "我在这个看板上找不到匹配的内容。",
+        "found": "找到 {{items}}：",
+        "columnsHeading": "列：",
+        "cardsHeading": "卡片：",
+        "columnLine_one": "- {{title}}（{{count}} 张卡片）",
+        "columnLine_other": "- {{title}}（{{count}} 张卡片）",
+        "cardLine": "- {{title}}，位于 {{columnTitle}}（{{priority}}，{{assignee}}）",
+        "shortened": "我把列表保持为简短版本。如果你想看其余结果，请缩小搜索范围。",
+        "suggestions": {
+          "highPriority": "显示高优先级卡片",
+          "assignedToMe": "有哪些任务分配给我？"
+        }
+      }
+    },
+    "ai": {
+      "affectedCards_one": "这还会移除 {{count}} 张卡片。",
+      "affectedCards_other": "这还会移除 {{count}} 张卡片。",
+      "closeAriaLabel": "关闭 AI 助手",
+      "confirmDeletion": "确认删除",
+      "emptyHint": "试试“向 To do 添加高优先级卡片”或“将发布文案移动到 Review”。",
+      "emptyTitle": "让我帮你整理这个看板。",
+      "inputAriaLabel": "给 AI 看板助手发消息",
+      "openAriaLabel": "打开 AI 看板助手",
+      "panelAriaLabel": "AI 看板助手",
+      "placeholder": "询问你的看板...",
+      "subtitle": "创建、更新、移动并查找工作",
+      "thinking": "正在梳理看板...",
+      "title": "看板助手"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+dist/
+out/
+src/routeTree.gen.ts
+.agents/
+
+src-tauri/target/

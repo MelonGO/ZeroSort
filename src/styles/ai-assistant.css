@@ -1,0 +1,139 @@
+@reference "./app.css";
+
+.kanban-ai-toggle {
+  @apply absolute right-6 bottom-6 z-50 size-13 rounded-full border border-primary/30 bg-primary text-primary-foreground shadow-xl shadow-primary/20 hover:bg-primary/90;
+}
+
+.kanban-ai-panel {
+  @apply absolute right-6 bottom-6 z-50 flex h-[min(640px,calc(100%-3rem))] w-[min(420px,calc(100%-3rem))] max-w-[calc(100%-3rem)] flex-col overflow-hidden rounded-2xl border border-border/80 bg-card/95 shadow-2xl backdrop-blur-md;
+}
+
+.kanban-ai-panel__header {
+  @apply flex items-start justify-between gap-3 border-b border-border/70 p-4;
+}
+
+.kanban-ai-panel__title {
+  @apply flex min-w-0 items-start gap-2.5;
+}
+
+.kanban-ai-panel__title > span {
+  @apply mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary;
+}
+
+.kanban-ai-panel__title h2 {
+  @apply m-0 text-[0.98rem] leading-tight;
+}
+
+.kanban-ai-panel__title p {
+  @apply mt-0.5 text-[0.75rem] text-muted-foreground;
+}
+
+.kanban-ai-panel__actions {
+  @apply flex shrink-0 items-center gap-1;
+}
+
+.kanban-ai-panel__messages {
+  @apply flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto p-4;
+}
+
+.kanban-ai-empty {
+  @apply flex h-full min-h-72 flex-col items-center justify-center rounded-xl border border-dashed border-border/80 bg-background/45 p-6 text-center text-muted-foreground;
+}
+
+.kanban-ai-empty svg {
+  @apply mb-3 text-primary opacity-80;
+}
+
+.kanban-ai-empty p {
+  @apply m-0 text-sm font-bold text-foreground;
+}
+
+.kanban-ai-empty span {
+  @apply mt-2 max-w-64 text-xs leading-relaxed;
+}
+
+.kanban-ai-message {
+  @apply flex flex-col gap-1;
+}
+
+.kanban-ai-message--user {
+  @apply items-end;
+}
+
+.kanban-ai-message--assistant {
+  @apply items-start;
+}
+
+.kanban-ai-message__bubble {
+  @apply max-w-[86%] rounded-2xl px-3.5 py-2.5 text-[0.86rem] leading-relaxed whitespace-pre-wrap;
+}
+
+.kanban-ai-message--user .kanban-ai-message__bubble {
+  @apply rounded-br-md bg-primary text-primary-foreground;
+}
+
+.kanban-ai-message--assistant .kanban-ai-message__bubble {
+  @apply rounded-bl-md bg-muted text-foreground;
+}
+
+.kanban-ai-message__bubble--loading {
+  @apply inline-flex items-center gap-2 text-muted-foreground;
+}
+
+.kanban-ai-message__bubble--loading svg {
+  @apply animate-spin;
+}
+
+.kanban-ai-message__chips {
+  @apply flex max-w-[86%] flex-wrap gap-1.5 px-1;
+}
+
+.kanban-ai-chip {
+  @apply h-auto rounded-full px-2.5 py-1 text-[0.72rem];
+}
+
+.kanban-ai-message time {
+  @apply px-1 text-[0.68rem] text-muted-foreground;
+}
+
+.kanban-ai-confirmation {
+  @apply rounded-xl border border-destructive/30 bg-destructive/5 p-3 text-sm;
+}
+
+.kanban-ai-confirmation strong {
+  @apply text-foreground;
+}
+
+.kanban-ai-confirmation p {
+  @apply mt-1 text-muted-foreground;
+}
+
+.kanban-ai-confirmation ul {
+  @apply mt-2 grid gap-1 pl-4 text-muted-foreground;
+}
+
+.kanban-ai-confirmation span {
+  @apply mt-2 block text-xs font-semibold text-destructive;
+}
+
+.kanban-ai-confirmation div {
+  @apply mt-3 flex gap-2;
+}
+
+.kanban-ai-panel__composer {
+  @apply flex gap-2 border-t border-border/70 p-4;
+}
+
+.kanban-ai-panel__composer input {
+  @apply h-9 min-w-0 flex-1 rounded-lg border border-border/80 bg-background px-3 text-sm transition outline-none placeholder:text-muted-foreground focus:border-ring focus:ring-3 focus:ring-ring/25 disabled:opacity-50;
+}
+
+@media (max-width: 720px) {
+  .kanban-ai-toggle {
+    @apply right-4 bottom-4;
+  }
+
+  .kanban-ai-panel {
+    @apply right-4 bottom-4 h-[min(620px,calc(100%-2rem))] w-[calc(100%-2rem)] max-w-[calc(100%-2rem)];
+  }
+}

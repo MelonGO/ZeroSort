@@ -1,0 +1,1314 @@
+{
+  "settings": {
+    "title": "Paramètres",
+    "back": "Retour",
+    "general": {
+      "title": "Paramètres Généraux",
+      "description": "Ici, vous pouvez configurer les paramètres de base de l'application, y compris le thème de l'interface, la langue et d'autres options.",
+      "interface": {
+        "title": "Paramètres de l'interface",
+        "theme": {
+          "title": "Thème",
+          "description": "Choisissez le thème d'apparence de l'application"
+        },
+        "themePreset": {
+          "title": "Palette de couleurs",
+          "description": "Choisissez un préréglage de schéma de couleurs pour l'application",
+          "default": "Par défaut",
+          "custom": "Personnalisé"
+        },
+        "language": {
+          "title": "Langue",
+          "description": "Choisissez la langue d'affichage de l'application"
+        },
+        "interfaceScale": {
+          "title": "Échelle de l'interface",
+          "description": "Ajustez l'échelle globale de l'interface de l'application"
+        },
+        "contentScale": {
+          "title": "Échelle du contenu",
+          "description": "Ajustez la taille du texte dans l'éditeur et le contenu Markdown du chat",
+          "sizes": {
+            "sm": "Petit",
+            "base": "Normal",
+            "lg": "Grand",
+            "xl": "Très grand",
+            "2xl": "Extra grand"
+          }
+        },
+        "codeWrap": {
+          "title": "Débordement des blocs de code",
+          "description": "Choisissez comment les lignes longues dans les blocs de code sont affichées",
+          "scroll": "Faire défiler",
+          "wrap": "Retour à la ligne"
+        },
+        "showFolderNoteCount": {
+          "title": "Afficher le nombre de notes par dossier",
+          "description": "Afficher le nombre de notes à côté des noms de dossier dans la barre latérale"
+        },
+        "showCharacterCount": {
+          "title": "Afficher le nombre de caractères",
+          "description": "Affichez le nombre de caractères et de mots dans l'éditeur"
+        }
+      },
+      "data": {
+        "title": "Gestion des données",
+        "import": {
+          "title": "Importer un dossier Markdown",
+          "description": "Importez des fichiers Markdown imbriqués à partir d'un répertoire local dans vos notes.",
+          "success": "Importation de {{count}} notes réussie."
+        },
+        "importFiles": {
+          "title": "Importer des fichiers Markdown",
+          "description": "Sélectionnez un ou plusieurs fichiers Markdown locaux pour les importer directement dans vos notes.",
+          "success": "Importation de {{count}} fichiers Markdown réussie."
+        },
+        "export": {
+          "title": "Exporter vers Markdown",
+          "description": "Exportez toutes vos notes dans un répertoire local sous forme de fichiers Markdown.",
+          "success": "Exportation de {{count}} notes réussie."
+        },
+        "cleanupDirectories": {
+          "title": "Supprimer les dossiers vides",
+          "description": "Supprimez les dossiers qui ne contiennent pas de notes dans leur arborescence.",
+          "action": "Supprimer",
+          "previewTitle": "Supprimer les dossiers vides",
+          "previewDescription_zero": "Aucun dossier ne sera supprimé.",
+          "previewDescription_one": "Le dossier suivant sera supprimé.",
+          "previewDescription_other": "Les {{count}} dossiers suivants seront supprimés.",
+          "confirmAction": "Supprimer les dossiers",
+          "success_zero": "Aucun dossier vide trouvé.",
+          "success_one": "1 dossier vide supprimé.",
+          "success_other": "{{count}} dossiers vides supprimés.",
+          "error": "Échec de la suppression des dossiers vides."
+        },
+        "cleanupTags": {
+          "title": "Supprimer les mots-clés inutilisés",
+          "description": "Supprimez les mots-clés qui ne sont associés à aucune note.",
+          "action": "Supprimer",
+          "previewTitle": "Supprimer les mots-clés inutilisés",
+          "previewDescription_zero": "Aucun mot-clé ne sera supprimé.",
+          "previewDescription_one": "Le mot-clé suivant sera supprimé.",
+          "previewDescription_other": "Les {{count}} mots-clés suivants seront supprimés.",
+          "confirmAction": "Supprimer les mots-clés",
+          "success_zero": "Aucun mot-clé inutilisé trouvé.",
+          "success_one": "1 mot-clé inutilisé supprimé.",
+          "success_other": "{{count}} mots-clés inutilisés supprimés.",
+          "error": "Échec de la suppression des mots-clés inutilisés."
+        }
+      }
+    },
+    "editor": {
+      "title": "Éditeur",
+      "description": "Personnalisez la barre d'outils de l'éditeur en activant ou désactivant des groupes de boutons.",
+      "toolbar": {
+        "title": "Barre d'outils",
+        "history": {
+          "title": "Historique",
+          "description": "Boutons Annuler et Rétablir"
+        },
+        "headings": {
+          "title": "Titres",
+          "description": "Boutons de titre 1, 2 et 3"
+        },
+        "formatting": {
+          "title": "Mise en forme",
+          "description": "Boutons Gras, Italique, Souligné, Barré, Surligné et Couleur du texte"
+        },
+        "lists": {
+          "title": "Listes",
+          "description": "Boutons Liste à puces, Liste numérotée et Liste de tâches"
+        },
+        "block": {
+          "title": "Éléments de bloc",
+          "description": "Boutons Citation, Code en ligne, Bloc de code et Ligne horizontale"
+        },
+        "insert": {
+          "title": "Insérer",
+          "description": "Boutons Lien, Tableau, Mathématiques en ligne et Mathématiques en bloc"
+        },
+        "tools": {
+          "title": "IA et Dessin",
+          "description": "Boutons Copier en Markdown, Assistant IA, Excalidraw et Mermaid"
+        }
+      }
+    },
+    "ai": {
+      "title": "Paramètres IA",
+      "apiKey": "Clé API",
+      "apiKeyPlaceholder": "Entrez votre clé API...",
+      "apiKeyNotice": "Votre clé est stockée localement sur votre appareil.",
+      "baseUrl": "URL de base",
+      "modelName": "Nom du modèle",
+      "modelNamePlaceholder": "ex., gemini-1.5-flash",
+      "models": "Modèles",
+      "saveSettings": "Enregistrer les paramètres",
+      "savedSuccessfully": "Paramètres IA enregistrés avec succès",
+      "failedToSave": "Échec de l'enregistrement des paramètres"
+    },
+    "theme": {
+      "licenseGate": {
+        "required": "Licence active requise",
+        "description": "La personnalisation du thème nécessite une licence ZeroSort active. Veuillez activer votre licence pour déverrouiller cette fonctionnalité.",
+        "activateButton": "Aller aux paramètres de licence",
+        "featureLocked": "La personnalisation du thème nécessite une licence active"
+      },
+      "editingMode": {
+        "label": "Mode d'édition",
+        "light": "Clair",
+        "dark": "Sombre"
+      },
+      "tabs": {
+        "presets": "Préréglages",
+        "colors": "Couleurs",
+        "other": "Autres"
+      },
+      "sections": {
+        "primaryColors": "Couleurs Principales",
+        "secondaryColors": "Couleurs secondaires",
+        "accentColors": "Couleurs d'accentuation",
+        "baseColors": "Couleurs de base",
+        "cardColors": "Couleurs de carte",
+        "popoverColors": "Couleurs des fenêtres contextuelles",
+        "mutedColors": "Couleurs Atténuées",
+        "destructiveColors": "Couleurs d'action destructive",
+        "borderColors": "Couleurs de bordure et de saisie",
+        "chartColors": "Couleurs de graphique",
+        "sidebarColors": "Couleurs de la barre latérale",
+        "hslAdjustments": "Ajustements TSL",
+        "radius": "Arrondi",
+        "spacing": "Espacement",
+        "letterSpacing": "Espacement des lettres",
+        "fonts": "Polices",
+        "shadow": "Ombre"
+      }
+    },
+    "models": {
+      "title": "Gestion des modèles",
+      "modelSelect": "Sélectionner un modèle",
+      "description": "Configurez les modèles IA qui alimentent ZeroSort.",
+      "custom": "Personnalisé",
+      "providers": "Fournisseurs",
+      "addNew": "Ajouter",
+      "noProviderSelected": "Aucun fournisseur sélectionné",
+      "selectOrCreate": "Créez un nouveau fournisseur ou sélectionnez-en un dans la barre latérale.",
+      "createProvider": "Créer un fournisseur",
+      "createDescription": "Créez une nouvelle configuration à partir du modèle de fournisseur.",
+      "templates": "Modèles de fournisseur",
+      "addModel": "Ajouter un modèle",
+      "editModel": "Modifier un modèle",
+      "modelName": "Nom du modèle",
+      "modelId": "ID du modèle",
+      "familyGroup": "Famille de modèles",
+      "providerName": "Nom du fournisseur",
+      "providerNamePlaceholder": "ex. Mon fournisseur personnalisé",
+      "testConnection": "Tester la connexion",
+      "testing": "Test en cours...",
+      "connectionSuccess": "Connexion réussie",
+      "connectionFailed": "Échec de la connexion: {{error}}"
+    }
+  },
+  "common": {
+    "title": "Titre",
+    "add": "Ajouter",
+    "alreadyAdded": "Déjà ajouté",
+    "english": "Anglais",
+    "chinese": "Chinois",
+    "languages": {
+      "ar": "Arabe",
+      "de": "Allemand",
+      "en": "Anglais",
+      "es": "Espagnol",
+      "fr": "Français",
+      "it": "Italien",
+      "ja": "Japonais",
+      "ko": "Coréen",
+      "pt": "Portugais",
+      "ru": "Russe",
+      "zh": "Chinois"
+    },
+    "tryAgain": "Réessayer",
+    "home": "Accueil",
+    "goBack": "Retour",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "export": "Exporter",
+    "exporting": "Exportation en cours...",
+    "import": "Importer",
+    "importing": "Importation en cours...",
+    "loading": "Chargement...",
+    "cleaning": "Nettoyage...",
+    "save": "Enregistrer",
+    "saving": "Enregistrement en cours...",
+    "close": "Fermer",
+    "hide": "Cacher",
+    "comingSoon": "Bientôt disponible",
+    "uncategorized": "Non catégorisé",
+    "current": "Actuel",
+    "beforeUpdate": "Avant",
+    "afterUpdate": "Après",
+    "on": "Activé",
+    "off": "Désactivé",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins",
+    "regenerating": "Régénération",
+    "tags": "Mots-clés",
+    "sortBy": "Trier par",
+    "createdAt": "Date de création",
+    "updatedAt": "Date de modification",
+    "months": {
+      "1": "Janvier",
+      "2": "Février",
+      "3": "Mars",
+      "4": "Avril",
+      "5": "Mai",
+      "6": "Juin",
+      "7": "Juillet",
+      "8": "Août",
+      "9": "Septembre",
+      "10": "Octobre",
+      "11": "Novembre",
+      "12": "Décembre"
+    },
+    "datePicker": {
+      "pickDate": "Choisir une date",
+      "clearFilter": "Effacer le filtre de date",
+      "modalTitle": "Filtrer par date",
+      "noDateSelected": "Aucune date sélectionnée",
+      "notesOnDate": "{{count}} notes le {{date}}"
+    }
+  },
+  "folder": {
+    "newFolder": "Nouveau dossier",
+    "renameFolder": "Renommer le dossier",
+    "deleteFolder": "Supprimer le dossier",
+    "deleteConfirmation": "Êtes-vous sûr de vouloir supprimer \"{{name}}\"?",
+    "deleteWarning": "Choisissez ce qu'il faut faire avec les notes dans ce dossier.",
+    "deleteOptionMoveToUncategorized": "Déplacer les notes vers Non catégorisé",
+    "deleteOptionDeleteAll": "Supprimer définitivement toutes les notes",
+    "folderName": "Nom du dossier",
+    "placeholder": "Entrez le nom du dossier...",
+    "create": "Créer le dossier",
+    "rename": "Renommer le dossier",
+    "addSubfolder": "Ajouter un sous-dossier",
+    "delete": "Supprimer",
+    "alreadyExists": "Le dossier existe déjà",
+    "moveFolder": "Déplacer le dossier",
+    "selectDestination": "Sélectionner la destination",
+    "root": "Racine (Niveau supérieur)",
+    "move": "Déplacer",
+    "noOtherFolders": "Aucun autre dossier disponible"
+  },
+  "note": {
+    "moveNote": "Déplacer la note",
+    "searchDirectories": "Rechercher des répertoires...",
+    "noDirectoriesFound": "Aucun répertoire trouvé",
+    "deleted": "Note supprimée",
+    "failedToDelete": "Échec de la suppression de la note",
+    "deleteTitle": "Supprimer la note?",
+    "deleteDescription": "Cette action est irréversible. Êtes-vous sûr de vouloir supprimer cette note?",
+    "editorPlaceholder": "Commencez à écrire...",
+    "savedSuccessfully": "Note enregistrée avec succès",
+    "savedWithWarnings": "Note enregistrée, mais le nettoyage des images n'a pas pu être terminé",
+    "failedToSave": "Échec de l'enregistrement de la note",
+    "hideSummary": "Masquer le résumé",
+    "showSummary": "Afficher le résumé",
+    "summary": "Résumé",
+    "editTitle": "Modifier le titre",
+    "created": "Créée",
+    "updated": "Modifiée",
+    "editSummary": "Modifier le résumé",
+    "editCreatedAt": "Modifier la date de création",
+    "createdAtUpdated": "Date de création mise à jour",
+    "createdAtUpdatedWithWarnings": "Date de création mise à jour, mais le nettoyage de certaines images n'a pas abouti",
+    "failedToUpdateCreatedAt": "Échec de la mise à jour de la date de création",
+    "createdAtHour": "Heure",
+    "createdAtMinute": "Minute",
+    "createdAtSecond": "Seconde",
+    "createdAtHourPlaceholder": "HH",
+    "createdAtMinutePlaceholder": "MM",
+    "createdAtSecondPlaceholder": "SS",
+    "summaryPlaceholder": "Entrez un résumé...",
+    "unsavedChanges": "Modifications non enregistrées",
+    "unsavedChangesDescription": "Vous avez des modifications non enregistrées dans votre note. Voulez-vous les enregistrer avant de vous déplacer?",
+    "saveAndContinue": "Enregistrer et continuer",
+    "discardChanges": "Ignorer les modifications",
+    "regenerateTitle": "Régénérer le titre",
+    "titleRegenerated": "Titre régénéré",
+    "regenerateSummary": "Régénérer le résumé",
+    "summaryRegenerated": "Résumé régénéré",
+    "regenerateCatalog": "Régénérer la hiérarchie du catalogue",
+    "catalogRegenerated": "Catalogue régénéré",
+    "regenerateTags": "Régénérer les mots-clés",
+    "tagsRegenerated": "Mots-clés régénérés",
+    "untitled": "Sans titre",
+    "sort": "Trier",
+    "regenerate": "Régénérer",
+    "regenerateAll": "Tout régénérer",
+    "regenerateSelected": "Régénérer la sélection",
+    "selectToRegenerate": "Sélectionnez les champs à régénérer",
+    "regeneratedSuccessfully": "Régénération réussie",
+    "reviewChanges": "Examiner les modifications",
+    "applyChanges": "Appliquer les modifications",
+    "discardRegeneration": "Ignorer",
+    "noChange": "Aucune modification",
+    "createNote": "Créer"
+  },
+  "links": {
+    "title": "Liens"
+  },
+  "backlinks": {
+    "loading": "Chargement des rétroliens...",
+    "empty": "Aucun rétrolien pour le moment",
+    "hint": "Les liens vers cette note apparaîtront ici",
+    "title": "Rétroliens",
+    "link": "lien",
+    "links": "liens",
+    "mention": "mention",
+    "mentions": "mentions"
+  },
+  "outgoingLinks": {
+    "loading": "Chargement des liens...",
+    "empty": "Aucun lien sortant",
+    "hint": "Utilisez [[Titre de la note]] pour créer un lien vers d'autres notes",
+    "title": "Liens sortants",
+    "link": "lien",
+    "links": "liens",
+    "broken": "Liens brisés",
+    "valid": "Liens valides",
+    "createNote": "Créer"
+  },
+  "wikiLinks": {
+    "noNotesFound": "Aucune note trouvée"
+  },
+  "notFound": {
+    "description": "La page que vous recherchez n'existe pas.",
+    "startOver": "Recommencer"
+  },
+  "sidebar": {
+    "folders": "Dossiers",
+    "expandAll": "Tout développer",
+    "collapseAll": "Tout réduire",
+    "showSidebar": "Afficher la barre latérale",
+    "hideSidebar": "Masquer la barre latérale",
+    "searchPlaceholder": "Rechercher des notes & des dossiers...",
+    "tags": "Mots-clés",
+    "clearTagFilters": "Effacer les filtres de mots-clés",
+    "matchAll": "Associer à tout",
+    "matchAny": "Associer à n'importe lequel",
+    "noTags": "Aucun mot-clé pour le moment",
+    "manageTags": "Gérer les Mots-clés"
+  },
+  "tags": {
+    "title": "Gestionnaire de mots-clés",
+    "filters": "Filtres Actifs",
+    "allTags": "Tous les Mots-clés",
+    "create": "Créer un Mot-clé",
+    "rename": "Renommer",
+    "delete": "Supprimer",
+    "selectMultiple": "Sélectionner des mots-clés",
+    "cancelSelection": "Annuler",
+    "selectAll": "Tout sélectionner",
+    "clearSelection": "Effacer la sélection",
+    "selectedCount": "{{count}} sélectionné(s)",
+    "selectedCount_other": "{{count}} sélectionné(s)",
+    "deleteSelected": "Supprimer la sélection",
+    "deleteSelectedConfirm": "Supprimer {{count}} mot-clé sélectionné ? Il sera retiré de toutes les notes.",
+    "deleteSelectedConfirm_other": "Supprimer {{count}} mots-clés sélectionnés ? Ils seront retirés de toutes les notes.",
+    "deleteConfirm": "Supprimer ce mot-clé? Il sera retiré de toutes les notes.",
+    "color": "Couleur",
+    "noTags": "Pas de mots-clés pour l'instant. Créez-en un pour commencer.",
+    "namePlaceholder": "Nom du mot-clé...",
+    "noteCount": "{{count}} note",
+    "noteCount_other": "{{count}} notes",
+    "searchPlaceholder": "Rechercher des mots-clés...",
+    "dateFilter": "Affichage des mots-clés depuis le {{date}}"
+  },
+  "home": {
+    "tagline": "Notez librement, l'IA structure.",
+    "analyzing": "Analyse...",
+    "sorting": "Tri par catégories...",
+    "noNotes": "Aucune note pour le moment. Commencez à créer ci-dessous!",
+    "notesCount": "{{count}} notes",
+    "viewMode": {
+      "timeline": "Chronologie"
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "version": "Version",
+    "description": "ZeroSort est une application de prise de notes propulsée par l'IA, conçue pour vous aider à organiser vos pensées sans effort. Laissez-y vos idées, laissez l'IA s'occuper de l'organisation.",
+    "website": "Site Web",
+    "websiteDesc": "Visitez notre site officiel pour des nouvelles et de la documentation.",
+    "visitWebsite": "Visitez zerosort.app",
+    "updater": {
+      "title": "Mises à jour de l'application",
+      "description": "Vérifiez les nouvelles versions de l'application de bureau et installez-les sans quitter ZeroSort.",
+      "releaseNotes": "Notes de mise à jour",
+      "releaseDate": "Publié le: {{date}}",
+      "actions": {
+        "check": "Vérifier les mises à jour",
+        "install": "Installer la mise à jour"
+      },
+      "status": {
+        "idle": "Prêt à vérifier les mises à jour.",
+        "checking": "Vérification des mises à jour...",
+        "upToDate": "Vous avez déjà la dernière version.",
+        "available": "La version {{version}} est prête à être installée.",
+        "availableUnknown": "Une nouvelle mise à jour est disponible.",
+        "downloading": "Téléchargement du package de mise à jour...",
+        "installing": "Installation de la mise à jour...",
+        "completed": "Redémarrage pour terminer la mise à jour...",
+        "unsupported": "Les mises à jour ne sont disponibles que dans l'application de bureau."
+      },
+      "progress": {
+        "percent": "{{percent}}% téléchargé",
+        "unknown": "Téléchargement de la mise à jour..."
+      },
+      "toast": {
+        "upToDate": "ZeroSort est déjà à jour.",
+        "available": "La mise à jour {{version}} est disponible."
+      },
+      "errors": {
+        "network": "Impossible d'atteindre le serveur de mise à jour. Vérifiez votre connexion Internet et réessayez.",
+        "check": "Échec de la vérification des mises à jour.",
+        "install": "Échec de l'installation de la mise à jour."
+      }
+    },
+    "footer": "© 2026 ZeroSort. Tous droits réservés."
+  },
+  "editor": {
+    "undo": "Annuler",
+    "redo": "Rétablir",
+    "heading1": "Titre 1",
+    "heading2": "Titre 2",
+    "heading3": "Titre 3",
+    "bold": "Gras",
+    "italic": "Italique",
+    "underline": "Souligné",
+    "strikethrough": "Barré",
+    "bulletList": "Liste à puces",
+    "orderedList": "Liste numérotée",
+    "taskList": "Liste de tâches",
+    "indent": "Augmenter le retrait",
+    "outdent": "Diminuer le retrait",
+    "quote": "Citation",
+    "inlineCode": "Code en ligne",
+    "codeBlock": "Bloc de code",
+    "horizontalRule": "Ligne horizontale",
+    "link": "Lien",
+    "insertLink": "Insérer un lien",
+    "removeLink": "Supprimer le lien",
+    "insertTable": "Tableau",
+    "image": "Image",
+    "insertImage": "Insérer une image",
+    "editImage": "Modifier l'image",
+    "imageFromUrl": "À partir d'une URL",
+    "imageFromFile": "À partir d'un fichier",
+    "imageUrl": "URL de l'image",
+    "imageSelectFile": "Sélectionner un fichier image",
+    "imageChooseFile": "Choisir le fichier",
+    "imageDropHere": "Déposer l'image ici",
+    "imageDropHint": "Glissez et déposez une image locale dans cette zone",
+    "imageFileLimit": "Taille maximale de fichier: 5 Mo",
+    "imageFileTooLarge": "L'image doit être de 5 Mo ou moins.",
+    "imageFileReadFailed": "Échec de la lecture du fichier image.",
+    "imageFileSaveFailed": "Échec de l'enregistrement du fichier image.",
+    "imageAlt": "Texte alternatif (optionnel)",
+    "deleteImage": "Supprimer l'image",
+    "displayInline": "En ligne",
+    "displayBlock": "En bloc",
+    "moreActions": "Plus d'actions",
+    "copyMarkdown": "Copier en Markdown",
+    "copiedMarkdown": "Markdown de la note copié dans le presse-papiers",
+    "aiAssistant": "Assistant IA",
+    "aiModeOffLabel": "IA Désactivée",
+    "aiModeSelectionLabel": "Sélection",
+    "aiModeAskAiLabel": "Demander à l'IA",
+    "aiModeSelection": "IA: Mode Sélection (cliquez pour changer)",
+    "aiModeAskAi": "IA: Mode Demander à l'IA (cliquez pour changer)",
+    "inlineMath": "Maths en ligne",
+    "blockMath": "Maths en bloc",
+    "enterLatex": "Entrez l'expression LaTeX:",
+    "highlight": "Surligner",
+    "textColor": "Couleur du texte",
+    "removeColor": "Supprimer la couleur",
+    "applyColor": "Appliquer",
+    "excalidraw": {
+      "insert": "Dessin Excalidraw",
+      "placeholder": "Cliquez dans le coin supérieur gauche pour commencer à dessiner",
+      "edit": "Modifier",
+      "done": "Terminé",
+      "copy": "Copier le bloc de dessin",
+      "copied": "Bloc de dessin copié dans le presse-papiers",
+      "delete": "Supprimer le dessin",
+      "loading": "Chargement du dessin..."
+    },
+    "markmap": {
+      "zoomIn": "Zoomer",
+      "zoomOut": "Dézoomer",
+      "fit": "Ajuster à la vue",
+      "copy": "Copier le bloc de carte mentale",
+      "copied": "Bloc de carte mentale copié dans le presse-papiers",
+      "delete": "Supprimer la carte mentale"
+    },
+    "mermaid": {
+      "insert": "Diagramme Mermaid",
+      "edit": "Modifier",
+      "preview": "Aperçu",
+      "zoomIn": "Zoomer",
+      "zoomOut": "Dézoomer",
+      "fit": "Ajuster à la vue",
+      "copy": "Copier le bloc diagramme",
+      "copied": "Bloc diagramme copié dans le presse-papiers",
+      "delete": "Supprimer le diagramme"
+    },
+    "chart": {
+      "copy": "Copier le bloc de graphique",
+      "copied": "Bloc de graphique copié dans le presse-papiers"
+    },
+    "calendar": {
+      "insert": "Calendrier",
+      "blockLabel": "Calendrier",
+      "copy": "Copier le bloc calendrier",
+      "copied": "Bloc calendrier copié dans le presse-papiers",
+      "delete": "Supprimer le calendrier",
+      "resize": "Redimensionner le calendrier",
+      "previousMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "newEvent": "Nouvel événement",
+      "add": "Ajouter",
+      "selectedDate": "Date sélectionnée",
+      "titlePlaceholder": "Titre de l'événement",
+      "descriptionPlaceholder": "Notes",
+      "allDay": "Toute la journée",
+      "noEvents": "Aucun événement pour cette date",
+      "deleteEvent": "Supprimer l'événement",
+      "weekDays": {
+        "sun": "Dim",
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mer",
+        "thu": "Jeu",
+        "fri": "Ven",
+        "sat": "Sam"
+      },
+      "colors": {
+        "blue": "Bleu",
+        "green": "Vert",
+        "yellow": "Jaune",
+        "pink": "Rose",
+        "purple": "Violet",
+        "orange": "Orange",
+        "red": "Rouge",
+        "teal": "Sarcelle",
+        "indigo": "Indigo"
+      }
+    },
+    "copyFailed": "Échec de la copie dans le presse-papiers",
+    "table": {
+      "addRowBefore": "Ajouter une ligne au-dessus",
+      "addRowAfter": "Ajouter une ligne en dessous",
+      "addColumnBefore": "Ajouter une colonne à gauche",
+      "addColumnAfter": "Ajouter une colonne à droite",
+      "deleteRow": "Supprimer la ligne",
+      "deleteColumn": "Supprimer la colonne",
+      "mergeOrSplit": "Fusionner ou diviser les cellules",
+      "deleteTable": "Supprimer le tableau",
+      "createChart": "Créer un graphique à partir du tableau"
+    },
+    "characterCount": {
+      "characters": "caractères",
+      "words": "mots"
+    },
+    "kanban": {
+      "insert": "Kanban",
+      "blockLabel": "Kanban",
+      "copy": "Copier le kanban",
+      "copied": "Kanban copié",
+      "delete": "Supprimer le kanban",
+      "resize": "Redimensionner le kanban"
+    }
+  },
+  "ai": {
+    "prompts": {
+      "system": "Vous êtes ZeroSort AI, un assistant d'organisation de notes minimaliste.\nAnalysez l'entrée de l'utilisateur et renvoyez un objet JSON structuré.",
+      "input": "Entrée:",
+      "content": "Contenu:",
+      "contentBefore": "<Content>",
+      "contentAfter": "</Content>",
+      "regenerateTitle": "Régénérez un titre court et clair (6 mots max) pour ce contenu.",
+      "regenerateSummary": "Régénérez un résumé/une introduction de 2-3 phrases pour ce contenu.",
+      "regenerateCatalog": "Régénérez la hiérarchie des dossiers (catalogue) de ce contenu et renvoyez-la sous forme de tableau de chaînes, avec un maximum de 3 niveaux. Par exemple: [\"Travail\", \"Réunions\", \"Résumé\"] ou [\"Personnel\", \"Recettes\", \"Salades\"]",
+      "regenerateTags": "Suggérez des mots-clés pertinents pour ce contenu. Renvoyez un tableau plat de noms de mots-clés courts et descriptifs (1 à 3 mots chacun). Suggérez 2 à 5 mots-clés qui capturent les sujets clés.",
+      "existingDirectories": "L'utilisateur a la structure de répertoire suivante: {{directories}} \n\nVeuillez catégoriser la note actuelle. Veuillez suivre cette logique:\n1. Si le contenu de la note correspond bien à un sujet de répertoire existant, catégorisez-le directement dans ce répertoire existant.\n2. Si la note appartient à un sous-domaine spécifique d'un répertoire existant, vous pouvez créer un nouveau sous-répertoire sous ce répertoire.\n3. Si le sujet de la note n'est lié à aucun répertoire existant, ne le forcez pas dans un répertoire existant. Vous devez créer un tout nouveau répertoire racine indépendant pour cela.",
+      "schema": {
+        "title": "Un nom court et clair pour la note (max 6 mots).",
+        "catalog": "Une hiérarchie de dossiers (catalogue) concise sous forme de tableau de chaînes pour ce contenu, avec un maximum de 3 niveaux. Par exemple: [\"Travail\", \"Réunions\", \"Résumé\"] ou [\"Personnel\", \"Recettes\", \"Salades\"]",
+        "summary": "Un aperçu de 2-3 phrases pour la carte de note.",
+        "tags": "Un tableau de noms de mots-clés courts et descriptifs (1 à 3 mots chacun, 2 à 5 mots-clés) qui capturent les sujets clés de la note."
+      }
+    },
+    "enabled": "IA activée",
+    "disabled": "IA désactivée",
+    "includeExistingDirs": "Répertoires de référence",
+    "includeExistingDirsTooltip": "Faire référence à la structure de répertoires existante",
+    "noModelSelected": "Veuillez sélectionner un modèle IA dans les paramètres.",
+    "requestFailed": "Échec de la requête IA. Veuillez réessayer après avoir vérifié les paramètres du modèle."
+  },
+  "aiMenu": {
+    "editWithAi": "Modifier avec l'IA",
+    "placeholder": "Demandez n'importe quoi à l'IA...",
+    "send": "Envoyer",
+    "preview": "Réponse IA",
+    "mindmapPreview": "Carte Mentale",
+    "mermaidPreview": "Diagramme Mermaid",
+    "chartPreview": "Graphique",
+    "insertBelow": "Insérer ci-dessous",
+    "insertMindmap": "Insérer la carte mentale",
+    "insertMermaid": "Insérer le diagramme",
+    "insertChart": "Insérer le graphique",
+    "mindmapInserted": "Carte mentale insérée",
+    "mermaidInserted": "Diagramme inséré",
+    "chartInserted": "Graphique inséré",
+    "chartParseError": "Échec de l'analyse des données du graphique",
+    "copy": "Copier le résultat",
+    "copied": "Copié dans le presse-papiers",
+    "discard": "Ignorer",
+    "useFullContext": "Utiliser le document complet comme contexte",
+    "sections": {
+      "suggested": "Suggéré",
+      "charts": "Graphiques",
+      "edit": "Modifier"
+    },
+    "actions": {
+      "improve": "Améliorer l'écriture",
+      "proofread": "Relire",
+      "explain": "Expliquer",
+      "translate": "Traduire en",
+      "longer": "Rallonger",
+      "shorter": "Raccourcir",
+      "tone": "Changer le ton",
+      "simplify": "Simplifier le langage",
+      "mindmap": "Générer une carte mentale",
+      "mermaid": "Générer un diagramme",
+      "chart": "Générer un graphique"
+    },
+    "languages": {
+      "arabic": "Arabe",
+      "english": "Anglais",
+      "chinese": "Chinois",
+      "italian": "Italien",
+      "korean": "Coréen",
+      "portuguese": "Portugais",
+      "russian": "Russe",
+      "spanish": "Espagnol",
+      "french": "Français",
+      "german": "Allemand",
+      "japanese": "Japonais"
+    },
+    "chartTypes": {
+      "line": "Graphique Ligne",
+      "bar": "Graphique Barre",
+      "pie": "Graphique Secteur",
+      "radar": "Graphique Radar",
+      "bubble": "Graphique Bulle"
+    },
+    "tones": {
+      "professional": "Professionnel",
+      "casual": "Occasionnel",
+      "friendly": "Amical",
+      "confident": "Confiant",
+      "formal": "Formel"
+    },
+    "generating": "Génération...",
+    "loading": "L'IA réfléchit...",
+    "success": "Texte mis à jour",
+    "errors": {
+      "noSelection": "Veuillez d'abord sélectionner du texte",
+      "failed": "La requête IA a échoué. Veuillez réessayer.",
+      "emptyResponse": "L'IA a renvoyé une réponse vide"
+    },
+    "prompts": {
+      "contextPrefix": "Voici le document complet pour le contexte:\n\n{{fullDocument}}\n\n---\n\nMaintenant, en vous concentrant sur la portion sélectionnée suivante:\n\n",
+      "improve": "{{contextPrefix}}Améliorez le texte suivant en gardant sa signification. Ne renvoyez que le texte amélioré, sans explication:\n\n{{text}}",
+      "proofread": "{{contextPrefix}}Corrigez toutes les erreurs de grammaire, d'orthographe ou de ponctuation dans le texte suivant. Ne renvoyez que le texte corrigé:\n\n{{text}}",
+      "translate": "{{contextPrefix}}Traduisez le texte suivant en {{option}}. Ne renvoyez que la traduction:\n\n{{text}}",
+      "longer": "{{contextPrefix}}Développez le texte suivant avec plus de détails tout en conservant la même signification. Ne renvoyez que le texte développé:\n\n{{text}}",
+      "shorter": "{{contextPrefix}}Rendez le texte suivant plus concis tout en conservant sa signification. Ne renvoyez que le texte raccourci:\n\n{{text}}",
+      "tone": "{{contextPrefix}}Réécrivez le texte suivant avec un ton {{option}}. Ne renvoyez que le texte réécrit:\n\n{{text}}",
+      "simplify": "{{contextPrefix}}Simplifiez le texte suivant pour le rendre plus facile à comprendre. Ne renvoyez que le texte simplifié:\n\n{{text}}",
+      "explain": "{{contextPrefix}}Expliquez le texte suivant en termes simples. Fournissez une explication claire et concise:\n\n{{text}}",
+      "mindmap": "Convertissez le texte suivant en une structure de carte mentale hiérarchique en utilisant markdown. Utilisez les titres (##, ###) pour les sujets principaux et les puces imbriquées (-) pour les sous-sujets. Gardez-le concis et bien organisé. Ne renvoyez que le markdown, sans explication:\n\n{{text}}",
+      "mermaid": "Convertissez le texte suivant en un diagramme Mermaid. Choisissez le type de diagramme le plus approprié (organigramme, séquence, classe, état, ER, gantt ou secteur). Renvoyez UNIQUEMENT la syntaxe Mermaid valide (pas de blocs de code markdown, pas d'explication, juste le code Mermaid brut). Commencez par le mot-clé du type de diagramme (ex., graph TD, sequenceDiagram, classDiagram, etc.):\n\n{{text}}",
+      "custom": "{{contextPrefix}}{{option}}\n\nTexte sur lequel travailler:\n{{text}}",
+      "chart": {
+        "base": "Analysez le texte suivant et extrayez des données numériques pour créer une configuration de graphique {{chartType}} Chart.js. Renvoyez UNIQUEMENT un objet JSON valide (pas de blocs markdown, pas d'explication, juste du JSON brut). Le JSON DOIT inclure un champ \"type\" défini sur \"{{chartType}}\". Utilisez des étiquettes descriptives dérivées du texte. S'il existe plusieurs séries de données, créez plusieurs ensembles de données avec différentes couleurs. {{colorsHint}}"
+      }
+    }
+  },
+  "proFeatures": {
+    "licenseGate": {
+      "required": "Clé de licence active requise",
+      "description": "{{feature}} est une fonctionnalité Pro. Activez votre clé de licence ZeroSort pour la déverrouiller.",
+      "activateButton": "Aller aux paramètres de licence",
+      "featureLocked": "{{feature}} nécessite une clé de licence active",
+      "featureTooltip": "{{feature}} nécessite Pro"
+    }
+  },
+  "askAi": {
+    "title": "Demander à l'IA",
+    "placeholder": "Demandez n'importe quoi... Tapez @ pour référencer des notes ouvertes",
+    "mentionHint": "Appuyez sur @ pour référencer les notes ouvertes comme contexte",
+    "contextPrefix": "Voici quelques notes pour le contexte:",
+    "pickLocation": "Cliquez dans l'éditeur pour insérer la réponse",
+    "insertInNote": "Insérer dans la note",
+    "insertResponse": "Insérer cette réponse",
+    "inserted": "Inséré",
+    "newChat": "Nouvelle discussion",
+    "noOpenNotes": "Aucune note ouverte à référencer",
+    "noMatchingNotes": "Aucune note correspondante trouvée"
+  },
+  "license": {
+    "title": "Licence",
+    "description": "Gérez votre licence logicielle pour ZeroSort.",
+    "status": "Statut de la licence",
+    "active": "Active",
+    "inactive": "Aucune licence",
+    "invalid": "Licence invalide",
+    "machineId": "ID Machine",
+    "machineIdCopied": "ID Machine copié dans le presse-papiers",
+    "activate": "Activer la licence",
+    "activatePlaceholder": "Collez votre clé de licence ici...",
+    "activateButton": "Activer",
+    "purchaseLink": "Obtenir une clé de licence",
+    "activateSuccess": "Licence activée avec succès",
+    "deactivate": "Désactiver la licence",
+    "deactivateConfirm": "Êtes-vous sûr de vouloir désactiver votre licence ?",
+    "deactivateSuccess": "Licence désactivée",
+    "errors": {
+      "invalidSignature": "Clé de licence invalide - l'authentification de la signature a échoué",
+      "expired": "La clé de licence a expiré",
+      "hardwareMismatch": "Cette licence n'est pas valide pour cette machine",
+      "clockTampered": "Altération de l'horloge système détectée. Veuillez corriger l'heure de votre système.",
+      "activationFailed": "Échec de l'activation de la licence"
+    }
+  },
+  "sync": {
+    "title": "Synchronisation Cloud",
+    "description": "Synchronisez vos notes sur un stockage compatible S3 pour la sauvegarde et l'accès multi-appareils.",
+    "connected": "Connexion réussie",
+    "notConnected": "Non connecté à S3",
+    "connect": "Se connecter",
+    "disconnect": "Se déconnecter",
+    "upload": "Téléverser vers le cloud",
+    "download": "Télécharger depuis le cloud",
+    "uploadSuccess": "Sauvegarde téléversée avec succès",
+    "downloadSuccess": "Sauvegarde téléchargée avec succès",
+    "syncing": "Synchronisation...",
+    "connecting": "Connexion...",
+    "restoring": "Restauration de la connexion...",
+    "lastSync": "Dernière synchronisation : {{time}}",
+    "never": "Jamais",
+    "syncNow": "Synchroniser",
+    "preview": "Aperçu",
+    "syncComplete": "Synchronisation terminée : {{uploaded}} téléversés, {{downloaded}} téléchargés",
+    "recoveryComplete": "Restauration à distance terminée",
+    "refreshPartialTags": "Synchronisation terminée, mais les mots-clés n'ont pas pu être actualisés.",
+    "refreshFailed": "La synchronisation est terminée, mais les données locales n'ont pas pu être actualisées. Rechargez l'application pour voir les dernières modifications.",
+    "blockedBySafety": "Synchronisation bloquée par des vérifications de sécurité",
+    "recovery": {
+      "title": "Récupération à distance recommandée",
+      "description": "ZeroSort a détecté que votre état de synchronisation local est inopinément vide. Récupérez à partir de la version distante pour reconstruire les données locales sans supprimer les données du cloud.",
+      "action": "Récupérer depuis le cloud"
+    },
+    "safetyDialog": {
+      "common": {
+        "totalItems": "Total des éléments",
+        "confirm": "Continuer quand même",
+        "cancel": "Annuler la synchronisation",
+        "close": "Fermer"
+      },
+      "deletion": {
+        "title": "Taux de suppression élevé détecté",
+        "description": "Les éléments {{count}} sur {{total}} ({{percentage}}%) seront supprimés, dépassant le seuil de sécurité de {{threshold}}%. Cela peut indiquer un problème de configuration ou une perte de données accidentelle.",
+        "localDeletes": "Suppressions locales",
+        "remoteDeletes": "Suppressions distantes"
+      },
+      "unsafe": {
+        "title": "Synchronisation bloquée par un état local non sécurisé",
+        "description": "{{count}} élément géré est toujours référencé localement, mais ZeroSort n'a pas pu vérifier son fichier local. La synchronisation est bloquée pour éviter une perte de données accidentelle.",
+        "unsafeItems": "Éléments non sécurisés",
+        "details": "Détails"
+      }
+    },
+    "noChanges": "Aucun changement à synchroniser",
+    "phase": {
+      "idle": "Prêt",
+      "connecting": "Connexion...",
+      "collecting": "Collecte de données...",
+      "planning": "Planification des modifications...",
+      "executing": "Synchronisation...",
+      "directories": "Préparation des dossiers et des mots-clés...",
+      "uploading": "Téléversement...",
+      "downloading": "Téléchargement...",
+      "deleting": "Suppression...",
+      "cleanup": "Finalisation...",
+      "completing": "Achèvement..."
+    },
+    "progress": {
+      "preparing": "Préparation de la synchronisation..."
+    },
+    "preview_section": {
+      "title": "Aperçu de la synchronisation",
+      "uploads": "À téléverser",
+      "downloads": "À télécharger",
+      "deletes": "À supprimer localement",
+      "remoteDeletes": "À supprimer à distance",
+      "conflicts": "Conflits",
+      "unsafe": "Bloqués",
+      "unchanged": "Inchangés"
+    },
+    "configuration": {
+      "title": "Configuration S3",
+      "label": "Nom de la connexion",
+      "labelPlaceholder": "Ma sauvegarde S3",
+      "bucketName": "Nom du Bucket",
+      "bucketPlaceholder": "Entrez le nom du bucket...",
+      "accessKeyId": "Clé d'Accès",
+      "secretAccessKey": "Clé d'Accès Secrète",
+      "region": "Région",
+      "regionPlaceholder": "us-east-1",
+      "endpointUrl": "URL du point de terminaison",
+      "endpointPlaceholder": "https://s3.{region}.amazonaws.com ou votre point de terminaison personnalisé"
+    },
+    "concurrency": {
+      "title": "Concurrence de synchronisation",
+      "description": "Nombre d'opérations parallèles pendant la synchronisation. Des valeurs plus élevées accélèrent la synchronisation mais utilisent plus de bande passante."
+    },
+    "encryption": {
+      "title": "Mot de passe de chiffrement",
+      "description": "Mot de passe utilisé pour chiffrer vos notes avant de les téléverser vers le cloud. Gardez ce mot de passe en sécurité - vous en aurez besoin pour déchiffrer vos données.",
+      "configured": "Le mot de passe de chiffrement est défini",
+      "notConfigured": "Non configuré - la synchronisation ne fonctionnera pas",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer mot de passe",
+      "mismatch": "Mots de passe différents",
+      "tooShort": "Il faut au moins 8 caractères",
+      "saved": "Mot de passe enregistré",
+      "changeWarning": "Le changement forcera une resynchronisation de toutes les notes",
+      "configure": "Configurer",
+      "change": "Changer"
+    },
+    "buckets": {
+      "title": "Sélectionner un bucket",
+      "refresh": "Rafraîchir",
+      "noBuckets": "Aucun bucket trouvé",
+      "createBucket": "Créez d'abord un bucket dans votre console S3"
+    },
+    "errors": {
+      "connectionFailed": "Échec de la connexion à S3",
+      "uploadFailed": "Échec du téléversement de la sauvegarde",
+      "downloadFailed": "Échec du téléchargement de la sauvegarde",
+      "noBackups": "Aucune sauvegarde trouvée dans le bucket"
+    },
+    "licenseGate": {
+      "required": "Licence active requise",
+      "description": "La synchronisation cloud nécessite une licence ZeroSort active. Veuillez activer votre licence pour déverrouiller cette fonctionnalité.",
+      "activateButton": "Aller aux paramètres de licence",
+      "featureLocked": "La synchronisation cloud nécessite une licence active"
+    }
+  },
+  "batch": {
+    "multiSelect": "Sélection multiple",
+    "selectMonth": "Sélectionner toutes les notes du mois",
+    "deselectMonth": "Désélectionner toutes les notes du mois",
+    "selectedCount": "{{count}} sélectionné(s)",
+    "regenerate": "Régénérer",
+    "regenerateTooltip": "Régénérer les champs pour les notes sélectionnées",
+    "dialogTitle": "Régénération par lots",
+    "dialogDescription": "Choisissez les champs à régénérer pour {{count}} notes sélectionnées.",
+    "startRegeneration": "Régénérer {{count}} notes",
+    "alreadyRunning": "Une tâche par lots est déjà en cours",
+    "inProgress": "Régénération...",
+    "cancelledTitle": "Annulé",
+    "completedTitle": "Terminé",
+    "progress": "{{completed}} / {{total}}",
+    "failedCount": "{{count}} échec(s)",
+    "processing": "Traitement : {{title}}",
+    "processingMultiple": "Traitement de {{count}} notes...",
+    "stop": "Arrêter",
+    "completed": "Régénéré avec succès {{count}} notes",
+    "completedWithErrors": "Régénéré {{completed}} notes, {{failed}} échecs",
+    "cancelled": "Annulé — {{completed}} sur {{total}} notes régénérées",
+    "concurrency": "Concurrence",
+    "concurrencyDescription": "Nombre de notes à traiter en parallèle"
+  },
+  "event-calendar": {
+    "app": {
+      "title": "Calendrier d'événements"
+    },
+    "language": {
+      "select": "Choisir la langue"
+    },
+    "theme": {
+      "toggle": "Changer de thème"
+    },
+    "nav": {
+      "previousPeriod": "Période précédente",
+      "nextPeriod": "Période suivante"
+    },
+    "controls": {
+      "selectDay": "Choisir le jour",
+      "selectMonth": "Choisir le mois",
+      "selectYear": "Choisir l'année"
+    },
+    "view": {
+      "day": "Jour",
+      "week": "Semaine",
+      "month": "Mois",
+      "year": "Année"
+    },
+    "display": {
+      "calendar": "Vue calendrier",
+      "list": "Vue liste",
+      "switchToCalendar": "Passer au calendrier",
+      "switchToList": "Passer à la liste"
+    },
+    "period": {
+      "today": "Aujourd'hui",
+      "tomorrow": "Demain",
+      "thisWeek": "Cette semaine",
+      "thisMonth": "Ce mois-ci",
+      "thisYear": "Cette année"
+    },
+    "time": {
+      "twelveHour": "12 h",
+      "twentyFourHour": "24 h"
+    },
+    "filters": {
+      "filter": "Filtrer",
+      "byColor": "Filtrer par couleur"
+    },
+    "actions": {
+      "add": "Ajouter",
+      "addEvent": "Ajouter un événement",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "createEvent": "Créer un événement",
+      "delete": "Supprimer",
+      "reset": "Réinitialiser",
+      "saveEvent": "Enregistrer"
+    },
+    "notice": {
+      "created": "Événement créé",
+      "updated": "Événement mis à jour",
+      "deleted": "Événement supprimé"
+    },
+    "calendar": {
+      "allDay": "Toute la journée",
+      "allDayCompact": "Toute la journée",
+      "createEventAt": "Créer un événement à {{time}}",
+      "createEventOn": "Créer un événement le {{date}}",
+      "currentTime": "Heure actuelle : {{time}}",
+      "eventCount_one": "{{count}} événement",
+      "eventCount_other": "{{count}} événements",
+      "fullDayEvents_one": "Événement journée entière ({{count}})",
+      "fullDayEvents_other": "Événements journée entière ({{count}})",
+      "moreEvents_one": "+{{count}} de plus",
+      "moreEvents_other": "+{{count}} de plus",
+      "selectedTime": "Heure sélectionnée : {{time}}"
+    },
+    "dialog": {
+      "addEvent": "Ajouter un événement",
+      "allDayEvent": "Événement toute la journée",
+      "color": "Couleur",
+      "description": "Description",
+      "descriptionPlaceholder": "Ajouter des notes, un ordre du jour ou des détails",
+      "editEvent": "Modifier l'événement",
+      "endDate": "Date de fin",
+      "endTime": "Heure de fin",
+      "eventTitle": "Titre de l'événement",
+      "eventTitlePlaceholder": "Saisir le titre de l'événement",
+      "invalidEndTime": "L'heure de fin ne peut pas précéder l'heure de début.",
+      "startDate": "Date de début",
+      "startTime": "Heure de début"
+    },
+    "list": {
+      "emptyHint": "Ajustez vos filtres ou ajoutez un nouvel événement",
+      "noEvents": "Aucun événement trouvé"
+    },
+    "colors": {
+      "blue": "Bleu",
+      "green": "Vert",
+      "indigo": "Indigo",
+      "orange": "Orange",
+      "pink": "Rose",
+      "purple": "Violet",
+      "red": "Rouge",
+      "teal": "Sarcelle",
+      "yellow": "Jaune"
+    },
+    "assistant": {
+      "confirmDeletion": "Confirmer la suppression",
+      "notConfigured": "Veuillez sélectionner un modèle IA dans les paramètres.",
+      "serviceUnavailable": "Je n'ai pas pu joindre le service IA pour le moment : {{error}}",
+      "processingFailed": "Je n'ai pas pu traiter cela pour le moment : {{error}}",
+      "tryAgain": "veuillez réessayer.",
+      "unknownError": "Erreur inconnue",
+      "noPendingConfirm": "Aucune action en attente à confirmer.",
+      "deleteSuccess": "{{eventCount}} supprimé(s).",
+      "deleteFailed": "Impossible de supprimer les événements : {{error}}",
+      "noPendingCancel": "Aucune action en attente à annuler.",
+      "deleteCanceled": "Suppression annulée.",
+      "unsupportedAction": "L'IA a renvoyé une action non prise en charge.",
+      "needsEventTitle": "Je peux planifier cela, mais il me manque un détail : comment dois-je nommer l'événement ?",
+      "suggestMeeting": "Réunion",
+      "suggestAppointment": "Rendez-vous",
+      "suggestFocusTime": "Temps de concentration",
+      "needsEventDate": "Je peux planifier cela, mais j'ai d'abord besoin de la date. Quel jour dois-je choisir ?",
+      "needsEventTime": "Il me manque encore un détail avant de planifier cela : à quelle heure cela doit-il commencer ?",
+      "suggestShowToday": "Montre-moi aujourd'hui",
+      "suggestShowWeek": "Montre-moi cette semaine",
+      "needsEventReferenceUpdate": "Je peux mettre cela à jour, mais j'ai besoin de savoir de quel événement vous parlez.",
+      "eventNotFoundUpdate": "Je ne retrouve plus cet événement. Quel événement dois-je mettre à jour à la place ?",
+      "needsUpdateChange": "Je peux vous aider à le mettre à jour, mais j'ai besoin de savoir ce qui doit changer.",
+      "suggestMoveTomorrow": "Déplace-le à demain",
+      "suggestRename": "Renomme-le",
+      "suggestChangeColor": "Change la couleur",
+      "confirmDeleteWhichEvent": "Avant de supprimer quoi que ce soit, veuillez confirmer quel événement doit être supprimé.",
+      "eventNotFoundDelete": "Je n'ai pas trouvé d'événement correspondant à supprimer. Lequel vouliez-vous dire ?",
+      "listPair": "{{first}} et {{second}}",
+      "conflictWarning": "{{message}}\n\nAttention : cela chevauche {{eventNames}}{{extraInfo}}.",
+      "conflictWarningExtra": " et encore {{count}} autre(s)",
+      "defaultPrompt": "Je peux vous aider avec votre calendrier. Que souhaitez-vous faire ?",
+      "allDay": "toute la journée",
+      "createdEventOnAllDay": "J'ai créé \"{{title}}\" le {{date}}, {{allDay}}.",
+      "createdEventOnAtTime": "J'ai créé \"{{title}}\" le {{date}} à {{time}}.",
+      "createdEventFromTo": "J'ai créé \"{{title}}\" du {{startDate}} au {{endDate}}.",
+      "queryFoundOnDate": "J'ai trouvé {{eventCount}} le {{date}}",
+      "queryFoundFromTo": "J'ai trouvé {{eventCount}} du {{dateFrom}} au {{dateTo}}",
+      "queryFoundThrough": "J'ai trouvé {{eventCount}} jusqu'au {{date}}",
+      "queryFoundAny": "J'ai trouvé {{eventCount}}",
+      "eventDateTimeAllDay": "{{dateRange}}, {{allDay}}",
+      "eventDateTimeTimed": "{{dateRange}}, {{startTime}} - {{endTime}}",
+      "changeRenamed": "renommé en \"{{title}}\"",
+      "changeDescriptionUpdated": "description mise à jour",
+      "changeDescriptionCleared": "description supprimée",
+      "changeRescheduled": "replanifié au {{date}} à {{time}}",
+      "changeColor": "couleur changée en {{color}}",
+      "changeMarkedAllDay": "marqué comme événement sur toute la journée",
+      "changeMarkedTimed": "marqué comme événement avec horaire",
+      "updatedEvent": "J'ai mis à jour \"{{title}}\" : {{changes}}.",
+      "confirmDeleteSingle": "Juste pour confirmer : dois-je supprimer \"{{title}}\" le {{date}} ?",
+      "confirmDeleteMultiple": "Juste pour confirmer : dois-je supprimer ces {{eventCount}} ?",
+      "eventOnDate": "{{title}} le {{date}}",
+      "emptyResultsForSearch": "Je ne vois aucun événement pour cette recherche.",
+      "emptyResultsFromTo": "Je ne vois aucun événement du {{dateFrom}} au {{dateTo}}.",
+      "emptyResultsFromToMatching": "Je ne vois aucun événement du {{dateFrom}} au {{dateTo}} correspondant à \"{{searchTerm}}\".",
+      "emptyHint": "Essayez : \"Planifie une réunion demain à 14 h\" ou \"Qu'y a-t-il dans mon calendrier aujourd'hui ?\"",
+      "emptyResultsMatching": "Je ne vois aucun événement correspondant à \"{{searchTerm}}\".",
+      "emptyResultsOnDate": "Je ne vois aucun événement le {{date}}.",
+      "emptyResultsOnDateMatching": "Je ne vois aucun événement le {{date}} correspondant à \"{{searchTerm}}\".",
+      "emptyResultsOnOrAfter": "Je ne vois aucun événement le {{date}} ou après.",
+      "emptyResultsOnOrAfterMatching": "Je ne vois aucun événement le {{date}} ou après correspondant à \"{{searchTerm}}\".",
+      "emptyResultsThrough": "Je ne vois aucun événement jusqu'au {{date}}.",
+      "emptyResultsThroughMatching": "Je ne vois aucun événement jusqu'au {{date}} correspondant à \"{{searchTerm}}\".",
+      "emptyTitle": "Demandez-moi de gérer votre calendrier",
+      "openAriaLabel": "Ouvrir l'assistant calendrier IA",
+      "panelAriaLabel": "Assistant calendrier IA",
+      "title": "Assistant calendrier IA",
+      "subtitle": "Créer, mettre à jour, supprimer et trouver des événements",
+      "closeAriaLabel": "Fermer l'assistant IA",
+      "thinking": "Analyse de votre calendrier...",
+      "inputAriaLabel": "Envoyer un message à l'assistant calendrier IA",
+      "placeholder": "Posez une question sur votre calendrier...",
+      "send": "Envoyer"
+    }
+  },
+  "kanban": {
+    "app": {
+      "eyebrow": "Tableau de projet"
+    },
+    "language": {
+      "label": "Langue",
+      "ariaLabel": "Changer de langue"
+    },
+    "board": {
+      "ariaLabel": "Tableau kanban",
+      "noCards": "Aucune carte"
+    },
+    "summary": {
+      "ariaLabel": "Résumé du tableau",
+      "columns": "Colonnes",
+      "cards": "Cartes"
+    },
+    "priority": {
+      "urgent": "Urgent",
+      "high": "Élevée",
+      "medium": "Moyenne",
+      "low": "Faible"
+    },
+    "actions": {
+      "addColumn": "Ajouter une colonne",
+      "addCard": "Ajouter une carte",
+      "cancel": "Annuler",
+      "clear": "Effacer",
+      "confirm": "Confirmer",
+      "deleteCard": "Supprimer {{title}}",
+      "deleteColumn": "Supprimer {{title}}",
+      "editCard": "Modifier {{title}}",
+      "editColumn": "Modifier {{title}}",
+      "reset": "Réinitialiser",
+      "save": "Enregistrer",
+      "send": "Envoyer le message"
+    },
+    "dialogs": {
+      "deleteCard": "Supprimer \"{{title}}\" ?",
+      "deleteColumn_one": "Supprimer \"{{title}}\" et sa {{count}} carte ?",
+      "deleteColumn_other": "Supprimer \"{{title}}\" et ses {{count}} cartes ?"
+    },
+    "forms": {
+      "assignee": "Responsable",
+      "cardDescription": "Description de la carte",
+      "cardTitle": "Titre de la carte",
+      "cardTitlePlaceholder": "Titre de la carte",
+      "columnColor": "Couleur de colonne",
+      "columnDescription": "Description de la colonne",
+      "columnName": "Nom de la colonne",
+      "columnTitle": "Titre de la colonne",
+      "description": "Description",
+      "dueDate": "Échéance",
+      "noDueDate": "Aucune échéance",
+      "priority": "Priorité",
+      "tags": "Étiquettes",
+      "useColor": "Utiliser {{color}}"
+    },
+    "defaults": {
+      "newWorkflowStage": "Nouvelle étape de flux",
+      "unassigned": "Non assigné"
+    },
+    "aiService": {
+      "notConfigured": "L'IA n'est pas configurée. Ajoutez VITE_DEEPSEEK_API_KEY pour activer l'assistant.",
+      "providerUnavailable": "Je n'ai pas pu joindre le service IA pour le moment : {{message}}",
+      "processingFailed": "Je n'ai pas pu traiter cela pour le moment : {{message}}",
+      "tryAgain": "veuillez réessayer.",
+      "noPendingConfirm": "Aucune action en attente à confirmer.",
+      "noPendingCancel": "Aucune action en attente à annuler.",
+      "canceledDeletion": "Suppression annulée.",
+      "unsupportedAction": "L'IA a renvoyé une action non prise en charge.",
+      "confirmDelete": "Supprimer {{items}} ?",
+      "confirmDeleteColumnsAndCards": "Supprimer {{columns}} et {{cards}} ?",
+      "deleted": "{{items}} supprimés.",
+      "deletedColumnsAndCards": "{{columns}} et {{cards}} supprimés.",
+      "replyFallback": "Je peux vous aider avec votre tableau kanban. Que voulez-vous faire ?",
+      "providerRequestFailed": "La requête DeepSeek a échoué avec le statut {{status}}.",
+      "providerEmptyResponse": "DeepSeek a renvoyé une réponse vide.",
+      "providerInvalidJson": "DeepSeek a renvoyé un JSON invalide.",
+      "count": {
+        "card_one": "{{count}} carte",
+        "card_other": "{{count}} cartes",
+        "column_one": "{{count}} colonne",
+        "column_other": "{{count}} colonnes",
+        "matchingItem_one": "{{count}} élément correspondant",
+        "matchingItem_other": "{{count}} éléments correspondants"
+      },
+      "createCard": {
+        "missingTitle": "Je peux ajouter cette carte, mais quel doit être son titre ?",
+        "missingColumn": "Dans quelle colonne dois-je ajouter la carte ?",
+        "failed": "Je n'ai pas pu ajouter cette carte, car la colonne cible est introuvable.",
+        "success": "\"{{title}}\" a été créée dans {{columnTitle}}.",
+        "examples": {
+          "launchChecklist": "Rédiger la checklist de lancement",
+          "followUpWithDesign": "Relancer l'équipe design",
+          "reviewOpenBugs": "Passer en revue les bugs ouverts"
+        }
+      },
+      "createColumn": {
+        "missingTitle": "Je peux ajouter cette colonne, mais comment doit-elle s'appeler ?",
+        "failed": "Je n'ai pas pu ajouter cette colonne pour le moment.",
+        "success": "La colonne \"{{title}}\" a été créée.",
+        "examples": {
+          "backlog": "Backlog",
+          "inProgress": "En cours",
+          "readyForReview": "Prête pour revue"
+        }
+      },
+      "updateCard": {
+        "missingCard": "Quelle carte dois-je mettre à jour ?",
+        "missingChanges": "Que faut-il changer sur cette carte ?",
+        "missingAfterUpdate": "Je n'ai plus trouvé cette carte.",
+        "success": "\"{{title}}\" a été mise à jour.",
+        "examples": {
+          "rename": "La renommer",
+          "changePriority": "Changer la priorité",
+          "assignToSomeone": "L'assigner à quelqu'un"
+        }
+      },
+      "updateColumn": {
+        "missingColumn": "Quelle colonne dois-je mettre à jour ?",
+        "missingChanges": "Que faut-il changer sur cette colonne ?",
+        "missingAfterUpdate": "Je n'ai plus trouvé cette colonne.",
+        "success": "La colonne \"{{title}}\" a été mise à jour.",
+        "examples": {
+          "rename": "La renommer",
+          "changeColor": "Changer la couleur",
+          "updateDescription": "Mettre à jour la description"
+        }
+      },
+      "moveCard": {
+        "missingCard": "Quelle carte dois-je déplacer ?",
+        "missingColumn": "Vers quelle colonne dois-je la déplacer ?",
+        "failed": "Je n'ai pas pu déplacer cette carte avec la cible indiquée.",
+        "success": "\"{{title}}\" a été déplacée vers {{columnTitle}}."
+      },
+      "moveColumn": {
+        "missingColumn": "Quelle colonne dois-je déplacer ?",
+        "failed": "Je n'ai pas pu déplacer cette colonne avec la cible indiquée.",
+        "success": "La colonne \"{{title}}\" a été déplacée."
+      },
+      "deleteCard": {
+        "missingCard": "Quelle carte dois-je supprimer ?"
+      },
+      "deleteColumn": {
+        "missingColumn": "Quelle colonne dois-je supprimer ?"
+      },
+      "localQuery": {
+        "suggestions": {
+          "urgentCards": "Afficher les cartes urgentes",
+          "assignedToSamRivera": "Afficher les cartes assignées à Sam Rivera",
+          "cardsDueToday": "Afficher les cartes dues aujourd'hui"
+        }
+      },
+      "query": {
+        "noResults": "Je n'ai rien trouvé qui corresponde à cela sur ce tableau.",
+        "found": "{{items}} trouvés :",
+        "columnsHeading": "Colonnes :",
+        "cardsHeading": "Cartes :",
+        "columnLine_one": "- {{title}} ({{count}} carte)",
+        "columnLine_other": "- {{title}} ({{count}} cartes)",
+        "cardLine": "- {{title}} dans {{columnTitle}} ({{priority}}, {{assignee}})",
+        "shortened": "J'ai gardé cette liste courte. Affinez la recherche si vous voulez le reste.",
+        "suggestions": {
+          "highPriority": "Afficher les cartes haute priorité",
+          "assignedToMe": "Qu'est-ce qui m'est assigné ?"
+        }
+      }
+    },
+    "ai": {
+      "affectedCards_one": "Cela supprimera aussi {{count}} carte.",
+      "affectedCards_other": "Cela supprimera aussi {{count}} cartes.",
+      "closeAriaLabel": "Fermer l'assistant IA",
+      "confirmDeletion": "Confirmer la suppression",
+      "emptyHint": "Essayez \"Ajoute une carte haute priorité à À faire\" ou \"Déplace le texte de lancement vers Revue\".",
+      "emptyTitle": "Demandez-moi d'organiser ce tableau.",
+      "inputAriaLabel": "Message à l'assistant kanban IA",
+      "openAriaLabel": "Ouvrir l'assistant kanban IA",
+      "panelAriaLabel": "Assistant kanban IA",
+      "placeholder": "Posez une question sur votre tableau...",
+      "subtitle": "Créer, mettre à jour, déplacer et trouver du travail",
+      "thinking": "Analyse du tableau...",
+      "title": "Assistant de tableau IA"
+    }
+  }
+}

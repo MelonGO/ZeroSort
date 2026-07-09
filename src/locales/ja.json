@@ -1,0 +1,1314 @@
+{
+  "settings": {
+    "title": "設定",
+    "back": "戻る",
+    "general": {
+      "title": "一般設定",
+      "description": "ここでは、インターフェースのテーマ、言語、その他のオプションなど、アプリケーションの基本設定を行うことができます。",
+      "interface": {
+        "title": "インターフェース設定",
+        "theme": {
+          "title": "テーマ",
+          "description": "アプリケーションの外観テーマを選択します"
+        },
+        "themePreset": {
+          "title": "カラースキーム",
+          "description": "アプリケーションのカラースキームプリセットを選択します",
+          "default": "デフォルト",
+          "custom": "カスタム"
+        },
+        "language": {
+          "title": "言語",
+          "description": "アプリケーションの表示言語を選択します"
+        },
+        "interfaceScale": {
+          "title": "インターフェースの拡大縮小",
+          "description": "アプリケーションインターフェース全体の拡大縮小を調整します"
+        },
+        "contentScale": {
+          "title": "コンテンツの拡大縮小",
+          "description": "エディターとチャットのMarkdownコンテンツのテキストサイズを調整します",
+          "sizes": {
+            "sm": "小",
+            "base": "標準",
+            "lg": "大",
+            "xl": "特大",
+            "2xl": "超特大"
+          }
+        },
+        "codeWrap": {
+          "title": "コードブロックのオーバーフロー",
+          "description": "コードブロックの長い行の表示方法を選択します",
+          "scroll": "スクロール",
+          "wrap": "折り返し"
+        },
+        "showFolderNoteCount": {
+          "title": "フォルダのノート数を表示",
+          "description": "サイドバーのフォルダ名の横にノート数を表示します"
+        },
+        "showCharacterCount": {
+          "title": "文字数を表示",
+          "description": "エディタに文字数と単語数を表示します"
+        }
+      },
+      "data": {
+        "title": "データ管理",
+        "import": {
+          "title": "Markdownフォルダのインポート",
+          "description": "ローカルディレクトリからネストされたMarkdownファイルをノートにインポートします。",
+          "success": "{{count}}個のノートを正常にインポートしました。"
+        },
+        "importFiles": {
+          "title": "Markdownファイルのインポート",
+          "description": "ノートに直接インポートする1つ以上のローカルMarkdownファイルを選択します。",
+          "success": "{{count}}個のMarkdownファイルを正常にインポートしました。"
+        },
+        "export": {
+          "title": "Markdownへのエクスポート",
+          "description": "すべてのノートをMarkdownファイルとしてローカルディレクトリにエクスポートします。",
+          "success": "{{count}}個のノートを正常にエクスポートしました。"
+        },
+        "cleanupDirectories": {
+          "title": "空のフォルダをクリア",
+          "description": "サブツリーのどこにもノートが含まれていないフォルダを削除します。",
+          "action": "クリア",
+          "previewTitle": "空のフォルダを削除",
+          "previewDescription_zero": "削除されるフォルダはありません。",
+          "previewDescription_one": "次のフォルダが削除されます。",
+          "previewDescription_other": "次の{{count}}個のフォルダが削除されます。",
+          "confirmAction": "フォルダを削除",
+          "success_zero": "空のフォルダは見つかりませんでした。",
+          "success_one": "空のフォルダを1つ削除しました。",
+          "success_other": "{{count}}個の空のフォルダを削除しました。",
+          "error": "空のフォルダのクリアに失敗しました。"
+        },
+        "cleanupTags": {
+          "title": "未使用のタグをクリア",
+          "description": "ノートに関連付けられていないタグを削除します。",
+          "action": "クリア",
+          "previewTitle": "未使用のタグを削除",
+          "previewDescription_zero": "削除されるタグはありません。",
+          "previewDescription_one": "次のタグが削除されます。",
+          "previewDescription_other": "次の{{count}}個のタグが削除されます。",
+          "confirmAction": "タグを削除",
+          "success_zero": "未使用のタグは見つかりませんでした。",
+          "success_one": "未使用のタグを1つ削除しました。",
+          "success_other": "{{count}}個の未使用のタグを削除しました。",
+          "error": "未使用のタグのクリアに失敗しました。"
+        }
+      }
+    },
+    "editor": {
+      "title": "エディタ",
+      "description": "ボタングループを有効または無効にして、エディタツールバーをカスタマイズします。",
+      "toolbar": {
+        "title": "ツールバー",
+        "history": {
+          "title": "履歴",
+          "description": "元に戻すとやり直すボタン"
+        },
+        "headings": {
+          "title": "見出し",
+          "description": "見出し1、2、および3のボタン"
+        },
+        "formatting": {
+          "title": "書式設定",
+          "description": "太字、斜体、下線、取り消し線、ハイライト、テキストの色のボタン"
+        },
+        "lists": {
+          "title": "リスト",
+          "description": "箇条書きリスト、順序付きリスト、およびタスクリストのボタン"
+        },
+        "block": {
+          "title": "ブロック要素",
+          "description": "引用、インラインコード、コードブロック、および水平線のボタン"
+        },
+        "insert": {
+          "title": "挿入",
+          "description": "リンク、テーブル、インライン数式、およびブロック数式のボタン"
+        },
+        "tools": {
+          "title": "AIと描画",
+          "description": "Markdown をコピー、AI アシスタント、Excalidraw、Mermaid のボタン"
+        }
+      }
+    },
+    "ai": {
+      "title": "AI設定",
+      "apiKey": "APIキー",
+      "apiKeyPlaceholder": "APIキーを入力してください...",
+      "apiKeyNotice": "キーはデバイスのローカルに保存されます。",
+      "baseUrl": "ベースURL",
+      "modelName": "モデル名",
+      "modelNamePlaceholder": "例: gemini-1.5-flash",
+      "models": "モデル",
+      "saveSettings": "設定を保存",
+      "savedSuccessfully": "AI設定を正常に保存しました",
+      "failedToSave": "設定の保存に失敗しました"
+    },
+    "theme": {
+      "licenseGate": {
+        "required": "有効なライセンスが必要です",
+        "description": "テーマのカスタマイズには有効な ZeroSort ライセンスが必要です。この機能を解除するにはライセンスを有効化してください。",
+        "activateButton": "ライセンス設定へ",
+        "featureLocked": "テーマのカスタマイズには有効なライセンスが必要です"
+      },
+      "editingMode": {
+        "label": "編集モード",
+        "light": "ライト",
+        "dark": "ダーク"
+      },
+      "tabs": {
+        "presets": "プリセット",
+        "colors": "カラー",
+        "other": "その他"
+      },
+      "sections": {
+        "primaryColors": "プライマリーカラー",
+        "secondaryColors": "セカンダリーカラー",
+        "accentColors": "アクセントカラー",
+        "baseColors": "ベースカラー",
+        "cardColors": "カードカラー",
+        "popoverColors": "ポップオーバーカラー",
+        "mutedColors": "ミュートカラー",
+        "destructiveColors": "破壊的なカラー",
+        "borderColors": "ボーダーと入力のカラー",
+        "chartColors": "チャートカラー",
+        "sidebarColors": "サイドバーカラー",
+        "hslAdjustments": "HSL調整",
+        "radius": "角の丸み",
+        "spacing": "間隔",
+        "letterSpacing": "文字間隔",
+        "fonts": "フォント",
+        "shadow": "影"
+      }
+    },
+    "models": {
+      "title": "モデル管理",
+      "modelSelect": "モデルを選択",
+      "description": "ZeroSort を支える AI モデルを設定します。",
+      "custom": "カスタム",
+      "providers": "プロバイダー",
+      "addNew": "新規追加",
+      "noProviderSelected": "プロバイダーが選択されていません",
+      "selectOrCreate": "新しいプロバイダーを作成するか、サイドバーから選択してください。",
+      "createProvider": "プロバイダーを作成",
+      "createDescription": "プロバイダーテンプレートを使用して新しい設定を作成します。",
+      "templates": "プロバイダーテンプレート",
+      "addModel": "モデルを追加",
+      "editModel": "モデルを編集",
+      "modelName": "モデル名",
+      "modelId": "モデルID",
+      "familyGroup": "ファミリグループ",
+      "providerName": "プロバイダー名",
+      "providerNamePlaceholder": "例: マイカスタムプロバイダー",
+      "testConnection": "接続テスト",
+      "testing": "テスト中...",
+      "connectionSuccess": "接続に成功しました",
+      "connectionFailed": "接続に失敗しました: {{error}}"
+    }
+  },
+  "common": {
+    "title": "タイトル",
+    "add": "追加",
+    "alreadyAdded": "追加済み",
+    "english": "英語",
+    "chinese": "中国語",
+    "languages": {
+      "ar": "アラビア語",
+      "de": "ドイツ語",
+      "en": "英語",
+      "es": "スペイン語",
+      "fr": "フランス語",
+      "it": "イタリア語",
+      "ja": "日本語",
+      "ko": "韓国語",
+      "pt": "ポルトガル語",
+      "ru": "ロシア語",
+      "zh": "中国語"
+    },
+    "tryAgain": "再試行",
+    "home": "ホーム",
+    "goBack": "戻る",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "export": "エクスポート",
+    "exporting": "エクスポート中...",
+    "import": "インポート",
+    "importing": "インポート中...",
+    "loading": "読み込み中...",
+    "cleaning": "クリーンアップ中...",
+    "save": "保存",
+    "saving": "保存中...",
+    "close": "閉じる",
+    "hide": "非表示",
+    "comingSoon": "近日公開",
+    "uncategorized": "未分類",
+    "current": "現在",
+    "beforeUpdate": "前",
+    "afterUpdate": "後",
+    "on": "オン",
+    "off": "オフ",
+    "showMore": "さらに表示",
+    "showLess": "折りたたむ",
+    "regenerating": "再生成中",
+    "tags": "タグ",
+    "sortBy": "並べ替え",
+    "createdAt": "作成日",
+    "updatedAt": "更新日",
+    "months": {
+      "1": "1月",
+      "2": "2月",
+      "3": "3月",
+      "4": "4月",
+      "5": "5月",
+      "6": "6月",
+      "7": "7月",
+      "8": "8月",
+      "9": "9月",
+      "10": "10月",
+      "11": "11月",
+      "12": "12月"
+    },
+    "datePicker": {
+      "pickDate": "日付を選ぶ",
+      "clearFilter": "日付フィルターをクリア",
+      "modalTitle": "日付で絞り込む",
+      "noDateSelected": "日付が選択されていません",
+      "notesOnDate": "{{date}}のノート {{count}}件"
+    }
+  },
+  "folder": {
+    "newFolder": "新しいフォルダ",
+    "renameFolder": "フォルダ名を変更",
+    "deleteFolder": "フォルダを削除",
+    "deleteConfirmation": "本当に \"{{name}}\" を削除しますか？",
+    "deleteWarning": "このフォルダ内にあるノートへの処理を選択してください。",
+    "deleteOptionMoveToUncategorized": "未分類に移動する",
+    "deleteOptionDeleteAll": "完全にすべて削除する",
+    "folderName": "フォルダ名",
+    "placeholder": "フォルダ名を入力...",
+    "create": "フォルダを作成",
+    "rename": "名前を変更",
+    "addSubfolder": "サブフォルダを追加",
+    "delete": "削除",
+    "alreadyExists": "フォルダはすでに存在します",
+    "moveFolder": "フォルダを移動",
+    "selectDestination": "移動先を選択",
+    "root": "ルート (最上位)",
+    "move": "移動",
+    "noOtherFolders": "他のフォルダはありません"
+  },
+  "note": {
+    "moveNote": "ノートを移動",
+    "searchDirectories": "ディレクトリを検索...",
+    "noDirectoriesFound": "ディレクトリが見つかりません",
+    "deleted": "ノートが削除されました",
+    "failedToDelete": "ノートの削除に失敗しました",
+    "deleteTitle": "ノートを削除しますか？",
+    "deleteDescription": "この操作は元に戻せません。このノートを削除してもよろしいですか？",
+    "editorPlaceholder": "書き始めましょう...",
+    "savedSuccessfully": "ノートを保存しました",
+    "savedWithWarnings": "ノートは保存されましたが、一部の画像クリーンアップが完了しませんでした",
+    "failedToSave": "ノートの保存に失敗しました",
+    "hideSummary": "要約を非表示",
+    "showSummary": "要約を表示",
+    "summary": "要約",
+    "editTitle": "タイトルを編集",
+    "created": "作成日時",
+    "updated": "更新日時",
+    "editSummary": "要約を編集",
+    "editCreatedAt": "作成日を編集",
+    "createdAtUpdated": "作成日が更新されました",
+    "createdAtUpdatedWithWarnings": "作成日は更新されましたが、一部の画像クリーンアップが完了しませんでした",
+    "failedToUpdateCreatedAt": "作成日の更新に失敗しました",
+    "createdAtHour": "時",
+    "createdAtMinute": "分",
+    "createdAtSecond": "秒",
+    "createdAtHourPlaceholder": "HH",
+    "createdAtMinutePlaceholder": "MM",
+    "createdAtSecondPlaceholder": "SS",
+    "summaryPlaceholder": "要約を入力...",
+    "unsavedChanges": "保存されていない変更があります",
+    "unsavedChangesDescription": "ノートに変更が加えられています。移動する前に保存しますか？",
+    "saveAndContinue": "保存して続行",
+    "discardChanges": "変更を破棄",
+    "regenerateTitle": "タイトルを再生成",
+    "titleRegenerated": "タイトルが再生成されました",
+    "regenerateSummary": "要約を再生成",
+    "summaryRegenerated": "要約が再生成されました",
+    "regenerateCatalog": "フォルダ階層を再生成",
+    "catalogRegenerated": "フォルダ階層が再生成されました",
+    "regenerateTags": "タグを再生成",
+    "tagsRegenerated": "タグが再生成されました",
+    "untitled": "無題",
+    "sort": "分類",
+    "regenerate": "再生成",
+    "regenerateAll": "すべて再生成",
+    "regenerateSelected": "選択項目を再生成",
+    "selectToRegenerate": "再生成する内容を選択",
+    "regeneratedSuccessfully": "正常に再生成されました",
+    "reviewChanges": "変更をレビュー",
+    "applyChanges": "変更を適用",
+    "discardRegeneration": "破棄",
+    "noChange": "変更なし",
+    "createNote": "ノートを作成"
+  },
+  "links": {
+    "title": "リンク"
+  },
+  "backlinks": {
+    "loading": "バックリンクを読み込み中...",
+    "empty": "バックリンクはありません",
+    "hint": "このノートへのリンクがここに表示されます",
+    "title": "バックリンク",
+    "link": "リンク",
+    "links": "リンク",
+    "mention": "メンション",
+    "mentions": "メンション"
+  },
+  "outgoingLinks": {
+    "loading": "リンクを読み込み中...",
+    "empty": "外向きリンクはありません",
+    "hint": "[[ノートタイトル]]で他のノートにリンクできます",
+    "title": "外向きリンク",
+    "link": "リンク",
+    "links": "リンク",
+    "broken": "壊れたリンク",
+    "valid": "有効なリンク",
+    "createNote": "ノートを作成"
+  },
+  "wikiLinks": {
+    "noNotesFound": "ノートが見つかりません"
+  },
+  "notFound": {
+    "description": "お探しのページは存在しません。",
+    "startOver": "やり直す"
+  },
+  "sidebar": {
+    "folders": "フォルダ",
+    "expandAll": "すべて展開",
+    "collapseAll": "すべて折りたたむ",
+    "showSidebar": "サイドバーを表示",
+    "hideSidebar": "サイドバーを非表示",
+    "searchPlaceholder": "ノートやフォルダを検索...",
+    "tags": "タグ",
+    "clearTagFilters": "タグフィルターをクリア",
+    "matchAll": "すべてに一致",
+    "matchAny": "いずれかに一致",
+    "noTags": "タグがありません",
+    "manageTags": "タグを管理"
+  },
+  "tags": {
+    "title": "タグマネージャー",
+    "filters": "アクティブなフィルター",
+    "allTags": "すべてのタグ",
+    "create": "タグを作成",
+    "rename": "名前を変更",
+    "delete": "削除",
+    "selectMultiple": "タグを選択",
+    "cancelSelection": "キャンセル",
+    "selectAll": "すべて選択",
+    "clearSelection": "選択をクリア",
+    "selectedCount": "{{count}}個選択",
+    "selectedCount_other": "{{count}}個選択",
+    "deleteSelected": "選択項目を削除",
+    "deleteSelectedConfirm": "{{count}}個のタグを削除しますか？すべてのノートから削除されます。",
+    "deleteSelectedConfirm_other": "{{count}}個のタグを削除しますか？すべてのノートから削除されます。",
+    "deleteConfirm": "このタグを削除しますか？すべてのノートから削除されます。",
+    "color": "カラー",
+    "noTags": "タグはまだありません。作成して始めてください。",
+    "namePlaceholder": "タグ名...",
+    "noteCount": "{{count}}ノート",
+    "noteCount_other": "{{count}}ノート",
+    "searchPlaceholder": "タグを検索...",
+    "dateFilter": "{{date}}からのタグを表示"
+  },
+  "home": {
+    "tagline": "思考は自由に、整理はAIに。",
+    "analyzing": "分析中...",
+    "sorting": "カテゴリに分類中...",
+    "noNotes": "ノートがありません。下から新しく作成しましょう！",
+    "notesCount": "{{count}}ノート",
+    "viewMode": {
+      "timeline": "タイムライン"
+    }
+  },
+  "about": {
+    "title": "このアプリについて",
+    "version": "バージョン",
+    "description": "ZeroSortはAIを活用したメモアプリです。考えるのはあなたに任せ、整理はAIにお任せください。",
+    "website": "ウェブサイト",
+    "websiteDesc": "ニュースや公式ドキュメントはウェブサイトをご覧ください。",
+    "visitWebsite": "zerosort.app にアクセス",
+    "updater": {
+      "title": "アプリのアップデート",
+      "description": "新しいデスクトップビルドを確認し、ZeroSortから離れずにインストールします。",
+      "releaseNotes": "リリースノート",
+      "releaseDate": "公開日: {{date}}",
+      "actions": {
+        "check": "アップデートを確認する",
+        "install": "アップデートをインストール"
+      },
+      "status": {
+        "idle": "アップデートを確認する準備ができました。",
+        "checking": "アップデートを確認中...",
+        "upToDate": "すでに最新バージョンです。",
+        "available": "バージョン {{version}} がインストール可能です。",
+        "availableUnknown": "新しいアップデートが利用可能です。",
+        "downloading": "アップデートパッケージをダウンロード中...",
+        "installing": "アップデートをインストール中...",
+        "completed": "再起動してアップデートを完了します...",
+        "unsupported": "アップデートはデスクトップアプリ内でのみ利用可能です。"
+      },
+      "progress": {
+        "percent": "{{percent}}% ダウンロード完了",
+        "unknown": "アップデートをダウンロード中..."
+      },
+      "toast": {
+        "upToDate": "ZeroSortはすでに最新です。",
+        "available": "アップデート {{version}} が利用可能です。"
+      },
+      "errors": {
+        "network": "アップデートサーバーに到達できません。インターネット接続を確認してもう一度お試しください。",
+        "check": "アップデートの確認に失敗しました。",
+        "install": "アップデートのインストールに失敗しました。"
+      }
+    },
+    "footer": "© 2026 ZeroSort. All rights reserved."
+  },
+  "editor": {
+    "undo": "元に戻す",
+    "redo": "やり直し",
+    "heading1": "見出し 1",
+    "heading2": "見出し 2",
+    "heading3": "見出し 3",
+    "bold": "太字",
+    "italic": "斜体",
+    "underline": "下線",
+    "strikethrough": "取り消し線",
+    "bulletList": "箇条書き",
+    "orderedList": "番号付きリスト",
+    "taskList": "タスクリスト",
+    "indent": "インデントを増やす",
+    "outdent": "インデントを減らす",
+    "quote": "引用",
+    "inlineCode": "インラインコード",
+    "codeBlock": "コードブロック",
+    "horizontalRule": "水平線",
+    "link": "リンク",
+    "insertLink": "リンクを挿入",
+    "removeLink": "リンクを削除",
+    "insertTable": "テーブル",
+    "image": "画像",
+    "insertImage": "画像を挿入",
+    "editImage": "画像を編集",
+    "imageFromUrl": "URLから",
+    "imageFromFile": "ファイルから",
+    "imageUrl": "画像URL",
+    "imageSelectFile": "画像ファイルを選択",
+    "imageChooseFile": "ファイルを選択",
+    "imageDropHere": "ここに画像をドロップ",
+    "imageDropHint": "ローカル画像をこのエリアにドラッグ＆ドロップ",
+    "imageFileLimit": "最大ファイルサイズ: 5 MB",
+    "imageFileTooLarge": "画像は5 MB以下である必要があります。",
+    "imageFileReadFailed": "画像ファイルの読み込みに失敗しました。",
+    "imageFileSaveFailed": "画像ファイルの保存に失敗しました。",
+    "imageAlt": "代替テキスト (オプション)",
+    "deleteImage": "画像を削除",
+    "displayInline": "インライン表示",
+    "displayBlock": "ブロック表示",
+    "moreActions": "その他の操作",
+    "copyMarkdown": "Markdownとしてコピー",
+    "copiedMarkdown": "ノートのMarkdownをクリップボードにコピーしました",
+    "aiAssistant": "AIアシスタント",
+    "aiModeOffLabel": "AI オフ",
+    "aiModeSelectionLabel": "選択範囲",
+    "aiModeAskAiLabel": "AIに聞く",
+    "aiModeSelection": "AI: 選択モード (クリックで切り替え)",
+    "aiModeAskAi": "AI: AIに聞くモード (クリックで切り替え)",
+    "inlineMath": "インライン数式",
+    "blockMath": "ブロック数式",
+    "enterLatex": "LaTeX式を入力:",
+    "highlight": "ハイライト",
+    "textColor": "テキストの色",
+    "removeColor": "色を削除",
+    "applyColor": "適用",
+    "excalidraw": {
+      "insert": "Excalidrawの描画",
+      "placeholder": "左上隅をクリックして描画を開始します",
+      "edit": "描画を編集",
+      "done": "完了",
+      "copy": "描画ブロックをコピー",
+      "copied": "描画ブロックをクリップボードにコピーしました",
+      "delete": "描画を削除",
+      "loading": "描画を読み込み中..."
+    },
+    "markmap": {
+      "zoomIn": "ズームイン",
+      "zoomOut": "ズームアウト",
+      "fit": "ビューに合わせる",
+      "copy": "マインドマップブロックをコピー",
+      "copied": "マインドマップブロックをクリップボードにコピーしました",
+      "delete": "マインドマップを削除"
+    },
+    "mermaid": {
+      "insert": "Mermaid図",
+      "edit": "コードを編集",
+      "preview": "プレビュー",
+      "zoomIn": "ズームイン",
+      "zoomOut": "ズームアウト",
+      "fit": "ビューに合わせる",
+      "copy": "図ブロックをコピー",
+      "copied": "図ブロックをクリップボードにコピーしました",
+      "delete": "図を削除"
+    },
+    "chart": {
+      "copy": "チャートブロックをコピー",
+      "copied": "チャートブロックをクリップボードにコピーしました"
+    },
+    "calendar": {
+      "insert": "カレンダー",
+      "blockLabel": "カレンダー",
+      "copy": "カレンダーブロックをコピー",
+      "copied": "カレンダーブロックをクリップボードにコピーしました",
+      "delete": "カレンダーを削除",
+      "resize": "カレンダーのサイズを変更",
+      "previousMonth": "前の月",
+      "nextMonth": "次の月",
+      "newEvent": "新しいイベント",
+      "add": "追加",
+      "selectedDate": "選択した日付",
+      "titlePlaceholder": "イベント名",
+      "descriptionPlaceholder": "メモ",
+      "allDay": "終日",
+      "noEvents": "この日付のイベントはありません",
+      "deleteEvent": "イベントを削除",
+      "weekDays": {
+        "sun": "日",
+        "mon": "月",
+        "tue": "火",
+        "wed": "水",
+        "thu": "木",
+        "fri": "金",
+        "sat": "土"
+      },
+      "colors": {
+        "blue": "青",
+        "green": "緑",
+        "yellow": "黄",
+        "pink": "ピンク",
+        "purple": "紫",
+        "orange": "オレンジ",
+        "red": "赤",
+        "teal": "ティール",
+        "indigo": "インディゴ"
+      }
+    },
+    "copyFailed": "クリップボードへのコピーに失敗しました",
+    "table": {
+      "addRowBefore": "上に行を追加",
+      "addRowAfter": "下に行を追加",
+      "addColumnBefore": "左に列を追加",
+      "addColumnAfter": "右に列を追加",
+      "deleteRow": "行を削除",
+      "deleteColumn": "列を削除",
+      "mergeOrSplit": "セルの結合または分割",
+      "deleteTable": "テーブルを削除",
+      "createChart": "テーブルからチャートを作成"
+    },
+    "characterCount": {
+      "characters": "文字",
+      "words": "単語"
+    },
+    "kanban": {
+      "insert": "カンバン",
+      "blockLabel": "カンバン",
+      "copy": "カンバンをコピー",
+      "copied": "カンバンをクリップボードにコピーしました",
+      "delete": "カンバンを削除",
+      "resize": "カンバンのサイズを変更"
+    }
+  },
+  "ai": {
+    "prompts": {
+      "system": "あなたはZeroSort AI、ミニマリストなノート整理アシスタントです。\nユーザー入力を分析し、構造化されたJSONオブジェクトを返してください。",
+      "input": "入力:",
+      "content": "コンテンツ:",
+      "contentBefore": "<Content>",
+      "contentAfter": "</Content>",
+      "regenerateTitle": "このコンテンツに対して短く明確なタイトル（最大6語）を再生成してください。",
+      "regenerateSummary": "このコンテンツの2〜3文の要約/プレビューを再生成してください。",
+      "regenerateCatalog": "このコンテンツのフォルダ階層（カタログ）を再生成し、文字列の配列として返してください。レベルは最大3つまでです。例: [\"仕事\", \"ミーティング\", \"要約\"] または [\"個人\", \"レシピ\", \"サラダ\"]",
+      "regenerateTags": "このコンテンツに関連するタグを提案してください。短く説明的なタグ名（各1〜3語）のフラットな配列を返してください。主要なトピックを捉える2〜5個のタグを提案してください。",
+      "existingDirectories": "ユーザーは次のディレクトリ構造を持っています: {{directories}} \n\n 現在のノートを分類してください。次のロジックに従ってください:\n 1. ノートのコンテンツが既存のディレクトリのトピックによく一致する場合は、その既存のディレクトリに直接分類します。\n 2. ノートが既存のディレクトリの特定のサブフィールドに属する場合は、そのディレクトリの下に新しいサブディレクトリを作成できます。\n 3. ノートのトピックが既存のディレクトリのいずれとも関連性がない場合は、既存のディレクトリに強制的に入れないでください。完全に新しく独立したルートディレクトリを作成する必要があります。",
+      "schema": {
+        "title": "ノートの短く明確な名前（最大6語）。",
+        "catalog": "このコンテンツの簡潔なフォルダ階層（カタログ）を文字列の配列として返します。最大3レベル。例: [\"仕事\", \"ミーティング\", \"サマリー\"]",
+        "summary": "ノートカード用の2〜3文のプレビュー。",
+        "tags": "ノートの主要なトピックを捉える、短く説明的なタグ名の配列（各1〜3語、2〜5個のタグ）。"
+      }
+    },
+    "enabled": "AI有効",
+    "disabled": "AI無効",
+    "includeExistingDirs": "フォルダを参照",
+    "includeExistingDirsTooltip": "既存のディレクトリ構造を参照する",
+    "noModelSelected": "設定でAIモデルを選択してください。",
+    "requestFailed": "AIリクエストが失敗しました。モデル設定を確認してからもう一度お試しください。"
+  },
+  "aiMenu": {
+    "editWithAi": "AIで編集",
+    "placeholder": "AIに何でも質問...",
+    "send": "送信",
+    "preview": "AIの回答",
+    "mindmapPreview": "マインドマップ",
+    "mermaidPreview": "Mermaid図",
+    "chartPreview": "チャート",
+    "insertBelow": "下に挿入",
+    "insertMindmap": "マインドマップを挿入",
+    "insertMermaid": "図を挿入",
+    "insertChart": "チャートを挿入",
+    "mindmapInserted": "マインドマップを挿入しました",
+    "mermaidInserted": "図を挿入しました",
+    "chartInserted": "チャートを挿入しました",
+    "chartParseError": "チャートデータの解析に失敗しました",
+    "copy": "結果をコピー",
+    "copied": "クリップボードにコピーしました",
+    "discard": "破棄",
+    "useFullContext": "ドキュメント全体をコンテキストとして使用",
+    "sections": {
+      "suggested": "提案",
+      "charts": "チャート",
+      "edit": "編集"
+    },
+    "actions": {
+      "improve": "文章を改善",
+      "proofread": "校正する",
+      "explain": "説明",
+      "translate": "翻訳先",
+      "longer": "長くする",
+      "shorter": "短くする",
+      "tone": "トーンを変更",
+      "simplify": "わかりやすくする",
+      "mindmap": "マインドマップを生成",
+      "mermaid": "Mermaid 図を生成",
+      "chart": "チャートを生成"
+    },
+    "languages": {
+      "arabic": "アラビア語",
+      "english": "英語",
+      "chinese": "中国語",
+      "italian": "イタリア語",
+      "korean": "韓国語",
+      "portuguese": "ポルトガル語",
+      "russian": "ロシア語",
+      "spanish": "スペイン語",
+      "french": "フランス語",
+      "german": "ドイツ語",
+      "japanese": "日本語"
+    },
+    "chartTypes": {
+      "line": "折れ線グラフ",
+      "bar": "棒グラフ",
+      "pie": "円グラフ",
+      "radar": "レーダーチャート",
+      "bubble": "バブルチャート"
+    },
+    "tones": {
+      "professional": "プロフェッショナル",
+      "casual": "カジュアル",
+      "friendly": "フレンドリー",
+      "confident": "自信に満ちた",
+      "formal": "フォーマル"
+    },
+    "generating": "生成中...",
+    "loading": "AIが思考中...",
+    "success": "テキストを更新しました",
+    "errors": {
+      "noSelection": "テキストを選択してください",
+      "failed": "AIリクエストに失敗しました。もう一度お試しください。",
+      "emptyResponse": "AIからの応答が空です"
+    },
+    "prompts": {
+      "contextPrefix": "完全なドキュメントのコンテキストは以下の通りです:\n\n{{fullDocument}}\n\n---\n\nそれでは、以下の選択された部分に焦点を当ててください:\n\n",
+      "improve": "{{contextPrefix}}意味を保ちつつ、次のテキストを改善してください。説明などを省き、改善されたテキストのみを返してください:\n\n{{text}}",
+      "proofread": "{{contextPrefix}}次のテキストの文法、スペル、句読点のエラーを校正して修正してください。修正されたテキストのみを返してください:\n\n{{text}}",
+      "translate": "{{contextPrefix}}次のテキストを{{option}}に翻訳してください。翻訳結果のみを返してください:\n\n{{text}}",
+      "longer": "{{contextPrefix}}同じ意味を保ちながら、次のテキストにより詳細を追加して拡張してください。拡張されたテキストのみを返してください:\n\n{{text}}",
+      "shorter": "{{contextPrefix}}意味を保ちながら、次のテキストをより簡潔にしてください。短くされたテキストのみを返してください:\n\n{{text}}",
+      "tone": "{{contextPrefix}}次のテキストを{{option}}なトーンで書き直してください。書き直されたテキストのみを返してください:\n\n{{text}}",
+      "simplify": "{{contextPrefix}}次のテキストをより理解しやすく簡潔にしてください。簡略化したテキストのみを返してください:\n\n{{text}}",
+      "explain": "{{contextPrefix}}次のテキストを簡単な言葉で説明してください。明確で簡潔な説明を提供してください:\n\n{{text}}",
+      "mindmap": "Markdownを使用して、次のテキストを階層的なマインドマップ構造に変換してください。メイントピックには見出し (##, ###) を、サブトピックには箇条書き (-) を使用してください。簡潔で整理されたものにしてください。説明などを省き、Markdownのみを返してください:\n\n{{text}}",
+      "mermaid": "次のテキストをMermaid図に変換してください。最も適切な図の種類（flowchart, sequence, class, state, ER, gantt, pieのいずれか）を選択してください。マークダウンのコードフェンスや説明は不要です。有効なMermaidの構文のみを返してください。図の種類のキーワード（例：graph TD, sequenceDiagram, classDiagramなど）から始めてください:\n\n{{text}}",
+      "custom": "{{contextPrefix}}{{option}}\n\n対象テキスト:\n{{text}}",
+      "chart": {
+        "base": "次のテキストを分析し、数値データを抽出してChart.jsの{{chartType}}チャート設定を作成してください。有効なJSONオブジェクトのみを返してください（マークダウンフェンスや説明は不要です）。JSONには必ず\"type\"フィールドを\"{{chartType}}\"として含める必要があります。テキストから推測される説明的なラベルを使用してください。複数のデータシリーズがある場合は、異なる色で複数のデータセットを作成してください。{{colorsHint}}"
+      }
+    }
+  },
+  "proFeatures": {
+    "licenseGate": {
+      "required": "有効なライセンスキーが必要です",
+      "description": "{{feature}} は Pro 機能です。ZeroSort のライセンスキーを有効化してロックを解除してください。",
+      "activateButton": "ライセンス設定へ移動",
+      "featureLocked": "{{feature}} には有効なライセンスキーが必要です",
+      "featureTooltip": "{{feature}} には Pro が必要です"
+    }
+  },
+  "askAi": {
+    "title": "AIに聞く",
+    "placeholder": "何でも質問してください... @と入力して開いているノートを参照",
+    "mentionHint": "@を押して開いているノートをコンテキストとして参照",
+    "contextPrefix": "コンテキストとしてのノート情報は以下の通りです:",
+    "pickLocation": "回答を挿入するにはエディタをクリックしてください",
+    "insertInNote": "ノートに挿入",
+    "insertResponse": "この応答を挿入",
+    "inserted": "挿入済み",
+    "newChat": "新しいチャット",
+    "noOpenNotes": "参照できる開いているノートがありません",
+    "noMatchingNotes": "一致するノートが見つかりません"
+  },
+  "license": {
+    "title": "ライセンス",
+    "description": "ZeroSortのソフトウェアライセンスを管理します。",
+    "status": "ライセンスのステータス",
+    "active": "有効",
+    "inactive": "ライセンスなし",
+    "invalid": "無効なライセンス",
+    "machineId": "マシンID",
+    "machineIdCopied": "マシンIDをクリップボードにコピーしました",
+    "activate": "ライセンスを有効化",
+    "activatePlaceholder": "ライセンスキーをここに貼り付けてください...",
+    "activateButton": "有効化",
+    "purchaseLink": "ライセンスキーを取得",
+    "activateSuccess": "ライセンスが正常に有効化されました",
+    "deactivate": "ライセンスを無効化",
+    "deactivateConfirm": "本当にライセンスを無効化しますか？",
+    "deactivateSuccess": "ライセンスが無効化されました",
+    "errors": {
+      "invalidSignature": "無効なライセンスキー - 署名の検証に失敗しました",
+      "expired": "ライセンスキーの有効期限が切れています",
+      "hardwareMismatch": "このライセンスはこのマシンでは有効ではありません",
+      "clockTampered": "システム時計の改ざんが検出されました。システムの時刻を修正してください。",
+      "activationFailed": "ライセンスのアクティベーションに失敗しました"
+    }
+  },
+  "sync": {
+    "title": "クラウド同期",
+    "description": "バックアップとマルチデバイスアクセスのために、S3互換ストレージにノートを同期します。",
+    "connected": "正常に接続しました",
+    "notConnected": "S3に接続されていません",
+    "connect": "接続",
+    "disconnect": "切断",
+    "upload": "クラウドにアップロード",
+    "download": "クラウドからダウンロード",
+    "uploadSuccess": "バックアップが正常にアップロードされました",
+    "downloadSuccess": "バックアップが正常にダウンロードされました",
+    "syncing": "同期中...",
+    "connecting": "接続中...",
+    "restoring": "接続を復元中...",
+    "lastSync": "最終同期: {{time}}",
+    "never": "未同期",
+    "syncNow": "同期",
+    "preview": "プレビュー",
+    "syncComplete": "同期完了: {{uploaded}}アップロード、{{downloaded}}ダウンロード",
+    "recoveryComplete": "リモートからの復元が完了しました",
+    "refreshPartialTags": "同期は完了しましたが、タグの更新ができませんでした。",
+    "refreshFailed": "同期は完了しましたが、ローカルデータの更新ができませんでした。アプリを再読み込みして最新の変更を確認してください。",
+    "blockedBySafety": "安全チェックにより同期がブロックされました",
+    "recovery": {
+      "title": "リモートからの復旧を推奨",
+      "description": "ZeroSort は、ローカルの同期状態が予期せず空になっていることを検出しました。クラウドデータを削除せずにローカルデータを再構築するには、リモートから復元してください。",
+      "action": "リモートから復元"
+    },
+    "safetyDialog": {
+      "common": {
+        "totalItems": "合計アイテム数",
+        "confirm": "それでも続行",
+        "cancel": "同期をキャンセル",
+        "close": "閉じる"
+      },
+      "deletion": {
+        "title": "削除率が高すぎます",
+        "description": "{{count}} / {{total}} 件の項目（{{percentage}}%）が削除される見込みで、安全しきい値 {{threshold}}% を超えています。これは設定ミスまたは意図しないデータ損失の可能性があります。",
+        "localDeletes": "ローカルの削除",
+        "remoteDeletes": "リモートの削除"
+      },
+      "unsafe": {
+        "title": "安全でないローカル状態のため同期をブロックしました",
+        "description": "ローカルではまだ {{count}} 件の管理対象項目が参照されていますが、ZeroSort は対応するローカルファイルを確認できませんでした。意図しないデータ損失を防ぐため、同期はブロックされました。",
+        "unsafeItems": "安全でないアイテム",
+        "details": "詳細"
+      }
+    },
+    "noChanges": "同期する変更はありません",
+    "phase": {
+      "idle": "準備完了",
+      "connecting": "接続中...",
+      "collecting": "データを収集中...",
+      "planning": "変更を計画中...",
+      "executing": "同期中...",
+      "directories": "フォルダとタグを準備中...",
+      "uploading": "アップロード中...",
+      "downloading": "ダウンロード中...",
+      "deleting": "古い項目を削除中...",
+      "cleanup": "同期を仕上げています...",
+      "completing": "同期を完了中..."
+    },
+    "progress": {
+      "preparing": "同期の準備中..."
+    },
+    "preview_section": {
+      "title": "同期プレビュー",
+      "uploads": "アップロード予定",
+      "downloads": "ダウンロード予定",
+      "deletes": "ローカルで削除予定",
+      "remoteDeletes": "リモートで削除予定",
+      "conflicts": "競合",
+      "unsafe": "ブロックされた項目",
+      "unchanged": "未変更"
+    },
+    "configuration": {
+      "title": "S3接続設定",
+      "label": "接続名",
+      "labelPlaceholder": "マイ S3 バックアップ",
+      "bucketName": "バケット名",
+      "bucketPlaceholder": "バケット名を入力してください...",
+      "accessKeyId": "アクセスキーID",
+      "secretAccessKey": "シークレットアクセスキー",
+      "region": "リージョン",
+      "regionPlaceholder": "us-east-1",
+      "endpointUrl": "エンドポイントURL",
+      "endpointPlaceholder": "https://s3.{region}.amazonaws.com またはカスタムエンドポイント"
+    },
+    "concurrency": {
+      "title": "並行処理数",
+      "description": "同期中の並行操作数。値を大きくすると同期は速くなりますが、より多くの帯域幅を使用します。"
+    },
+    "encryption": {
+      "title": "暗号化パスワード",
+      "description": "クラウドにアップロードする前にノートを暗号化するために使用するパスワードです。このパスワードは安全に保管してください。データの復号に必要になります。",
+      "configured": "暗号化パスワードが設定されています",
+      "notConfigured": "未設定 - 同期は機能しません",
+      "password": "暗号化パスワード",
+      "confirmPassword": "パスワードを確認",
+      "mismatch": "パスワードが一致しません",
+      "tooShort": "パスワードは8文字以上である必要があります",
+      "saved": "暗号化パスワードを保存しました",
+      "changeWarning": "パスワードを変更すると、すべてのノートを完全に再同期する必要があります",
+      "configure": "暗号化を設定",
+      "change": "変更"
+    },
+    "buckets": {
+      "title": "バケットの選択",
+      "refresh": "更新",
+      "noBuckets": "バケットが見つかりません",
+      "createBucket": "まずS3コンソールでバケットを作成してください"
+    },
+    "errors": {
+      "connectionFailed": "S3との接続に失敗しました。",
+      "uploadFailed": "バックアップのアップロードに失敗しました。",
+      "downloadFailed": "バックアップのダウンロードに失敗しました。",
+      "noBackups": "バケットにバックアップが見つかりません"
+    },
+    "licenseGate": {
+      "required": "有効なライセンスが必要です",
+      "description": "クラウド同期には有効な ZeroSort ライセンスが必要です。この機能を解除するにはライセンスを有効化してください。",
+      "activateButton": "ライセンス設定へ",
+      "featureLocked": "クラウド同期には有効なライセンスが必要です"
+    }
+  },
+  "batch": {
+    "multiSelect": "複数選択",
+    "selectMonth": "この月のすべてのノートを選択",
+    "deselectMonth": "この月のすべてのノートの選択を解除",
+    "selectedCount": "{{count}}個選択",
+    "regenerate": "再生成",
+    "regenerateTooltip": "選択したノートのフィールドを再生成",
+    "dialogTitle": "一括再生成",
+    "dialogDescription": "{{count}}個の選択されたノートで再生成するフィールドを選択してください。",
+    "startRegeneration": "{{count}}個のノートを再生成",
+    "alreadyRunning": "一括ジョブはすでに実行中です",
+    "inProgress": "再生成中...",
+    "cancelledTitle": "キャンセル済み",
+    "completedTitle": "完了",
+    "progress": "{{completed}} / {{total}}",
+    "failedCount": "{{count}}件失敗",
+    "processing": "処理中: {{title}}",
+    "processingMultiple": "{{count}}個のノートを処理中...",
+    "stop": "停止",
+    "completed": "{{count}}個のノートを正常に再生成しました",
+    "completedWithErrors": "{{completed}}個のノートを再生成し、{{failed}}件失敗しました",
+    "cancelled": "キャンセルしました — {{total}}個中{{completed}}個のノートを再生成しました",
+    "concurrency": "並行処理数",
+    "concurrencyDescription": "同時に処理するノートの数"
+  },
+  "event-calendar": {
+    "app": {
+      "title": "イベントカレンダー"
+    },
+    "language": {
+      "select": "言語を選択"
+    },
+    "theme": {
+      "toggle": "テーマを切り替え"
+    },
+    "nav": {
+      "previousPeriod": "前の期間",
+      "nextPeriod": "次の期間"
+    },
+    "controls": {
+      "selectDay": "日を選択",
+      "selectMonth": "月を選択",
+      "selectYear": "年を選択"
+    },
+    "view": {
+      "day": "日",
+      "week": "週",
+      "month": "月",
+      "year": "年"
+    },
+    "display": {
+      "calendar": "カレンダー表示",
+      "list": "リスト表示",
+      "switchToCalendar": "カレンダー表示に切り替え",
+      "switchToList": "リスト表示に切り替え"
+    },
+    "period": {
+      "today": "今日",
+      "tomorrow": "明日",
+      "thisWeek": "今週",
+      "thisMonth": "今月",
+      "thisYear": "今年"
+    },
+    "time": {
+      "twelveHour": "12時間",
+      "twentyFourHour": "24時間"
+    },
+    "filters": {
+      "filter": "フィルター",
+      "byColor": "色でフィルター"
+    },
+    "actions": {
+      "add": "追加",
+      "addEvent": "イベントを追加",
+      "cancel": "キャンセル",
+      "confirm": "確認",
+      "createEvent": "イベントを作成",
+      "delete": "削除",
+      "reset": "リセット",
+      "saveEvent": "イベントを保存"
+    },
+    "notice": {
+      "created": "イベントを作成しました",
+      "updated": "イベントを更新しました",
+      "deleted": "イベントを削除しました"
+    },
+    "calendar": {
+      "allDay": "終日",
+      "allDayCompact": "終日",
+      "createEventAt": "{{time}} にイベントを作成",
+      "createEventOn": "{{date}} にイベントを作成",
+      "currentTime": "現在時刻: {{time}}",
+      "eventCount_one": "{{count}} 件のイベント",
+      "eventCount_other": "{{count}} 件のイベント",
+      "fullDayEvents_one": "終日イベント（{{count}}）",
+      "fullDayEvents_other": "終日イベント（{{count}}）",
+      "moreEvents_one": "+{{count}} 件",
+      "moreEvents_other": "+{{count}} 件",
+      "selectedTime": "選択時刻: {{time}}"
+    },
+    "dialog": {
+      "addEvent": "イベントを追加",
+      "allDayEvent": "終日イベント",
+      "color": "色",
+      "description": "説明",
+      "descriptionPlaceholder": "メモ、議題、詳細を追加",
+      "editEvent": "イベントを編集",
+      "endDate": "終了日",
+      "endTime": "終了時刻",
+      "eventTitle": "イベント名",
+      "eventTitlePlaceholder": "イベント名を入力",
+      "invalidEndTime": "終了時刻は開始時刻より前にできません。",
+      "startDate": "開始日",
+      "startTime": "開始時刻"
+    },
+    "list": {
+      "emptyHint": "フィルターを調整するか、新しいイベントを追加してください",
+      "noEvents": "イベントが見つかりません"
+    },
+    "colors": {
+      "blue": "青",
+      "green": "緑",
+      "indigo": "インディゴ",
+      "orange": "オレンジ",
+      "pink": "ピンク",
+      "purple": "紫",
+      "red": "赤",
+      "teal": "ティール",
+      "yellow": "黄"
+    },
+    "assistant": {
+      "confirmDeletion": "削除を確認",
+      "notConfigured": "設定でAIモデルを選択してください。",
+      "serviceUnavailable": "現在 AI サービスに接続できませんでした: {{error}}",
+      "processingFailed": "現在その内容を処理できませんでした: {{error}}",
+      "tryAgain": "もう一度お試しください。",
+      "unknownError": "不明なエラー",
+      "noPendingConfirm": "確認待ちの操作はありません。",
+      "deleteSuccess": "{{eventCount}}を削除しました。",
+      "deleteFailed": "イベントを削除できませんでした: {{error}}",
+      "noPendingCancel": "キャンセル待ちの操作はありません。",
+      "deleteCanceled": "削除をキャンセルしました。",
+      "unsupportedAction": "AI が未対応の操作を返しました。",
+      "needsEventTitle": "予定を作成できますが、あと 1 つ必要です。イベント名は何にしますか？",
+      "suggestMeeting": "会議",
+      "suggestAppointment": "予定",
+      "suggestFocusTime": "集中時間",
+      "needsEventDate": "予定を作成できますが、まず日付が必要です。何日に入れますか？",
+      "needsEventTime": "予定を作成する前に、あと 1 つ必要です。開始時刻は何時ですか？",
+      "suggestShowToday": "今日の予定を見せて",
+      "suggestShowWeek": "今週の予定を見せて",
+      "needsEventReferenceUpdate": "更新できますが、どのイベントかを知る必要があります。",
+      "eventNotFoundUpdate": "そのイベントはもう見つかりませんでした。代わりにどのイベントを更新しますか？",
+      "needsUpdateChange": "更新をお手伝いできますが、何を変更するかを教えてください。",
+      "suggestMoveTomorrow": "明日に移動する",
+      "suggestRename": "名前を変更する",
+      "suggestChangeColor": "色を変更する",
+      "confirmDeleteWhichEvent": "削除する前に、どのイベントを削除するか確認してください。",
+      "eventNotFoundDelete": "削除対象のイベントが見つかりませんでした。どれを指していますか？",
+      "listPair": "{{first}} と {{second}}",
+      "conflictWarning": "{{message}}\n\n注意: これは {{eventNames}}{{extraInfo}} と重なっています。",
+      "conflictWarningExtra": "、ほか {{count}} 件",
+      "defaultPrompt": "カレンダーのお手伝いができます。何をしますか？",
+      "allDay": "終日",
+      "createdEventOnAllDay": "{{date}} に「{{title}}」を作成しました。{{allDay}}です。",
+      "createdEventOnAtTime": "{{date}} の {{time}} に「{{title}}」を作成しました。",
+      "createdEventFromTo": "「{{title}}」を {{startDate}} から {{endDate}} までで作成しました。",
+      "queryFoundOnDate": "{{date}} の {{eventCount}} が見つかりました",
+      "queryFoundFromTo": "{{dateFrom}} から {{dateTo}} までの {{eventCount}} が見つかりました",
+      "queryFoundThrough": "{{date}} までの {{eventCount}} が見つかりました",
+      "queryFoundAny": "{{eventCount}} が見つかりました",
+      "eventDateTimeAllDay": "{{dateRange}}、{{allDay}}",
+      "eventDateTimeTimed": "{{dateRange}}、{{startTime}} - {{endTime}}",
+      "changeRenamed": "「{{title}}」に名前を変更",
+      "changeDescriptionUpdated": "説明を更新",
+      "changeDescriptionCleared": "説明を削除",
+      "changeRescheduled": "{{date}} の {{time}} に再設定",
+      "changeColor": "色を {{color}} に変更",
+      "changeMarkedAllDay": "終日として設定",
+      "changeMarkedTimed": "時間指定イベントとして設定",
+      "updatedEvent": "「{{title}}」を更新しました: {{changes}}。",
+      "confirmDeleteSingle": "確認ですが、{{date}} の「{{title}}」を削除しますか？",
+      "confirmDeleteMultiple": "確認ですが、この {{eventCount}} を削除しますか？",
+      "eventOnDate": "{{date}} の {{title}}",
+      "emptyResultsForSearch": "その検索に一致する予定は見当たりません。",
+      "emptyResultsFromTo": "{{dateFrom}} から {{dateTo}} までの予定は見当たりません。",
+      "emptyResultsFromToMatching": "{{dateFrom}} から {{dateTo}} までで「{{searchTerm}}」に一致する予定は見当たりません。",
+      "emptyHint": "例: 「明日の午後2時に会議を予定」または「今日の予定は？」",
+      "emptyResultsMatching": "「{{searchTerm}}」に一致する予定は見当たりません。",
+      "emptyResultsOnDate": "{{date}} の予定は見当たりません。",
+      "emptyResultsOnDateMatching": "{{date}} で「{{searchTerm}}」に一致する予定は見当たりません。",
+      "emptyResultsOnOrAfter": "{{date}} 以降の予定は見当たりません。",
+      "emptyResultsOnOrAfterMatching": "{{date}} 以降で「{{searchTerm}}」に一致する予定は見当たりません。",
+      "emptyResultsThrough": "{{date}} までの予定は見当たりません。",
+      "emptyResultsThroughMatching": "{{date}} までで「{{searchTerm}}」に一致する予定は見当たりません。",
+      "emptyTitle": "カレンダー管理を依頼できます",
+      "openAriaLabel": "AIカレンダーアシスタントを開く",
+      "panelAriaLabel": "AIカレンダーアシスタント",
+      "title": "AIカレンダーアシスタント",
+      "subtitle": "イベントの作成、更新、削除、検索",
+      "closeAriaLabel": "AIアシスタントを閉じる",
+      "thinking": "カレンダーを確認しています...",
+      "inputAriaLabel": "AIカレンダーアシスタントにメッセージを送信",
+      "placeholder": "カレンダーについて質問...",
+      "send": "送信"
+    }
+  },
+  "kanban": {
+    "app": {
+      "eyebrow": "プロジェクトボード"
+    },
+    "language": {
+      "label": "言語",
+      "ariaLabel": "言語を変更"
+    },
+    "board": {
+      "ariaLabel": "カンバンボード",
+      "noCards": "カードはありません"
+    },
+    "summary": {
+      "ariaLabel": "ボードの概要",
+      "columns": "列",
+      "cards": "カード"
+    },
+    "priority": {
+      "urgent": "緊急",
+      "high": "高",
+      "medium": "中",
+      "low": "低"
+    },
+    "actions": {
+      "addColumn": "列を追加",
+      "addCard": "カードを追加",
+      "cancel": "キャンセル",
+      "clear": "クリア",
+      "confirm": "確認",
+      "deleteCard": "{{title}}を削除",
+      "deleteColumn": "{{title}}を削除",
+      "editCard": "{{title}}を編集",
+      "editColumn": "{{title}}を編集",
+      "reset": "リセット",
+      "save": "保存",
+      "send": "メッセージを送信"
+    },
+    "dialogs": {
+      "deleteCard": "\"{{title}}\"を削除しますか？",
+      "deleteColumn_one": "\"{{title}}\"とカード{{count}}件を削除しますか？",
+      "deleteColumn_other": "\"{{title}}\"とカード{{count}}件を削除しますか？"
+    },
+    "forms": {
+      "assignee": "担当者",
+      "cardDescription": "カードの説明",
+      "cardTitle": "カードのタイトル",
+      "cardTitlePlaceholder": "カードのタイトル",
+      "columnColor": "列の色",
+      "columnDescription": "列の説明",
+      "columnName": "列名",
+      "columnTitle": "列のタイトル",
+      "description": "説明",
+      "dueDate": "期限",
+      "noDueDate": "期限なし",
+      "priority": "優先度",
+      "tags": "タグ",
+      "useColor": "{{color}}を使用"
+    },
+    "defaults": {
+      "newWorkflowStage": "新しいワークフローステージ",
+      "unassigned": "未割り当て"
+    },
+    "aiService": {
+      "notConfigured": "AI は設定されていません。アシスタントを有効にするには VITE_DEEPSEEK_API_KEY を追加してください。",
+      "providerUnavailable": "今は AI サービスに接続できませんでした: {{message}}",
+      "processingFailed": "今はその内容を処理できませんでした: {{message}}",
+      "tryAgain": "もう一度お試しください。",
+      "noPendingConfirm": "確認待ちの操作はありません。",
+      "noPendingCancel": "キャンセル待ちの操作はありません。",
+      "canceledDeletion": "削除をキャンセルしました。",
+      "unsupportedAction": "AI が未対応の操作を返しました。",
+      "confirmDelete": "{{items}} を削除しますか？",
+      "confirmDeleteColumnsAndCards": "{{columns}} と {{cards}} を削除しますか？",
+      "deleted": "{{items}} を削除しました。",
+      "deletedColumnsAndCards": "{{columns}} と {{cards}} を削除しました。",
+      "replyFallback": "このカンバンボードのお手伝いができます。何をしますか？",
+      "providerRequestFailed": "DeepSeek リクエストはステータス {{status}} で失敗しました。",
+      "providerEmptyResponse": "DeepSeek が空のレスポンスを返しました。",
+      "providerInvalidJson": "DeepSeek が無効な JSON を返しました。",
+      "count": {
+        "card_one": "{{count}} 件のカード",
+        "card_other": "{{count}} 件のカード",
+        "column_one": "{{count}} 件の列",
+        "column_other": "{{count}} 件の列",
+        "matchingItem_one": "{{count}} 件の一致項目",
+        "matchingItem_other": "{{count}} 件の一致項目"
+      },
+      "createCard": {
+        "missingTitle": "カードは追加できますが、タイトルは何にしますか？",
+        "missingColumn": "どの列にカードを追加しますか？",
+        "failed": "対象の列が見つからなかったため、そのカードを追加できませんでした。",
+        "success": "{{columnTitle}} に「{{title}}」を作成しました。",
+        "examples": {
+          "launchChecklist": "ローンチチェックリストを書く",
+          "followUpWithDesign": "デザインチームにフォローする",
+          "reviewOpenBugs": "未解決のバグを確認する"
+        }
+      },
+      "createColumn": {
+        "missingTitle": "列は追加できますが、名前は何にしますか？",
+        "failed": "今はその列を追加できませんでした。",
+        "success": "「{{title}}」列を作成しました。",
+        "examples": {
+          "backlog": "バックログ",
+          "inProgress": "進行中",
+          "readyForReview": "レビュー待ち"
+        }
+      },
+      "updateCard": {
+        "missingCard": "どのカードを更新しますか？",
+        "missingChanges": "そのカードのどこを変更しますか？",
+        "missingAfterUpdate": "そのカードが見つからなくなりました。",
+        "success": "「{{title}}」を更新しました。",
+        "examples": {
+          "rename": "名前を変更する",
+          "changePriority": "優先度を変更する",
+          "assignToSomeone": "担当者を設定する"
+        }
+      },
+      "updateColumn": {
+        "missingColumn": "どの列を更新しますか？",
+        "missingChanges": "その列のどこを変更しますか？",
+        "missingAfterUpdate": "その列が見つからなくなりました。",
+        "success": "「{{title}}」列を更新しました。",
+        "examples": {
+          "rename": "名前を変更する",
+          "changeColor": "色を変更する",
+          "updateDescription": "説明を更新する"
+        }
+      },
+      "moveCard": {
+        "missingCard": "どのカードを移動しますか？",
+        "missingColumn": "どの列へ移動しますか？",
+        "failed": "指定された位置へそのカードを移動できませんでした。",
+        "success": "「{{title}}」を {{columnTitle}} に移動しました。"
+      },
+      "moveColumn": {
+        "missingColumn": "どの列を移動しますか？",
+        "failed": "指定された位置へその列を移動できませんでした。",
+        "success": "「{{title}}」列を移動しました。"
+      },
+      "deleteCard": {
+        "missingCard": "どのカードを削除しますか？"
+      },
+      "deleteColumn": {
+        "missingColumn": "どの列を削除しますか？"
+      },
+      "localQuery": {
+        "suggestions": {
+          "urgentCards": "緊急カードを表示",
+          "assignedToSamRivera": "Sam Rivera に割り当てられたカードを表示",
+          "cardsDueToday": "今日が期限のカードを表示"
+        }
+      },
+      "query": {
+        "noResults": "このボードでは一致する項目が見つかりませんでした。",
+        "found": "{{items}} が見つかりました:",
+        "columnsHeading": "列:",
+        "cardsHeading": "カード:",
+        "columnLine_one": "- {{title}} (カード {{count}} 件)",
+        "columnLine_other": "- {{title}} (カード {{count}} 件)",
+        "cardLine": "- {{columnTitle}} の {{title}} ({{priority}}, {{assignee}})",
+        "shortened": "一覧は短くしています。残りを見たい場合は検索条件を絞ってください。",
+        "suggestions": {
+          "highPriority": "高優先度のカードを表示",
+          "assignedToMe": "自分に割り当てられているものは?"
+        }
+      }
+    },
+    "ai": {
+      "affectedCards_one": "カード{{count}}件も削除されます。",
+      "affectedCards_other": "カード{{count}}件も削除されます。",
+      "closeAriaLabel": "AIアシスタントを閉じる",
+      "confirmDeletion": "削除を確認",
+      "emptyHint": "\"To doに高優先度のカードを追加\"や\"ローンチ文案をReviewへ移動\"を試してください。",
+      "emptyTitle": "このボードの整理を頼んでください。",
+      "inputAriaLabel": "AIカンバンアシスタントにメッセージ",
+      "openAriaLabel": "AIカンバンアシスタントを開く",
+      "panelAriaLabel": "AIカンバンアシスタント",
+      "placeholder": "ボードについて質問...",
+      "subtitle": "作業を作成、更新、移動、検索",
+      "thinking": "ボードを確認しています...",
+      "title": "AIボードアシスタント"
+    }
+  }
+}

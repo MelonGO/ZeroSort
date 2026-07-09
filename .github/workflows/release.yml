@@ -1,0 +1,168 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tagName:
+        description: GitHub release tag to create or update, for example app-v1.0.2
+        required: true
+        default: app-v__VERSION__
+  push:
+    tags:
+      - app-v*
+
+permissions:
+  contents: write
+
+jobs:
+  publish-tauri:
+    name: Build ${{ matrix.label }}
+    runs-on: ${{ matrix.platform }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: macOS Apple Silicon
+            platform: macos-latest
+            args: --target aarch64-apple-darwin
+          - label: macOS Intel
+            platform: macos-latest
+            args: --target x86_64-apple-darwin
+          - label: Linux x64
+            platform: ubuntu-22.04
+            args: ""
+          - label: Windows x64
+            platform: windows-latest
+            args: ""
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Linux system dependencies
+        if: matrix.platform == 'ubuntu-22.04'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf xdg-utils
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.17.1
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: pnpm
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+
+      - name: Cache Rust artifacts
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: ./src-tauri -> target
+
+      - name: Install frontend dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Import Apple signing certificate
+        if: matrix.platform == 'macos-latest'
+        env:
+          APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          CERTIFICATE_PATH="$RUNNER_TEMP/certificate.p12"
+          KEYCHAIN_PATH="$RUNNER_TEMP/build.keychain-db"
+
+          printf "%s" "$APPLE_CERTIFICATE" | base64 --decode > "$CERTIFICATE_PATH"
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security import "$CERTIFICATE_PATH" -P "$APPLE_CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+          security list-keychain -d user -s "$KEYCHAIN_PATH"
+          security default-keychain -s "$KEYCHAIN_PATH"
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+
+          CERT_IDENTITY="$(security find-identity -v -p codesigning "$KEYCHAIN_PATH" | awk -F '"' '/Developer ID Application/ { print $2; exit }')"
+          if [ -z "$CERT_IDENTITY" ]; then
+            CERT_IDENTITY="$(security find-identity -v -p codesigning "$KEYCHAIN_PATH" | awk -F '"' '/Apple Distribution/ { print $2; exit }')"
+          fi
+          if [ -z "$CERT_IDENTITY" ]; then
+            echo "No Developer ID Application or Apple Distribution signing identity found." >&2
+            security find-identity -v -p codesigning "$KEYCHAIN_PATH" >&2
+            exit 1
+          fi
+
+          echo "APPLE_SIGNING_IDENTITY=$CERT_IDENTITY" >> "$GITHUB_ENV"
+
+      - name: Import Windows signing certificate
+        if: matrix.platform == 'windows-latest'
+        env:
+          WINDOWS_CERTIFICATE: ${{ secrets.WINDOWS_CERTIFICATE }}
+          WINDOWS_CERTIFICATE_PASSWORD: ${{ secrets.WINDOWS_CERTIFICATE_PASSWORD }}
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path certificate
+          Set-Content -Path certificate/tempCert.txt -Value $env:WINDOWS_CERTIFICATE
+          certutil -decode certificate/tempCert.txt certificate/certificate.pfx
+          Remove-Item -Path certificate/tempCert.txt
+
+          $password = ConvertTo-SecureString -String $env:WINDOWS_CERTIFICATE_PASSWORD -Force -AsPlainText
+          $cert = Import-PfxCertificate -FilePath certificate/certificate.pfx -CertStoreLocation Cert:\CurrentUser\My -Password $password
+
+          if (-not $cert) {
+            throw "Windows signing certificate import failed."
+          }
+
+          "WINDOWS_CERTIFICATE_THUMBPRINT=$($cert.Thumbprint)" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Configure Windows code signing
+        if: matrix.platform == 'windows-latest'
+        env:
+          WINDOWS_TIMESTAMP_URL: ${{ secrets.WINDOWS_TIMESTAMP_URL }}
+        shell: pwsh
+        run: |
+          $timestampUrl = $env:WINDOWS_TIMESTAMP_URL
+          if ([string]::IsNullOrWhiteSpace($timestampUrl)) {
+            $timestampUrl = "http://timestamp.digicert.com"
+          }
+
+          $configPath = "src-tauri/tauri.conf.json"
+          $config = Get-Content -Raw -Path $configPath | ConvertFrom-Json
+
+          if ($null -eq $config.bundle.windows) {
+            $config.bundle | Add-Member -MemberType NoteProperty -Name windows -Value ([pscustomobject]@{})
+          }
+
+          $config.bundle.windows | Add-Member -MemberType NoteProperty -Name certificateThumbprint -Value $env:WINDOWS_CERTIFICATE_THUMBPRINT -Force
+          $config.bundle.windows | Add-Member -MemberType NoteProperty -Name digestAlgorithm -Value "sha256" -Force
+          $config.bundle.windows | Add-Member -MemberType NoteProperty -Name timestampUrl -Value $timestampUrl -Force
+
+          $config | ConvertTo-Json -Depth 100 | Set-Content -Path $configPath
+
+      - name: Build and publish Tauri bundles
+        uses: tauri-apps/tauri-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        with:
+          tagName: ${{ github.event_name == 'workflow_dispatch' && inputs.tagName || github.ref_name }}
+          releaseName: ZeroSort ${{ github.event_name == 'workflow_dispatch' && inputs.tagName || github.ref_name }}
+          releaseDraft: true
+          prerelease: false
+          generateReleaseNotes: true
+          args: ${{ matrix.args }}

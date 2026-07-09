@@ -1,0 +1,1326 @@
+{
+  "settings": {
+    "title": "الإعدادات",
+    "back": "رجوع",
+    "general": {
+      "title": "الإعدادات العامة",
+      "description": "يمكنك هنا ضبط إعدادات التطبيق الأساسية، بما في ذلك سمة الواجهة واللغة وخيارات أخرى.",
+      "interface": {
+        "title": "إعدادات الواجهة",
+        "theme": {
+          "title": "السمة",
+          "description": "اختر سمة مظهر التطبيق"
+        },
+        "themePreset": {
+          "title": "نظام الألوان",
+          "description": "اختر نظام ألوان جاهزا للتطبيق",
+          "default": "افتراضي",
+          "custom": "مخصص"
+        },
+        "language": {
+          "title": "اللغة",
+          "description": "اختر لغة عرض التطبيق"
+        },
+        "interfaceScale": {
+          "title": "مقياس الواجهة",
+          "description": "اضبط الحجم العام لواجهة التطبيق"
+        },
+        "contentScale": {
+          "title": "مقياس المحتوى",
+          "description": "اضبط حجم النص في المحرر ومحتوى Markdown في الدردشة",
+          "sizes": {
+            "sm": "صغير",
+            "base": "أساسي",
+            "lg": "كبير",
+            "xl": "كبير جدا",
+            "2xl": "كبير للغاية (2x)"
+          }
+        },
+        "codeWrap": {
+          "title": "تجاوز عرض كتلة التعليمات البرمجية",
+          "description": "اختر كيفية عرض الأسطر الطويلة في كتل التعليمات البرمجية",
+          "scroll": "تمرير",
+          "wrap": "التفاف"
+        },
+        "showFolderNoteCount": {
+          "title": "إظهار عدد الملاحظات في المجلد",
+          "description": "اعرض عدد الملاحظات بجانب أسماء المجلدات في الشريط الجانبي"
+        },
+        "showCharacterCount": {
+          "title": "إظهار عدد الأحرف",
+          "description": "اعرض عدد الأحرف والكلمات في المحرر"
+        }
+      },
+      "data": {
+        "title": "إدارة البيانات",
+        "import": {
+          "title": "استيراد مجلد Markdown",
+          "description": "استورد ملفات Markdown المتداخلة من مجلد محلي إلى ملاحظاتك.",
+          "success": "تم استيراد {{count}} ملاحظة بنجاح."
+        },
+        "importFiles": {
+          "title": "استيراد ملفات Markdown",
+          "description": "حدد ملف Markdown محليا واحدا أو أكثر لاستيراده مباشرة إلى ملاحظاتك.",
+          "success": "تم استيراد {{count}} ملف Markdown بنجاح."
+        },
+        "export": {
+          "title": "التصدير إلى Markdown",
+          "description": "صدر كل ملاحظاتك إلى مجلد محلي كملفات Markdown.",
+          "success": "تم تصدير {{count}} ملاحظة بنجاح."
+        },
+        "cleanupDirectories": {
+          "title": "مسح المجلدات الفارغة",
+          "description": "احذف المجلدات التي لا تحتوي على ملاحظات في أي مكان ضمن تفرعاتها.",
+          "action": "مسح",
+          "previewTitle": "حذف المجلدات الفارغة",
+          "previewDescription_zero": "لن يتم حذف أي مجلدات.",
+          "previewDescription_one": "سيتم حذف المجلد التالي.",
+          "previewDescription_other": "سيتم حذف المجلدات التالية وعددها {{count}}.",
+          "confirmAction": "حذف المجلدات",
+          "success_zero": "لم يتم العثور على مجلدات فارغة.",
+          "success_one": "تمت إزالة مجلد فارغ واحد.",
+          "success_other": "تمت إزالة {{count}} مجلدات فارغة.",
+          "error": "فشل مسح المجلدات الفارغة."
+        },
+        "cleanupTags": {
+          "title": "مسح الوسوم غير المستخدمة",
+          "description": "احذف الوسوم غير المرتبطة بأي ملاحظات.",
+          "action": "مسح",
+          "previewTitle": "حذف الوسوم غير المستخدمة",
+          "previewDescription_zero": "لن يتم حذف أي وسوم.",
+          "previewDescription_one": "سيتم حذف الوسم التالي.",
+          "previewDescription_other": "سيتم حذف الوسوم التالية وعددها {{count}}.",
+          "confirmAction": "حذف الوسوم",
+          "success_zero": "لم يتم العثور على وسوم غير مستخدمة.",
+          "success_one": "تمت إزالة وسم واحد غير مستخدم.",
+          "success_other": "تمت إزالة {{count}} وسوم غير مستخدمة.",
+          "error": "فشل مسح الوسوم غير المستخدمة."
+        }
+      }
+    },
+    "editor": {
+      "title": "المحرر",
+      "description": "خصص شريط أدوات المحرر عن طريق تفعيل مجموعات الأزرار أو تعطيلها.",
+      "toolbar": {
+        "title": "شريط الأدوات",
+        "history": {
+          "title": "السجل",
+          "description": "زرا التراجع والإعادة"
+        },
+        "headings": {
+          "title": "العناوين",
+          "description": "أزرار العنوان 1 و2 و3"
+        },
+        "formatting": {
+          "title": "التنسيق",
+          "description": "أزرار عريض ومائل وتسطير وشطب وتمييز ولون النص"
+        },
+        "lists": {
+          "title": "القوائم",
+          "description": "أزرار القائمة النقطية والقائمة المرقمة وقائمة المهام"
+        },
+        "block": {
+          "title": "عناصر الكتل",
+          "description": "أزرار الاقتباس والتعليمات البرمجية المضمنة وكتلة التعليمات البرمجية والخط الأفقي"
+        },
+        "insert": {
+          "title": "إدراج",
+          "description": "أزرار الرابط والجدول والرياضيات المضمنة وكتلة الرياضيات"
+        },
+        "tools": {
+          "title": "الذكاء الاصطناعي والرسم",
+          "description": "أزرار نسخ Markdown ومساعد الذكاء الاصطناعي وExcalidraw وMermaid"
+        }
+      }
+    },
+    "ai": {
+      "title": "إعدادات الذكاء الاصطناعي",
+      "apiKey": "مفتاح API",
+      "apiKeyPlaceholder": "أدخل مفتاح API الخاص بك...",
+      "apiKeyNotice": "يتم تخزين مفتاحك محليا على جهازك.",
+      "baseUrl": "عنوان URL الأساسي",
+      "modelName": "اسم النموذج",
+      "modelNamePlaceholder": "مثال: gemini-1.5-flash",
+      "models": "النماذج",
+      "saveSettings": "حفظ الإعدادات",
+      "savedSuccessfully": "تم حفظ إعدادات الذكاء الاصطناعي بنجاح",
+      "failedToSave": "فشل حفظ الإعدادات"
+    },
+    "theme": {
+      "licenseGate": {
+        "required": "يلزم ترخيص نشط",
+        "description": "يتطلب تخصيص السمة ترخيص ZeroSort نشطا. يرجى تفعيل ترخيصك لفتح هذه الميزة.",
+        "activateButton": "الانتقال إلى إعدادات الترخيص",
+        "featureLocked": "يتطلب تخصيص السمة ترخيصا نشطا"
+      },
+      "editingMode": {
+        "label": "وضع التحرير",
+        "light": "فاتح",
+        "dark": "داكن"
+      },
+      "tabs": {
+        "presets": "القوالب الجاهزة",
+        "colors": "الألوان",
+        "other": "أخرى"
+      },
+      "sections": {
+        "primaryColors": "الألوان الأساسية",
+        "secondaryColors": "الألوان الثانوية",
+        "accentColors": "ألوان التمييز",
+        "baseColors": "ألوان القاعدة",
+        "cardColors": "ألوان البطاقات",
+        "popoverColors": "ألوان النوافذ المنبثقة",
+        "mutedColors": "الألوان الخافتة",
+        "destructiveColors": "ألوان الإجراءات الخطرة",
+        "borderColors": "ألوان الحدود والإدخال",
+        "chartColors": "ألوان المخططات",
+        "sidebarColors": "ألوان الشريط الجانبي",
+        "hslAdjustments": "تعديلات HSL",
+        "radius": "نصف القطر",
+        "spacing": "التباعد",
+        "letterSpacing": "تباعد الأحرف",
+        "fonts": "الخطوط",
+        "shadow": "الظل"
+      }
+    },
+    "models": {
+      "title": "إدارة النماذج",
+      "modelSelect": "تحديد النموذج",
+      "description": "اضبط نماذج الذكاء الاصطناعي التي تشغل ZeroSort.",
+      "custom": "مخصص",
+      "providers": "المزودون",
+      "addNew": "إضافة جديد",
+      "noProviderSelected": "لم يتم تحديد مزود",
+      "selectOrCreate": "أنشئ مزودا جديدا أو اختر واحدا من الشريط الجانبي.",
+      "createProvider": "إنشاء مزود",
+      "createDescription": "أنشئ إعدادا جديدا باستخدام قالب المزود.",
+      "templates": "قوالب المزودين",
+      "addModel": "إضافة نموذج",
+      "editModel": "تحرير النموذج",
+      "modelName": "اسم النموذج",
+      "modelId": "معرف النموذج",
+      "familyGroup": "مجموعة العائلة",
+      "providerName": "اسم المزود",
+      "providerNamePlaceholder": "مثال: موفر مخصص خاص بي",
+      "testConnection": "اختبار الاتصال",
+      "testing": "جار الاختبار...",
+      "connectionSuccess": "تم الاتصال بنجاح",
+      "connectionFailed": "فشل الاتصال: {{error}}"
+    }
+  },
+  "common": {
+    "title": "العنوان",
+    "add": "إضافة",
+    "alreadyAdded": "تمت الإضافة بالفعل",
+    "english": "الإنجليزية",
+    "chinese": "الصينية",
+    "languages": {
+      "ar": "العربية",
+      "de": "الألمانية",
+      "en": "الإنجليزية",
+      "es": "الإسبانية",
+      "fr": "الفرنسية",
+      "it": "الإيطالية",
+      "ja": "اليابانية",
+      "ko": "الكورية",
+      "pt": "البرتغالية",
+      "ru": "الروسية",
+      "zh": "الصينية"
+    },
+    "tryAgain": "حاول مرة أخرى",
+    "home": "الرئيسية",
+    "goBack": "العودة",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "export": "تصدير",
+    "exporting": "جار التصدير...",
+    "import": "استيراد",
+    "importing": "جار الاستيراد...",
+    "loading": "جار التحميل...",
+    "cleaning": "جار التنظيف...",
+    "save": "حفظ",
+    "saving": "جار الحفظ...",
+    "close": "إغلاق",
+    "hide": "إخفاء",
+    "comingSoon": "قريبا",
+    "uncategorized": "غير مصنف",
+    "current": "الحالي",
+    "beforeUpdate": "قبل",
+    "afterUpdate": "بعد",
+    "on": "تشغيل",
+    "off": "إيقاف",
+    "showMore": "عرض المزيد",
+    "showLess": "عرض أقل",
+    "regenerating": "جار إعادة التوليد",
+    "tags": "الوسوم",
+    "sortBy": "الترتيب حسب",
+    "createdAt": "تاريخ الإنشاء",
+    "updatedAt": "تاريخ التحديث",
+    "months": {
+      "1": "يناير",
+      "2": "فبراير",
+      "3": "مارس",
+      "4": "أبريل",
+      "5": "مايو",
+      "6": "يونيو",
+      "7": "يوليو",
+      "8": "أغسطس",
+      "9": "سبتمبر",
+      "10": "أكتوبر",
+      "11": "نوفمبر",
+      "12": "ديسمبر"
+    },
+    "datePicker": {
+      "pickDate": "اختر تاريخا",
+      "clearFilter": "مسح فلتر التاريخ",
+      "modalTitle": "التصفية حسب التاريخ",
+      "noDateSelected": "لم يتم تحديد تاريخ",
+      "notesOnDate": "{{count}} ملاحظة في {{date}}"
+    }
+  },
+  "folder": {
+    "newFolder": "مجلد جديد",
+    "renameFolder": "إعادة تسمية المجلد",
+    "deleteFolder": "حذف المجلد",
+    "deleteConfirmation": "هل أنت متأكد أنك تريد حذف \"{{name}}\"؟",
+    "deleteWarning": "اختر ما تريد فعله بالملاحظات داخل هذا المجلد.",
+    "deleteOptionMoveToUncategorized": "نقل الملاحظات إلى غير مصنف",
+    "deleteOptionDeleteAll": "حذف كل الملاحظات نهائيا",
+    "folderName": "اسم المجلد",
+    "placeholder": "أدخل اسم المجلد...",
+    "create": "إنشاء مجلد",
+    "rename": "إعادة تسمية المجلد",
+    "addSubfolder": "إضافة مجلد فرعي",
+    "delete": "حذف",
+    "alreadyExists": "المجلد موجود بالفعل",
+    "moveFolder": "نقل المجلد",
+    "selectDestination": "تحديد الوجهة",
+    "root": "الجذر (المستوى الأعلى)",
+    "move": "نقل",
+    "noOtherFolders": "لا توجد مجلدات أخرى متاحة"
+  },
+  "note": {
+    "moveNote": "نقل الملاحظة",
+    "searchDirectories": "البحث في المجلدات...",
+    "noDirectoriesFound": "لم يتم العثور على مجلدات",
+    "deleted": "تم حذف الملاحظة",
+    "failedToDelete": "فشل حذف الملاحظة",
+    "deleteTitle": "حذف الملاحظة؟",
+    "deleteDescription": "لا يمكن التراجع عن هذا الإجراء. هل أنت متأكد أنك تريد حذف هذه الملاحظة؟",
+    "editorPlaceholder": "ابدأ الكتابة...",
+    "savedSuccessfully": "تم حفظ الملاحظة بنجاح",
+    "savedWithWarnings": "تم حفظ الملاحظة، لكن تعذر إكمال تنظيف بعض الصور",
+    "failedToSave": "فشل حفظ الملاحظة",
+    "hideSummary": "إخفاء الملخص",
+    "showSummary": "إظهار الملخص",
+    "summary": "الملخص",
+    "editTitle": "تحرير العنوان",
+    "created": "تم الإنشاء",
+    "updated": "تم التحديث",
+    "editSummary": "تحرير الملخص",
+    "editCreatedAt": "تحرير تاريخ الإنشاء",
+    "createdAtUpdated": "تم تحديث تاريخ الإنشاء",
+    "createdAtUpdatedWithWarnings": "تم تحديث تاريخ الإنشاء، لكن تعذر إكمال تنظيف بعض الصور",
+    "failedToUpdateCreatedAt": "فشل تحديث تاريخ الإنشاء",
+    "createdAtHour": "الساعة",
+    "createdAtMinute": "الدقيقة",
+    "createdAtSecond": "الثانية",
+    "createdAtHourPlaceholder": "HH",
+    "createdAtMinutePlaceholder": "MM",
+    "createdAtSecondPlaceholder": "SS",
+    "summaryPlaceholder": "أدخل الملخص...",
+    "unsavedChanges": "تغييرات غير محفوظة",
+    "unsavedChangesDescription": "لديك تغييرات غير محفوظة في ملاحظتك. هل تريد حفظها قبل الانتقال؟",
+    "saveAndContinue": "حفظ والمتابعة",
+    "discardChanges": "تجاهل التغييرات",
+    "regenerateTitle": "إعادة توليد العنوان",
+    "titleRegenerated": "تمت إعادة توليد العنوان",
+    "regenerateSummary": "إعادة توليد الملخص",
+    "summaryRegenerated": "تمت إعادة توليد الملخص",
+    "regenerateCatalog": "إعادة توليد هيكل المجلدات",
+    "catalogRegenerated": "تمت إعادة توليد هيكل المجلدات",
+    "regenerateTags": "إعادة توليد الوسوم",
+    "tagsRegenerated": "تمت إعادة توليد الوسوم",
+    "untitled": "بدون عنوان",
+    "sort": "ترتيب",
+    "regenerate": "إعادة توليد",
+    "regenerateAll": "إعادة توليد الكل",
+    "regenerateSelected": "إعادة توليد المحدد",
+    "selectToRegenerate": "حدد الحقول المراد إعادة توليدها",
+    "regeneratedSuccessfully": "تمت إعادة التوليد بنجاح",
+    "reviewChanges": "مراجعة التغييرات",
+    "applyChanges": "تطبيق التغييرات",
+    "discardRegeneration": "تجاهل",
+    "noChange": "لا تغيير",
+    "createNote": "إنشاء"
+  },
+  "links": {
+    "title": "الروابط"
+  },
+  "backlinks": {
+    "loading": "جار تحميل الروابط الخلفية...",
+    "empty": "لا توجد روابط خلفية بعد",
+    "hint": "ستظهر هنا الروابط التي تشير إلى هذه الملاحظة",
+    "title": "الروابط الخلفية",
+    "link": "رابط",
+    "links": "روابط",
+    "mention": "إشارة",
+    "mentions": "إشارات"
+  },
+  "outgoingLinks": {
+    "loading": "جار تحميل الروابط...",
+    "empty": "لا توجد روابط صادرة",
+    "hint": "استخدم [[عنوان الملاحظة]] للربط بملاحظات أخرى",
+    "title": "الروابط الصادرة",
+    "link": "رابط",
+    "links": "روابط",
+    "broken": "روابط معطلة",
+    "valid": "روابط صالحة",
+    "createNote": "إنشاء"
+  },
+  "wikiLinks": {
+    "noNotesFound": "لم يتم العثور على ملاحظات"
+  },
+  "notFound": {
+    "description": "الصفحة التي تبحث عنها غير موجودة.",
+    "startOver": "ابدأ من جديد"
+  },
+  "sidebar": {
+    "folders": "المجلدات",
+    "expandAll": "توسيع الكل",
+    "collapseAll": "طي الكل",
+    "showSidebar": "إظهار الشريط الجانبي",
+    "hideSidebar": "إخفاء الشريط الجانبي",
+    "searchPlaceholder": "البحث في الملاحظات والمجلدات...",
+    "tags": "الوسوم",
+    "clearTagFilters": "مسح فلاتر الوسوم",
+    "matchAll": "مطابقة الكل",
+    "matchAny": "مطابقة أي منها",
+    "noTags": "لا توجد وسوم بعد",
+    "manageTags": "إدارة الوسوم"
+  },
+  "tags": {
+    "title": "مدير الوسوم",
+    "filters": "الفلاتر النشطة",
+    "allTags": "كل الوسوم",
+    "create": "إنشاء وسم",
+    "rename": "إعادة تسمية",
+    "delete": "حذف",
+    "selectMultiple": "تحديد الوسوم",
+    "cancelSelection": "إلغاء",
+    "selectAll": "تحديد الكل",
+    "clearSelection": "مسح التحديد",
+    "selectedCount": "تم تحديد {{count}}",
+    "selectedCount_other": "تم تحديد {{count}}",
+    "deleteSelected": "حذف المحدد",
+    "deleteSelectedConfirm": "حذف {{count}} وسم محدد؟ ستتم إزالته من كل الملاحظات.",
+    "deleteSelectedConfirm_other": "حذف {{count}} وسوم محددة؟ ستتم إزالتها من كل الملاحظات.",
+    "deleteConfirm": "حذف هذا الوسم؟ ستتم إزالته من كل الملاحظات.",
+    "color": "اللون",
+    "noTags": "لا توجد وسوم بعد. أنشئ واحدا للبدء.",
+    "namePlaceholder": "اسم الوسم...",
+    "noteCount": "{{count}} ملاحظة",
+    "noteCount_other": "{{count}} ملاحظات",
+    "searchPlaceholder": "البحث في الوسوم...",
+    "dateFilter": "عرض الوسوم من {{date}}"
+  },
+  "home": {
+    "tagline": "أنت تدوّن، والذكاء الاصطناعي يرتّب.",
+    "analyzing": "جار التحليل...",
+    "sorting": "جار التصنيف إلى فئات...",
+    "noNotes": "لا توجد ملاحظات بعد. ابدأ الإنشاء أدناه!",
+    "notesCount": "{{count}} ملاحظة",
+    "viewMode": {
+      "timeline": "المخطط الزمني"
+    }
+  },
+  "about": {
+    "title": "حول",
+    "version": "الإصدار",
+    "description": "ZeroSort هو تطبيق ملاحظات مدعوم بالذكاء الاصطناعي، صُمم لمساعدتك على تنظيم أفكارك بسهولة. دع التفكير لك، واترك للذكاء الاصطناعي مهمة التنظيم.",
+    "website": "الموقع الإلكتروني",
+    "websiteDesc": "زر موقعنا الرسمي للاطلاع على الأخبار والوثائق.",
+    "visitWebsite": "زر zerosort.app",
+    "updater": {
+      "title": "تحديثات التطبيق",
+      "description": "تحقق من إصدارات سطح المكتب الأحدث وثبتها دون مغادرة ZeroSort.",
+      "releaseNotes": "ملاحظات الإصدار",
+      "releaseDate": "تم النشر: {{date}}",
+      "actions": {
+        "check": "التحقق من وجود تحديثات",
+        "install": "تثبيت التحديث"
+      },
+      "status": {
+        "idle": "جاهز للتحقق من وجود تحديثات.",
+        "checking": "جار التحقق من وجود تحديثات...",
+        "upToDate": "أنت تستخدم أحدث إصدار بالفعل.",
+        "available": "الإصدار {{version}} جاهز للتثبيت.",
+        "availableUnknown": "يتوفر تحديث جديد.",
+        "downloading": "جار تنزيل حزمة التحديث...",
+        "installing": "جار تثبيت التحديث...",
+        "completed": "جار إعادة التشغيل لإكمال التحديث...",
+        "unsupported": "التحديثات متاحة فقط داخل تطبيق سطح المكتب."
+      },
+      "progress": {
+        "percent": "تم تنزيل {{percent}}%",
+        "unknown": "جار تنزيل التحديث..."
+      },
+      "toast": {
+        "upToDate": "ZeroSort محدث بالفعل.",
+        "available": "يتوفر التحديث {{version}}."
+      },
+      "errors": {
+        "network": "تعذر الوصول إلى خادم التحديثات. تحقق من اتصالك بالإنترنت وحاول مرة أخرى.",
+        "check": "فشل التحقق من وجود تحديثات.",
+        "install": "فشل تثبيت التحديث."
+      }
+    },
+    "footer": "© 2026 ZeroSort. جميع الحقوق محفوظة."
+  },
+  "editor": {
+    "undo": "تراجع",
+    "redo": "إعادة",
+    "heading1": "عنوان 1",
+    "heading2": "عنوان 2",
+    "heading3": "عنوان 3",
+    "bold": "عريض",
+    "italic": "مائل",
+    "underline": "تسطير",
+    "strikethrough": "شطب",
+    "bulletList": "قائمة نقطية",
+    "orderedList": "قائمة مرقمة",
+    "taskList": "قائمة مهام",
+    "indent": "زيادة المسافة البادئة",
+    "outdent": "تقليل المسافة البادئة",
+    "quote": "اقتباس",
+    "inlineCode": "تعليمات برمجية مضمنة",
+    "codeBlock": "كتلة تعليمات برمجية",
+    "horizontalRule": "خط أفقي",
+    "link": "رابط",
+    "insertLink": "إدراج رابط",
+    "removeLink": "إزالة الرابط",
+    "insertTable": "جدول",
+    "image": "صورة",
+    "insertImage": "إدراج صورة",
+    "editImage": "تحرير الصورة",
+    "imageFromUrl": "من URL",
+    "imageFromFile": "من ملف",
+    "imageUrl": "عنوان URL للصورة",
+    "imageSelectFile": "تحديد ملف صورة",
+    "imageChooseFile": "اختيار ملف",
+    "imageDropHere": "أفلت الصورة هنا",
+    "imageDropHint": "اسحب صورة محلية وأفلتها في هذه المنطقة",
+    "imageFileLimit": "الحد الأقصى لحجم الملف: 5 ميغابايت",
+    "imageFileTooLarge": "يجب أن يكون حجم الصورة 5 ميغابايت أو أقل.",
+    "imageFileReadFailed": "فشلت قراءة ملف الصورة.",
+    "imageFileSaveFailed": "فشل حفظ ملف الصورة.",
+    "imageAlt": "النص البديل (اختياري)",
+    "deleteImage": "حذف الصورة",
+    "displayInline": "مضمن",
+    "displayBlock": "كتلة",
+    "moreActions": "مزيد من الإجراءات",
+    "copyMarkdown": "نسخ كـ Markdown",
+    "copiedMarkdown": "تم نسخ Markdown الخاص بالملاحظة إلى الحافظة",
+    "aiAssistant": "مساعد الذكاء الاصطناعي",
+    "aiModeOffLabel": "الذكاء الاصطناعي متوقف",
+    "aiModeSelectionLabel": "التحديد",
+    "aiModeAskAiLabel": "اسأل الذكاء الاصطناعي",
+    "aiModeSelection": "الذكاء الاصطناعي: وضع التحديد (انقر للتبديل)",
+    "aiModeAskAi": "الذكاء الاصطناعي: وضع سؤال الذكاء الاصطناعي (انقر للتبديل)",
+    "inlineMath": "رياضيات مضمنة",
+    "blockMath": "كتلة رياضيات",
+    "enterLatex": "أدخل تعبير LaTeX:",
+    "highlight": "تمييز",
+    "textColor": "لون النص",
+    "removeColor": "إزالة اللون",
+    "applyColor": "تطبيق",
+    "excalidraw": {
+      "insert": "رسم Excalidraw",
+      "placeholder": "انقر في الزاوية العلوية اليسرى لبدء الرسم",
+      "edit": "تحرير",
+      "done": "تم",
+      "copy": "نسخ كتلة الرسم",
+      "copied": "تم نسخ كتلة الرسم إلى الحافظة",
+      "delete": "حذف الرسم",
+      "loading": "جار تحميل الرسم..."
+    },
+    "markmap": {
+      "zoomIn": "تكبير",
+      "zoomOut": "تصغير",
+      "fit": "ملاءمة للعرض",
+      "copy": "نسخ كتلة الخريطة الذهنية",
+      "copied": "تم نسخ كتلة الخريطة الذهنية إلى الحافظة",
+      "delete": "حذف الخريطة الذهنية"
+    },
+    "mermaid": {
+      "insert": "مخطط Mermaid",
+      "edit": "تحرير",
+      "preview": "معاينة",
+      "zoomIn": "تكبير",
+      "zoomOut": "تصغير",
+      "fit": "ملاءمة للعرض",
+      "copy": "نسخ كتلة المخطط",
+      "copied": "تم نسخ كتلة المخطط إلى الحافظة",
+      "delete": "حذف المخطط"
+    },
+    "chart": {
+      "copy": "نسخ كتلة المخطط البياني",
+      "copied": "تم نسخ كتلة المخطط البياني إلى الحافظة"
+    },
+    "calendar": {
+      "insert": "تقويم",
+      "blockLabel": "تقويم",
+      "copy": "نسخ كتلة التقويم",
+      "copied": "تم نسخ كتلة التقويم إلى الحافظة",
+      "delete": "حذف التقويم",
+      "resize": "تغيير حجم التقويم",
+      "previousMonth": "الشهر السابق",
+      "nextMonth": "الشهر التالي",
+      "newEvent": "حدث جديد",
+      "add": "إضافة",
+      "selectedDate": "التاريخ المحدد",
+      "titlePlaceholder": "عنوان الحدث",
+      "descriptionPlaceholder": "ملاحظات",
+      "allDay": "طوال اليوم",
+      "noEvents": "لا توجد أحداث لهذا التاريخ",
+      "deleteEvent": "حذف الحدث",
+      "weekDays": {
+        "sun": "الأحد",
+        "mon": "الاثنين",
+        "tue": "الثلاثاء",
+        "wed": "الأربعاء",
+        "thu": "الخميس",
+        "fri": "الجمعة",
+        "sat": "السبت"
+      },
+      "colors": {
+        "blue": "أزرق",
+        "green": "أخضر",
+        "yellow": "أصفر",
+        "pink": "وردي",
+        "purple": "بنفسجي",
+        "orange": "برتقالي",
+        "red": "أحمر",
+        "teal": "تركوازي",
+        "indigo": "نيلي"
+      }
+    },
+    "copyFailed": "فشل النسخ إلى الحافظة",
+    "table": {
+      "addRowBefore": "إضافة صف أعلاه",
+      "addRowAfter": "إضافة صف أدناه",
+      "addColumnBefore": "إضافة عمود إلى اليسار",
+      "addColumnAfter": "إضافة عمود إلى اليمين",
+      "deleteRow": "حذف الصف",
+      "deleteColumn": "حذف العمود",
+      "mergeOrSplit": "دمج الخلايا أو تقسيمها",
+      "deleteTable": "حذف الجدول",
+      "createChart": "إنشاء مخطط بياني من الجدول"
+    },
+    "characterCount": {
+      "characters": "أحرف",
+      "words": "كلمات"
+    },
+    "kanban": {
+      "insert": "كانبان",
+      "blockLabel": "كانبان",
+      "copy": "نسخ لوحة كانبان",
+      "copied": "تم نسخ لوحة كانبان إلى الحافظة",
+      "delete": "حذف كانبان",
+      "resize": "تغيير حجم كانبان"
+    }
+  },
+  "ai": {
+    "prompts": {
+      "system": "أنت ZeroSort AI، مساعد بسيط لتنظيم الملاحظات.\nحلل إدخال المستخدم وأعد كائن JSON منظما.",
+      "input": "الإدخال:",
+      "content": "المحتوى:",
+      "contentBefore": "<Content>",
+      "contentAfter": "</Content>",
+      "regenerateTitle": "أعد توليد عنوان قصير وواضح (بحد أقصى 6 كلمات) لهذا المحتوى.",
+      "regenerateSummary": "أعد توليد ملخص/معاينة من جملتين إلى ثلاث جمل لهذا المحتوى.",
+      "regenerateCatalog": "أعد توليد هيكل المجلدات الهرمي لهذا المحتوى وأعده كمصفوفة نصية. لا يزيد عن 3 مستويات. على سبيل المثال: [\"العمل\", \"الاجتماعات\", \"الملخص\"] أو [\"شخصي\", \"وصفات\", \"سلطات\"]",
+      "regenerateTags": "اقترح وسوما ذات صلة بهذا المحتوى. أعد مصفوفة مسطحة من أسماء وسوم قصيرة ووصفية (من كلمة إلى 3 كلمات لكل منها). اقترح من 2 إلى 5 وسوم تلتقط الموضوعات الرئيسية.",
+      "existingDirectories": "لدى المستخدم بنية المجلدات التالية: {{directories}} \n\n يرجى تصنيف الملاحظة الحالية. يرجى اتباع هذا المنطق:\n 1. إذا كان محتوى الملاحظة يطابق موضوع مجلد موجود بشكل جيد، فصنفها مباشرة في ذلك المجلد الموجود.\n 2. إذا كانت الملاحظة تنتمي إلى مجال فرعي محدد ضمن مجلد موجود، يمكنك إنشاء مجلد فرعي جديد ضمن ذلك المجلد.\n 3. إذا كان موضوع الملاحظة غير مرتبط بأي مجلد موجود، فلا تجبره على الدخول في مجلد موجود. يجب عليك إنشاء مجلد جذري جديد ومستقل تماما له.",
+      "schema": {
+        "title": "اسم قصير وواضح للملاحظة (بحد أقصى 6 كلمات).",
+        "catalog": "هيكل مجلدات موجز كمصفوفة نصية لهذا المحتوى. لا يزيد عن 3 مستويات. على سبيل المثال: [\"العمل\", \"الاجتماعات\", \"الملخص\"] أو [\"شخصي\", \"وصفات\", \"سلطات\"]",
+        "summary": "معاينة من جملتين إلى ثلاث جمل لبطاقة الملاحظة.",
+        "tags": "مصفوفة من أسماء وسوم قصيرة ووصفية (من كلمة إلى 3 كلمات لكل منها، من 2 إلى 5 وسوم) تلتقط الموضوعات الرئيسية للملاحظة."
+      }
+    },
+    "enabled": "الذكاء الاصطناعي مفعل",
+    "disabled": "الذكاء الاصطناعي معطل",
+    "includeExistingDirs": "استخدام المجلدات كمرجع",
+    "includeExistingDirsTooltip": "الاستناد إلى بنية المجلدات الموجودة",
+    "noModelSelected": "يرجى تحديد نموذج ذكاء اصطناعي في الإعدادات.",
+    "requestFailed": "فشل طلب الذكاء الاصطناعي. يرجى المحاولة مرة أخرى بعد التحقق من إعدادات النموذج."
+  },
+  "aiMenu": {
+    "editWithAi": "التحرير بالذكاء الاصطناعي",
+    "placeholder": "اسأل الذكاء الاصطناعي أي شيء...",
+    "send": "إرسال",
+    "preview": "استجابة الذكاء الاصطناعي",
+    "mindmapPreview": "خريطة ذهنية",
+    "mermaidPreview": "مخطط Mermaid",
+    "chartPreview": "مخطط بياني",
+    "insertBelow": "إدراج أدناه",
+    "insertMindmap": "إدراج خريطة ذهنية",
+    "insertMermaid": "إدراج مخطط",
+    "insertChart": "إدراج مخطط بياني",
+    "mindmapInserted": "تم إدراج الخريطة الذهنية",
+    "mermaidInserted": "تم إدراج المخطط",
+    "chartInserted": "تم إدراج المخطط البياني",
+    "chartParseError": "فشل تحليل بيانات المخطط البياني",
+    "copy": "نسخ النتيجة",
+    "copied": "تم النسخ إلى الحافظة",
+    "discard": "تجاهل",
+    "useFullContext": "استخدام المستند الكامل كسياق",
+    "sections": {
+      "suggested": "مقترح",
+      "charts": "المخططات البيانية",
+      "edit": "تحرير"
+    },
+    "actions": {
+      "improve": "تحسين الكتابة",
+      "proofread": "التدقيق اللغوي",
+      "explain": "شرح",
+      "translate": "ترجمة إلى",
+      "longer": "اجعله أطول",
+      "shorter": "اجعله أقصر",
+      "tone": "تغيير النبرة",
+      "simplify": "تبسيط اللغة",
+      "mindmap": "إنشاء خريطة ذهنية",
+      "mermaid": "إنشاء Mermaid",
+      "chart": "إنشاء مخطط بياني"
+    },
+    "languages": {
+      "arabic": "العربية",
+      "english": "الإنجليزية",
+      "chinese": "الصينية",
+      "italian": "الإيطالية",
+      "korean": "الكورية",
+      "portuguese": "البرتغالية",
+      "russian": "الروسية",
+      "spanish": "الإسبانية",
+      "french": "الفرنسية",
+      "german": "الألمانية",
+      "japanese": "اليابانية"
+    },
+    "chartTypes": {
+      "line": "مخطط خطي",
+      "bar": "مخطط شريطي",
+      "pie": "مخطط دائري",
+      "radar": "مخطط راداري",
+      "bubble": "مخطط فقاعي"
+    },
+    "tones": {
+      "professional": "احترافية",
+      "casual": "عفوية",
+      "friendly": "ودية",
+      "confident": "واثقة",
+      "formal": "رسمية"
+    },
+    "generating": "جار التوليد...",
+    "loading": "الذكاء الاصطناعي يفكر...",
+    "success": "تم تحديث النص",
+    "errors": {
+      "noSelection": "يرجى تحديد بعض النص أولا",
+      "failed": "فشل طلب الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.",
+      "emptyResponse": "أعاد الذكاء الاصطناعي استجابة فارغة"
+    },
+    "prompts": {
+      "contextPrefix": "إليك المستند الكامل كسياق:\n\n{{fullDocument}}\n\n---\n\nوالآن، مع التركيز على الجزء المحدد التالي:\n\n",
+      "improve": "{{contextPrefix}}حسن النص التالي مع الحفاظ على معناه. أعد النص المحسن فقط، دون شروحات:\n\n{{text}}",
+      "proofread": "{{contextPrefix}}دقق النص التالي وأصلح أي أخطاء نحوية أو إملائية أو في علامات الترقيم. أعد النص المصحح فقط:\n\n{{text}}",
+      "translate": "{{contextPrefix}}ترجم النص التالي إلى {{option}}. أعد الترجمة فقط:\n\n{{text}}",
+      "longer": "{{contextPrefix}}وسع النص التالي بمزيد من التفاصيل مع الحفاظ على المعنى نفسه. أعد النص الموسع فقط:\n\n{{text}}",
+      "shorter": "{{contextPrefix}}اجعل النص التالي أكثر إيجازا مع الحفاظ على معناه. أعد النص المختصر فقط:\n\n{{text}}",
+      "tone": "{{contextPrefix}}أعد صياغة النص التالي بنبرة {{option}}. أعد النص المعاد صياغته فقط:\n\n{{text}}",
+      "simplify": "{{contextPrefix}}بسط النص التالي ليصبح أسهل فهما. أعد النص المبسط فقط:\n\n{{text}}",
+      "explain": "{{contextPrefix}}اشرح النص التالي بعبارات بسيطة. قدم شرحا واضحا وموجزا:\n\n{{text}}",
+      "mindmap": "حول النص التالي إلى بنية خريطة ذهنية هرمية باستخدام markdown. استخدم العناوين (##، ###) للموضوعات الرئيسية والنقاط المتداخلة (-) للموضوعات الفرعية. اجعله موجزا ومنظما جيدا. أعد markdown فقط، دون شروحات:\n\n{{text}}",
+      "mermaid": "حول النص التالي إلى مخطط Mermaid. اختر نوع المخطط الأنسب (flowchart أو sequence أو class أو state أو ER أو gantt أو pie). أعد صيغة Mermaid صالحة فقط - دون أسوار تعليمات برمجية markdown ودون شروحات، فقط كود Mermaid الخام. ابدأ بالكلمة المفتاحية لنوع المخطط (مثل graph TD أو sequenceDiagram أو classDiagram وما إلى ذلك):\n\n{{text}}",
+      "custom": "{{contextPrefix}}{{option}}\n\nالنص المطلوب العمل عليه:\n{{text}}",
+      "chart": {
+        "base": "حلل النص التالي واستخرج البيانات الرقمية لإنشاء إعداد مخطط Chart.js من نوع {{chartType}}. أعد كائن JSON صالحا فقط (دون أسوار markdown ودون شروحات، فقط JSON خام). يجب أن يتضمن JSON حقلا باسم \"type\" مضبوطا على \"{{chartType}}\". استخدم تسميات وصفية مشتقة من النص. إذا كانت هناك عدة سلاسل بيانات، فأنشئ عدة datasets بألوان مختلفة. {{colorsHint}}"
+      }
+    }
+  },
+  "proFeatures": {
+    "licenseGate": {
+      "required": "مطلوب مفتاح ترخيص نشط",
+      "description": "{{feature}} ميزة Pro. فعّل مفتاح ترخيص ZeroSort لفتحها.",
+      "activateButton": "الانتقال إلى إعدادات الترخيص",
+      "featureLocked": "تتطلب {{feature}} مفتاح ترخيص نشطا",
+      "featureTooltip": "تتطلب {{feature}} Pro"
+    }
+  },
+  "askAi": {
+    "title": "اسأل الذكاء الاصطناعي",
+    "placeholder": "اسأل أي شيء... اكتب @ للإشارة إلى الملاحظات المفتوحة",
+    "mentionHint": "اضغط @ للإشارة إلى الملاحظات المفتوحة كسياق",
+    "contextPrefix": "إليك بعض الملاحظات كسياق:",
+    "pickLocation": "انقر في المحرر لإدراج الاستجابة",
+    "insertInNote": "إدراج في الملاحظة",
+    "insertResponse": "إدراج هذه الاستجابة",
+    "inserted": "تم الإدراج",
+    "newChat": "محادثة جديدة",
+    "noOpenNotes": "لا توجد ملاحظات مفتوحة للإشارة إليها",
+    "noMatchingNotes": "لم يتم العثور على ملاحظات مطابقة"
+  },
+  "license": {
+    "title": "الترخيص",
+    "description": "إدارة ترخيص برنامج ZeroSort الخاص بك.",
+    "status": "حالة الترخيص",
+    "active": "نشط",
+    "inactive": "لا يوجد ترخيص",
+    "invalid": "ترخيص غير صالح",
+    "machineId": "معرف الجهاز",
+    "machineIdCopied": "تم نسخ معرف الجهاز إلى الحافظة",
+    "activate": "تفعيل الترخيص",
+    "activatePlaceholder": "الصق مفتاح الترخيص هنا...",
+    "activateButton": "تفعيل",
+    "purchaseLink": "احصل على مفتاح ترخيص",
+    "activateSuccess": "تم تفعيل الترخيص بنجاح",
+    "deactivate": "إلغاء تفعيل الترخيص",
+    "deactivateConfirm": "هل أنت متأكد أنك تريد إلغاء تفعيل ترخيصك؟",
+    "deactivateSuccess": "تم إلغاء تفعيل الترخيص",
+    "errors": {
+      "invalidSignature": "مفتاح ترخيص غير صالح - فشل التحقق من التوقيع",
+      "expired": "انتهت صلاحية مفتاح الترخيص",
+      "hardwareMismatch": "هذا الترخيص غير صالح لهذا الجهاز",
+      "clockTampered": "تم اكتشاف تلاعب بساعة النظام. يرجى تصحيح وقت النظام.",
+      "activationFailed": "فشل تفعيل الترخيص"
+    }
+  },
+  "sync": {
+    "title": "المزامنة السحابية",
+    "description": "زامن ملاحظاتك مع تخزين متوافق مع S3 للنسخ الاحتياطي والوصول من عدة أجهزة.",
+    "connected": "تم الاتصال بنجاح",
+    "notConnected": "غير متصل بـ S3",
+    "connect": "اتصل",
+    "disconnect": "قطع الاتصال",
+    "upload": "رفع إلى السحابة",
+    "download": "تنزيل من السحابة",
+    "uploadSuccess": "تم رفع النسخة الاحتياطية بنجاح",
+    "downloadSuccess": "تم تنزيل النسخة الاحتياطية بنجاح",
+    "syncing": "جار المزامنة...",
+    "connecting": "جار الاتصال...",
+    "restoring": "جار استعادة الاتصال...",
+    "lastSync": "آخر مزامنة: {{time}}",
+    "never": "أبدا",
+    "syncNow": "مزامنة",
+    "preview": "معاينة",
+    "syncComplete": "اكتملت المزامنة: تم رفع {{uploaded}} وتنزيل {{downloaded}}",
+    "recoveryComplete": "اكتملت الاستعادة من البعيد",
+    "refreshPartialTags": "اكتملت المزامنة، لكن تعذر تحديث الوسوم.",
+    "refreshFailed": "اكتملت المزامنة، لكن تعذر تحديث البيانات المحلية. أعد تحميل التطبيق لرؤية أحدث التغييرات.",
+    "blockedBySafety": "تم حظر المزامنة بسبب فحوصات السلامة",
+    "recovery": {
+      "title": "يوصى بالاستعادة من البعيد",
+      "description": "اكتشف ZeroSort أن حالة المزامنة المحلية لديك فارغة بشكل غير متوقع. استعد من النسخة البعيدة لإعادة بناء البيانات المحلية دون حذف بيانات السحابة.",
+      "action": "استعادة من النسخة البعيدة"
+    },
+    "safetyDialog": {
+      "common": {
+        "totalItems": "إجمالي العناصر",
+        "confirm": "المتابعة على أي حال",
+        "cancel": "إلغاء المزامنة",
+        "close": "إغلاق"
+      },
+      "deletion": {
+        "title": "تم اكتشاف معدل حذف مرتفع",
+        "description": "سيتم حذف {{count}} من أصل {{total}} عنصر ({{percentage}}%)، وهو ما يتجاوز حد السلامة البالغ {{threshold}}%. قد يشير ذلك إلى مشكلة في الإعداد أو فقدان بيانات غير مقصود.",
+        "localDeletes": "عمليات حذف محلية",
+        "remoteDeletes": "عمليات حذف بعيدة"
+      },
+      "unsafe": {
+        "title": "تم حظر المزامنة بسبب حالة محلية غير آمنة",
+        "description": "لا يزال هناك {{count}} عنصر مُدار مشار إليه محليا، لكن ZeroSort لم يتمكن من التحقق من ملفه المحلي. تم حظر المزامنة لمنع فقدان البيانات غير المقصود.",
+        "unsafeItems": "عناصر غير آمنة",
+        "details": "التفاصيل"
+      }
+    },
+    "noChanges": "لا توجد تغييرات للمزامنة",
+    "phase": {
+      "idle": "جاهز",
+      "connecting": "جار الاتصال...",
+      "collecting": "جار جمع البيانات...",
+      "planning": "جار تخطيط التغييرات...",
+      "executing": "جار المزامنة...",
+      "directories": "جار تجهيز المجلدات والوسوم...",
+      "uploading": "جار رفع التغييرات...",
+      "downloading": "جار تنزيل التغييرات...",
+      "deleting": "جار إزالة العناصر القديمة...",
+      "cleanup": "جار إنهاء المزامنة...",
+      "completing": "جار إكمال المزامنة..."
+    },
+    "progress": {
+      "preparing": "جار تجهيز المزامنة..."
+    },
+    "preview_section": {
+      "title": "معاينة المزامنة",
+      "uploads": "للرفع",
+      "downloads": "للتنزيل",
+      "deletes": "للحذف محليا",
+      "remoteDeletes": "للحذف عن بعد",
+      "conflicts": "تعارضات",
+      "unsafe": "عناصر محظورة",
+      "unchanged": "دون تغيير"
+    },
+    "configuration": {
+      "title": "إعداد S3",
+      "label": "اسم الاتصال",
+      "labelPlaceholder": "نسخة S3 الاحتياطية الخاصة بي",
+      "bucketName": "اسم الحاوية",
+      "bucketPlaceholder": "أدخل اسم الحاوية...",
+      "accessKeyId": "معرف مفتاح الوصول",
+      "secretAccessKey": "مفتاح الوصول السري",
+      "region": "المنطقة",
+      "regionPlaceholder": "us-east-1",
+      "endpointUrl": "عنوان URL لنقطة النهاية",
+      "endpointPlaceholder": "https://s3.{region}.amazonaws.com أو نقطة النهاية المخصصة لديك"
+    },
+    "concurrency": {
+      "title": "التوازي في المزامنة",
+      "description": "عدد العمليات المتوازية أثناء المزامنة. القيم الأعلى تجعل المزامنة أسرع، لكنها تستخدم عرض نطاق أكبر."
+    },
+    "encryption": {
+      "title": "كلمة مرور التشفير",
+      "description": "كلمة المرور المستخدمة لتشفير ملاحظاتك قبل رفعها إلى السحابة. احتفظ بهذه الكلمة في مكان آمن - ستحتاج إليها لفك تشفير بياناتك.",
+      "configured": "تم تعيين كلمة مرور التشفير",
+      "notConfigured": "غير مهيأة - لن تعمل المزامنة",
+      "password": "كلمة المرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "mismatch": "كلمتا المرور غير متطابقتين",
+      "tooShort": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+      "saved": "تم حفظ كلمة مرور التشفير",
+      "changeWarning": "سيؤدي تغيير كلمة مرورك إلى طلب إعادة مزامنة كاملة لكل الملاحظات",
+      "configure": "تهيئة",
+      "change": "تغيير"
+    },
+    "buckets": {
+      "title": "تحديد الحاوية",
+      "refresh": "تحديث",
+      "noBuckets": "لم يتم العثور على حاويات",
+      "createBucket": "أنشئ حاوية في وحدة تحكم S3 أولا"
+    },
+    "errors": {
+      "connectionFailed": "فشل الاتصال بـ S3",
+      "uploadFailed": "فشل رفع النسخة الاحتياطية",
+      "downloadFailed": "فشل تنزيل النسخة الاحتياطية",
+      "noBackups": "لم يتم العثور على نسخ احتياطية في الحاوية"
+    },
+    "licenseGate": {
+      "required": "يلزم ترخيص نشط",
+      "description": "تتطلب المزامنة السحابية ترخيص ZeroSort نشطا. يرجى تفعيل ترخيصك لفتح هذه الميزة.",
+      "activateButton": "الانتقال إلى إعدادات الترخيص",
+      "featureLocked": "تتطلب المزامنة السحابية ترخيصا نشطا"
+    }
+  },
+  "batch": {
+    "multiSelect": "تحديد متعدد",
+    "selectMonth": "تحديد كل الملاحظات في هذا الشهر",
+    "deselectMonth": "إلغاء تحديد كل الملاحظات في هذا الشهر",
+    "selectedCount": "تم تحديد {{count}}",
+    "regenerate": "إعادة توليد",
+    "regenerateTooltip": "إعادة توليد الحقول للملاحظات المحددة",
+    "dialogTitle": "إعادة توليد دفعي",
+    "dialogDescription": "اختر الحقول التي تريد إعادة توليدها لـ {{count}} ملاحظة محددة.",
+    "startRegeneration": "إعادة توليد {{count}} ملاحظة",
+    "alreadyRunning": "هناك مهمة دفعية قيد التشغيل بالفعل",
+    "inProgress": "جار إعادة التوليد...",
+    "cancelledTitle": "تم الإلغاء",
+    "completedTitle": "اكتمل",
+    "progress": "{{completed}} / {{total}}",
+    "failedCount": "فشل {{count}}",
+    "processing": "جار المعالجة: {{title}}",
+    "processingMultiple": "جار معالجة {{count}} ملاحظة...",
+    "stop": "إيقاف",
+    "completed": "تمت إعادة توليد {{count}} ملاحظة بنجاح",
+    "completedWithErrors": "تمت إعادة توليد {{completed}} ملاحظة، وفشل {{failed}}",
+    "cancelled": "تم الإلغاء - تمت إعادة توليد {{completed}} من أصل {{total}} ملاحظة",
+    "concurrency": "التزامن",
+    "concurrencyDescription": "عدد الملاحظات التي تتم معالجتها في الوقت نفسه"
+  },
+  "event-calendar": {
+    "app": {
+      "title": "تقويم الأحداث"
+    },
+    "language": {
+      "select": "اختيار اللغة"
+    },
+    "theme": {
+      "toggle": "تبديل السمة"
+    },
+    "nav": {
+      "previousPeriod": "الفترة السابقة",
+      "nextPeriod": "الفترة التالية"
+    },
+    "controls": {
+      "selectDay": "اختيار اليوم",
+      "selectMonth": "اختيار الشهر",
+      "selectYear": "اختيار السنة"
+    },
+    "view": {
+      "day": "يوم",
+      "week": "أسبوع",
+      "month": "شهر",
+      "year": "سنة"
+    },
+    "display": {
+      "calendar": "عرض التقويم",
+      "list": "عرض القائمة",
+      "switchToCalendar": "التبديل إلى عرض التقويم",
+      "switchToList": "التبديل إلى عرض القائمة"
+    },
+    "period": {
+      "today": "اليوم",
+      "tomorrow": "غدًا",
+      "thisWeek": "هذا الأسبوع",
+      "thisMonth": "هذا الشهر",
+      "thisYear": "هذه السنة"
+    },
+    "time": {
+      "twelveHour": "12 ساعة",
+      "twentyFourHour": "24 ساعة"
+    },
+    "filters": {
+      "filter": "تصفية",
+      "byColor": "تصفية حسب اللون"
+    },
+    "actions": {
+      "add": "إضافة",
+      "addEvent": "إضافة حدث",
+      "cancel": "إلغاء",
+      "confirm": "تأكيد",
+      "createEvent": "إنشاء حدث",
+      "delete": "حذف",
+      "reset": "إعادة ضبط",
+      "saveEvent": "حفظ الحدث"
+    },
+    "notice": {
+      "created": "تم إنشاء الحدث",
+      "updated": "تم تحديث الحدث",
+      "deleted": "تم حذف الحدث"
+    },
+    "calendar": {
+      "allDay": "طوال اليوم",
+      "allDayCompact": "طوال اليوم",
+      "createEventAt": "إنشاء حدث في {{time}}",
+      "createEventOn": "إنشاء حدث في {{date}}",
+      "currentTime": "الوقت الحالي: {{time}}",
+      "eventCount_zero": "{{count}} حدث",
+      "eventCount_one": "{{count}} حدث",
+      "eventCount_two": "{{count}} حدثان",
+      "eventCount_few": "{{count}} أحداث",
+      "eventCount_many": "{{count}} حدثًا",
+      "eventCount_other": "{{count}} حدث",
+      "fullDayEvents_zero": "أحداث طوال اليوم ({{count}})",
+      "fullDayEvents_one": "حدث طوال اليوم ({{count}})",
+      "fullDayEvents_two": "حدثان طوال اليوم ({{count}})",
+      "fullDayEvents_few": "أحداث طوال اليوم ({{count}})",
+      "fullDayEvents_many": "أحداث طوال اليوم ({{count}})",
+      "fullDayEvents_other": "أحداث طوال اليوم ({{count}})",
+      "moreEvents_zero": "+{{count}} إضافية",
+      "moreEvents_one": "+{{count}} إضافي",
+      "moreEvents_two": "+{{count}} إضافيان",
+      "moreEvents_few": "+{{count}} إضافية",
+      "moreEvents_many": "+{{count}} إضافية",
+      "moreEvents_other": "+{{count}} إضافية",
+      "selectedTime": "الوقت المحدد: {{time}}"
+    },
+    "dialog": {
+      "addEvent": "إضافة حدث",
+      "allDayEvent": "حدث طوال اليوم",
+      "color": "اللون",
+      "description": "الوصف",
+      "descriptionPlaceholder": "أضف ملاحظات أو جدول أعمال أو تفاصيل",
+      "editEvent": "تعديل الحدث",
+      "endDate": "تاريخ الانتهاء",
+      "endTime": "وقت الانتهاء",
+      "eventTitle": "عنوان الحدث",
+      "eventTitlePlaceholder": "أدخل عنوان الحدث",
+      "invalidEndTime": "لا يمكن أن يكون وقت الانتهاء قبل وقت البدء.",
+      "startDate": "تاريخ البدء",
+      "startTime": "وقت البدء"
+    },
+    "list": {
+      "emptyHint": "جرّب تعديل عوامل التصفية أو إضافة حدث جديد",
+      "noEvents": "لم يتم العثور على أحداث"
+    },
+    "colors": {
+      "blue": "أزرق",
+      "green": "أخضر",
+      "indigo": "نيلي",
+      "orange": "برتقالي",
+      "pink": "وردي",
+      "purple": "بنفسجي",
+      "red": "أحمر",
+      "teal": "تركوازي",
+      "yellow": "أصفر"
+    },
+    "assistant": {
+      "confirmDeletion": "تأكيد الحذف",
+      "notConfigured": "يرجى تحديد نموذج ذكاء اصطناعي في الإعدادات.",
+      "serviceUnavailable": "تعذر عليّ الوصول إلى خدمة الذكاء الاصطناعي الآن: {{error}}",
+      "processingFailed": "تعذر عليّ معالجة ذلك الآن: {{error}}",
+      "tryAgain": "يرجى المحاولة مرة أخرى.",
+      "unknownError": "خطأ غير معروف",
+      "noPendingConfirm": "لا توجد عملية معلقة للتأكيد.",
+      "deleteSuccess": "تم حذف {{eventCount}}.",
+      "deleteFailed": "تعذر حذف الأحداث: {{error}}",
+      "noPendingCancel": "لا توجد عملية معلقة للإلغاء.",
+      "deleteCanceled": "تم إلغاء الحذف.",
+      "unsupportedAction": "أعاد الذكاء الاصطناعي إجراءً غير مدعوم.",
+      "needsEventTitle": "يمكنني جدولة ذلك، لكنني أحتاج إلى تفصيل إضافي: ماذا تريد أن أسمّي الحدث؟",
+      "suggestMeeting": "اجتماع",
+      "suggestAppointment": "موعد",
+      "suggestFocusTime": "وقت تركيز",
+      "needsEventDate": "يمكنني جدولة ذلك، لكنني أحتاج إلى التاريخ أولًا. في أي يوم أضعه؟",
+      "needsEventTime": "أحتاج إلى تفصيل إضافي قبل أن أجدول ذلك: في أي وقت يجب أن يبدأ؟",
+      "suggestShowToday": "اعرض لي اليوم",
+      "suggestShowWeek": "اعرض لي هذا الأسبوع",
+      "needsEventReferenceUpdate": "يمكنني تحديث ذلك، لكنني أحتاج إلى معرفة الحدث الذي تقصده.",
+      "eventNotFoundUpdate": "لم أعد أستطيع العثور على ذلك الحدث. ما الحدث الذي يجب أن أحدّثه بدلًا منه؟",
+      "needsUpdateChange": "يمكنني مساعدتك في تحديثه، لكنني أحتاج إلى معرفة ما الذي يجب أن يتغير.",
+      "suggestMoveTomorrow": "انقله إلى الغد",
+      "suggestRename": "أعد تسميته",
+      "suggestChangeColor": "غيّر اللون",
+      "confirmDeleteWhichEvent": "قبل أن أحذف أي شيء، يُرجى تأكيد الحدث الذي يجب حذفه.",
+      "eventNotFoundDelete": "لم أتمكن من العثور على حدث مطابق لحذفه. أيّ حدث تقصد؟",
+      "listPair": "{{first}} و{{second}}",
+      "conflictWarning": "{{message}}\n\nتنبيه: هذا يتداخل مع {{eventNames}}{{extraInfo}}.",
+      "conflictWarningExtra": " و{{count}} أخرى",
+      "defaultPrompt": "يمكنني مساعدتك في تقويمك. ماذا تريد أن تفعل؟",
+      "allDay": "طوال اليوم",
+      "createdEventOnAllDay": "تم إنشاء \"{{title}}\" في {{date}}، {{allDay}}.",
+      "createdEventOnAtTime": "تم إنشاء \"{{title}}\" في {{date}} عند {{time}}.",
+      "createdEventFromTo": "تم إنشاء \"{{title}}\" من {{startDate}} إلى {{endDate}}.",
+      "queryFoundOnDate": "وجدت {{eventCount}} في {{date}}",
+      "queryFoundFromTo": "وجدت {{eventCount}} من {{dateFrom}} إلى {{dateTo}}",
+      "queryFoundThrough": "وجدت {{eventCount}} حتى {{date}}",
+      "queryFoundAny": "وجدت {{eventCount}}",
+      "eventDateTimeAllDay": "{{dateRange}}، {{allDay}}",
+      "eventDateTimeTimed": "{{dateRange}}، {{startTime}} - {{endTime}}",
+      "changeRenamed": "تمت إعادة تسميته إلى \"{{title}}\"",
+      "changeDescriptionUpdated": "تم تحديث الوصف",
+      "changeDescriptionCleared": "تم مسح الوصف",
+      "changeRescheduled": "تمت إعادة جدولته إلى {{date}} عند {{time}}",
+      "changeColor": "تم تغيير اللون إلى {{color}}",
+      "changeMarkedAllDay": "تم وضع علامة طوال اليوم",
+      "changeMarkedTimed": "تم وضع علامة كحدث بوقت محدد",
+      "updatedEvent": "تم تحديث \"{{title}}\": {{changes}}.",
+      "confirmDeleteSingle": "للتأكيد فقط، هل يجب أن أحذف \"{{title}}\" في {{date}}؟",
+      "confirmDeleteMultiple": "للتأكيد فقط، هل يجب أن أحذف هذه الأحداث: {{eventCount}}؟",
+      "eventOnDate": "{{title}} في {{date}}",
+      "emptyResultsForSearch": "لا أرى أي أحداث لهذا البحث.",
+      "emptyResultsFromTo": "لا أرى أي أحداث من {{dateFrom}} إلى {{dateTo}}.",
+      "emptyResultsFromToMatching": "لا أرى أي أحداث من {{dateFrom}} إلى {{dateTo}} تطابق \"{{searchTerm}}\".",
+      "emptyHint": "جرّب: \"حدد اجتماعًا غدًا الساعة 2 مساءً\" أو \"ماذا لدي في التقويم اليوم؟\"",
+      "emptyResultsMatching": "لا أرى أي أحداث تطابق \"{{searchTerm}}\".",
+      "emptyResultsOnDate": "لا أرى أي أحداث في {{date}}.",
+      "emptyResultsOnDateMatching": "لا أرى أي أحداث في {{date}} تطابق \"{{searchTerm}}\".",
+      "emptyResultsOnOrAfter": "لا أرى أي أحداث في {{date}} أو بعده.",
+      "emptyResultsOnOrAfterMatching": "لا أرى أي أحداث في {{date}} أو بعده تطابق \"{{searchTerm}}\".",
+      "emptyResultsThrough": "لا أرى أي أحداث حتى {{date}}.",
+      "emptyResultsThroughMatching": "لا أرى أي أحداث حتى {{date}} تطابق \"{{searchTerm}}\".",
+      "emptyTitle": "اطلب مني إدارة تقويمك",
+      "openAriaLabel": "فتح مساعد التقويم بالذكاء الاصطناعي",
+      "panelAriaLabel": "مساعد التقويم بالذكاء الاصطناعي",
+      "title": "مساعد التقويم بالذكاء الاصطناعي",
+      "subtitle": "إنشاء الأحداث وتحديثها وحذفها والعثور عليها",
+      "closeAriaLabel": "إغلاق مساعد الذكاء الاصطناعي",
+      "thinking": "أراجع تقويمك...",
+      "inputAriaLabel": "إرسال رسالة إلى مساعد التقويم بالذكاء الاصطناعي",
+      "placeholder": "اسأل عن تقويمك...",
+      "send": "إرسال"
+    }
+  },
+  "kanban": {
+    "app": {
+      "eyebrow": "لوحة المشروع"
+    },
+    "language": {
+      "label": "اللغة",
+      "ariaLabel": "تغيير اللغة"
+    },
+    "board": {
+      "ariaLabel": "لوحة كانبان",
+      "noCards": "لا توجد بطاقات"
+    },
+    "summary": {
+      "ariaLabel": "ملخص اللوحة",
+      "columns": "الأعمدة",
+      "cards": "البطاقات"
+    },
+    "priority": {
+      "urgent": "عاجلة",
+      "high": "عالية",
+      "medium": "متوسطة",
+      "low": "منخفضة"
+    },
+    "actions": {
+      "addColumn": "إضافة عمود",
+      "addCard": "إضافة بطاقة",
+      "cancel": "إلغاء",
+      "clear": "مسح",
+      "confirm": "تأكيد",
+      "deleteCard": "حذف {{title}}",
+      "deleteColumn": "حذف {{title}}",
+      "editCard": "تعديل {{title}}",
+      "editColumn": "تعديل {{title}}",
+      "reset": "إعادة تعيين",
+      "save": "حفظ",
+      "send": "إرسال الرسالة"
+    },
+    "dialogs": {
+      "deleteCard": "حذف \"{{title}}\"؟",
+      "deleteColumn_one": "حذف \"{{title}}\" وبطاقتها؟",
+      "deleteColumn_other": "حذف \"{{title}}\" و{{count}} بطاقات؟"
+    },
+    "forms": {
+      "assignee": "المسؤول",
+      "cardDescription": "وصف البطاقة",
+      "cardTitle": "عنوان البطاقة",
+      "cardTitlePlaceholder": "عنوان البطاقة",
+      "columnColor": "لون العمود",
+      "columnDescription": "وصف العمود",
+      "columnName": "اسم العمود",
+      "columnTitle": "عنوان العمود",
+      "description": "الوصف",
+      "dueDate": "تاريخ الاستحقاق",
+      "noDueDate": "بلا تاريخ استحقاق",
+      "priority": "الأولوية",
+      "tags": "الوسوم",
+      "useColor": "استخدام {{color}}"
+    },
+    "defaults": {
+      "newWorkflowStage": "مرحلة سير عمل جديدة",
+      "unassigned": "غير معين"
+    },
+    "aiService": {
+      "notConfigured": "الذكاء الاصطناعي غير مضبوط. أضف VITE_DEEPSEEK_API_KEY لتفعيل المساعد.",
+      "providerUnavailable": "تعذر الوصول إلى خدمة الذكاء الاصطناعي الآن: {{message}}",
+      "processingFailed": "تعذر معالجة ذلك الآن: {{message}}",
+      "tryAgain": "يرجى المحاولة مرة أخرى.",
+      "noPendingConfirm": "لا يوجد إجراء معلق لتأكيده.",
+      "noPendingCancel": "لا يوجد إجراء معلق لإلغائه.",
+      "canceledDeletion": "تم إلغاء الحذف.",
+      "unsupportedAction": "أعاد الذكاء الاصطناعي إجراء غير مدعوم.",
+      "confirmDelete": "هل تريد حذف {{items}}؟",
+      "confirmDeleteColumnsAndCards": "هل تريد حذف {{columns}} و{{cards}}؟",
+      "deleted": "تم حذف {{items}}.",
+      "deletedColumnsAndCards": "تم حذف {{columns}} و{{cards}}.",
+      "replyFallback": "يمكنني مساعدتك في لوحة كانبان. ماذا تريد أن أفعل؟",
+      "providerRequestFailed": "فشل طلب DeepSeek برمز الحالة {{status}}.",
+      "providerEmptyResponse": "أعاد DeepSeek استجابة فارغة.",
+      "providerInvalidJson": "أعاد DeepSeek بيانات JSON غير صالحة.",
+      "count": {
+        "card_one": "بطاقة واحدة",
+        "card_other": "{{count}} بطاقات",
+        "column_one": "عمود واحد",
+        "column_other": "{{count}} أعمدة",
+        "matchingItem_one": "نتيجة مطابقة واحدة",
+        "matchingItem_other": "{{count}} نتائج مطابقة"
+      },
+      "createCard": {
+        "missingTitle": "يمكنني إضافة هذه البطاقة، لكن ما عنوانها؟",
+        "missingColumn": "إلى أي عمود تريد إضافة البطاقة؟",
+        "failed": "تعذر إضافة هذه البطاقة لأن العمود الهدف غير موجود.",
+        "success": "تم إنشاء \"{{title}}\" في {{columnTitle}}.",
+        "examples": {
+          "launchChecklist": "اكتب قائمة مراجعة الإطلاق",
+          "followUpWithDesign": "تابع مع فريق التصميم",
+          "reviewOpenBugs": "راجع الأخطاء المفتوحة"
+        }
+      },
+      "createColumn": {
+        "missingTitle": "يمكنني إضافة هذا العمود، لكن ما اسمه؟",
+        "failed": "تعذر إضافة هذا العمود الآن.",
+        "success": "تم إنشاء العمود \"{{title}}\".",
+        "examples": {
+          "backlog": "المهام المتراكمة",
+          "inProgress": "قيد التنفيذ",
+          "readyForReview": "جاهز للمراجعة"
+        }
+      },
+      "updateCard": {
+        "missingCard": "أي بطاقة تريد تحديثها؟",
+        "missingChanges": "ما الذي يجب تغييره في هذه البطاقة؟",
+        "missingAfterUpdate": "لم أعد أستطيع العثور على تلك البطاقة.",
+        "success": "تم تحديث \"{{title}}\".",
+        "examples": {
+          "rename": "أعد تسميتها",
+          "changePriority": "غيّر الأولوية",
+          "assignToSomeone": "أسندها إلى شخص ما"
+        }
+      },
+      "updateColumn": {
+        "missingColumn": "أي عمود تريد تحديثه؟",
+        "missingChanges": "ما الذي يجب تغييره في هذا العمود؟",
+        "missingAfterUpdate": "لم أعد أستطيع العثور على ذلك العمود.",
+        "success": "تم تحديث العمود \"{{title}}\".",
+        "examples": {
+          "rename": "أعد تسميته",
+          "changeColor": "غيّر اللون",
+          "updateDescription": "حدّث الوصف"
+        }
+      },
+      "moveCard": {
+        "missingCard": "أي بطاقة تريد نقلها؟",
+        "missingColumn": "إلى أي عمود تريد نقلها؟",
+        "failed": "تعذر نقل تلك البطاقة بالهدف الذي قدمته.",
+        "success": "تم نقل \"{{title}}\" إلى {{columnTitle}}."
+      },
+      "moveColumn": {
+        "missingColumn": "أي عمود تريد نقله؟",
+        "failed": "تعذر نقل ذلك العمود بالهدف الذي قدمته.",
+        "success": "تم نقل العمود \"{{title}}\"."
+      },
+      "deleteCard": {
+        "missingCard": "أي بطاقة تريد حذفها؟"
+      },
+      "deleteColumn": {
+        "missingColumn": "أي عمود تريد حذفه؟"
+      },
+      "localQuery": {
+        "suggestions": {
+          "urgentCards": "اعرض البطاقات العاجلة",
+          "assignedToSamRivera": "اعرض البطاقات المسندة إلى Sam Rivera",
+          "cardsDueToday": "اعرض البطاقات المستحقة اليوم"
+        }
+      },
+      "query": {
+        "noResults": "لم أجد أي شيء يطابق ذلك في هذه اللوحة.",
+        "found": "تم العثور على {{items}}:",
+        "columnsHeading": "الأعمدة:",
+        "cardsHeading": "البطاقات:",
+        "columnLine_one": "- {{title}} (بطاقة واحدة)",
+        "columnLine_other": "- {{title}} ({{count}} بطاقات)",
+        "cardLine": "- {{title}} في {{columnTitle}} ({{priority}}، {{assignee}})",
+        "shortened": "أبقيت هذه القائمة قصيرة. ضيّق البحث إذا أردت الباقي.",
+        "suggestions": {
+          "highPriority": "اعرض البطاقات عالية الأولوية",
+          "assignedToMe": "ما المسند إليّ؟"
+        }
+      }
+    },
+    "ai": {
+      "affectedCards_one": "سيؤدي هذا أيضا إلى إزالة بطاقة واحدة.",
+      "affectedCards_other": "سيؤدي هذا أيضا إلى إزالة {{count}} بطاقات.",
+      "closeAriaLabel": "إغلاق مساعد الذكاء الاصطناعي",
+      "confirmDeletion": "تأكيد الحذف",
+      "emptyHint": "جرّب \"أضف بطاقة عالية الأولوية إلى المهام\" أو \"انقل نص الإطلاق إلى المراجعة\".",
+      "emptyTitle": "اطلب مني تشكيل هذه اللوحة.",
+      "inputAriaLabel": "مراسلة مساعد كانبان الذكي",
+      "openAriaLabel": "فتح مساعد كانبان الذكي",
+      "panelAriaLabel": "مساعد كانبان الذكي",
+      "placeholder": "اسأل عن لوحتك...",
+      "subtitle": "أنشئ العمل وحدّثه وانقله واعثر عليه",
+      "thinking": "أفكر في اللوحة...",
+      "title": "مساعد اللوحة الذكي"
+    }
+  }
+}

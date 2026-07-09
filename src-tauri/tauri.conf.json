@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ZeroSort",
+  "version": "1.0.1",
+  "identifier": "com.melongo.zerosort",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:3000",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "ZeroSort",
+        "width": 1280,
+        "height": 720,
+        "resizable": true,
+        "fullscreen": false,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: http://asset.localhost https://asset.localhost data: blob:; font-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost https://ipc.localhost https: http://localhost:* ws://localhost:* wss://localhost:*; media-src 'self' asset: http://asset.localhost https://asset.localhost blob:",
+      "assetProtocol": {
+        "enable": true,
+        "scope": ["$APPLOCALDATA/images/**", "$APPDATA/images/**"]
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    },
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser"
+      }
+    },
+    "linux": {
+      "deb": {},
+      "appimage": {}
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDNDOTAxMDhFNDM3RTcyNgpSV1FtNXpma0NBSEpBeDRha0UzOCtGcTRGMnYyaHl1dkdEaUpNQ0dYMTRSV3BUKzlDSWxVejBFVgo=",
+      "endpoints": [
+        "https://zerosort.app/api/updates/stable/{{target}}/{{arch}}/{{current_version}}"
+      ]
+    }
+  }
+}

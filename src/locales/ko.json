@@ -1,0 +1,1314 @@
+{
+  "settings": {
+    "title": "설정",
+    "back": "뒤로",
+    "general": {
+      "title": "일반 설정",
+      "description": "여기에서 인터페이스 테마, 언어 및 기타 옵션을 포함한 기본 애플리케이션 설정을 구성할 수 있습니다.",
+      "interface": {
+        "title": "인터페이스 설정",
+        "theme": {
+          "title": "테마",
+          "description": "애플리케이션의 모양 테마를 선택하세요"
+        },
+        "themePreset": {
+          "title": "색상 구성표",
+          "description": "애플리케이션의 색상 구성표 사전 설정을 선택하세요",
+          "default": "기본",
+          "custom": "사용자 지정"
+        },
+        "language": {
+          "title": "언어",
+          "description": "애플리케이션의 표시 언어를 선택하세요"
+        },
+        "interfaceScale": {
+          "title": "인터페이스 비율",
+          "description": "애플리케이션 인터페이스의 전체 비율을 조정하세요"
+        },
+        "contentScale": {
+          "title": "콘텐츠 비율",
+          "description": "에디터 및 채팅 마크다운 콘텐츠의 텍스트 크기를 조정하세요",
+          "sizes": {
+            "sm": "작게",
+            "base": "기본",
+            "lg": "크게",
+            "xl": "아주 크게",
+            "2xl": "가장 크게"
+          }
+        },
+        "codeWrap": {
+          "title": "코드 블록 줄바꿈",
+          "description": "코드 블록에서 긴 줄을 표시하는 방법을 선택하세요",
+          "scroll": "스크롤",
+          "wrap": "줄바꿈"
+        },
+        "showFolderNoteCount": {
+          "title": "폴더 노트 수 표시",
+          "description": "사이드바의 폴더 이름 옆에 노트 수를 표시합니다"
+        },
+        "showCharacterCount": {
+          "title": "글자 수 표시",
+          "description": "에디터에 글자 수와 단어 수를 표시합니다"
+        }
+      },
+      "data": {
+        "title": "데이터 관리",
+        "import": {
+          "title": "마크다운 폴더 가져오기",
+          "description": "로컬 디렉토리에서 중첩된 마크다운 파일을 노트로 가져옵니다.",
+          "success": "{{count}}개의 노트를 성공적으로 가져왔습니다."
+        },
+        "importFiles": {
+          "title": "마크다운 파일 가져오기",
+          "description": "직접 노트로 가져올 하나 이상의 로컬 마크다운 파일을 선택합니다.",
+          "success": "{{count}}개의 마크다운 파일을 성공적으로 가져왔습니다."
+        },
+        "export": {
+          "title": "마크다운으로 내보내기",
+          "description": "모든 노트를 마크다운 파일로 로컬 디렉토리에 내보냅니다.",
+          "success": "{{count}}개의 노트를 성공적으로 내보냈습니다."
+        },
+        "cleanupDirectories": {
+          "title": "빈 폴더 지우기",
+          "description": "하위 트리에 노트가 포함되지 않은 폴더를 삭제합니다.",
+          "action": "지우기",
+          "previewTitle": "빈 폴더 삭제",
+          "previewDescription_zero": "삭제할 폴더가 없습니다.",
+          "previewDescription_one": "다음 폴더가 삭제됩니다.",
+          "previewDescription_other": "다음 {{count}}개의 폴더가 삭제됩니다.",
+          "confirmAction": "폴더 삭제",
+          "success_zero": "빈 폴더가 없습니다.",
+          "success_one": "1개의 빈 폴더를 제거했습니다.",
+          "success_other": "{{count}}개의 빈 폴더를 제거했습니다.",
+          "error": "빈 폴더를 지우는 데 실패했습니다."
+        },
+        "cleanupTags": {
+          "title": "사용하지 않는 태그 지우기",
+          "description": "어떤 노트와도 연결되지 않은 태그를 삭제합니다.",
+          "action": "지우기",
+          "previewTitle": "사용하지 않는 태그 삭제",
+          "previewDescription_zero": "삭제할 태그가 없습니다.",
+          "previewDescription_one": "다음 태그가 삭제됩니다.",
+          "previewDescription_other": "다음 {{count}}개의 태그가 삭제됩니다.",
+          "confirmAction": "태그 삭제",
+          "success_zero": "사용하지 않는 태그가 없습니다.",
+          "success_one": "1개의 사용하지 않는 태그를 제거했습니다.",
+          "success_other": "{{count}}개의 사용하지 않는 태그를 제거했습니다.",
+          "error": "사용하지 않는 태그를 지우는 데 실패했습니다."
+        }
+      }
+    },
+    "editor": {
+      "title": "에디터",
+      "description": "버튼 그룹을 활성화하거나 비활성화하여 에디터 툴바를 사용자 지정하세요.",
+      "toolbar": {
+        "title": "툴바",
+        "history": {
+          "title": "실행 기록",
+          "description": "실행 취소 및 다시 실행 버튼"
+        },
+        "headings": {
+          "title": "제목",
+          "description": "제목 1, 2, 3 버튼"
+        },
+        "formatting": {
+          "title": "서식",
+          "description": "굵게, 기울임꼴, 밑줄, 취소선, 강조 표시 및 텍스트 색상 버튼"
+        },
+        "lists": {
+          "title": "목록",
+          "description": "글머리 기호 목록, 번호 매기기 목록 및 작업 목록 버튼"
+        },
+        "block": {
+          "title": "블록 요소",
+          "description": "인용구, 인라인 코드, 코드 블록 및 가로줄 버튼"
+        },
+        "insert": {
+          "title": "삽입",
+          "description": "링크, 표, 인라인 수식 및 블록 수식 버튼"
+        },
+        "tools": {
+          "title": "AI 및 그리기",
+          "description": "마크다운 복사, AI 어시스턴트, Excalidraw 및 Mermaid 버튼"
+        }
+      }
+    },
+    "ai": {
+      "title": "AI 설정",
+      "apiKey": "API 키",
+      "apiKeyPlaceholder": "API 키를 입력하세요...",
+      "apiKeyNotice": "키는 장치에 로컬로 저장됩니다.",
+      "baseUrl": "기본 URL",
+      "modelName": "모델 이름",
+      "modelNamePlaceholder": "예: gemini-1.5-flash",
+      "models": "모델",
+      "saveSettings": "설정 저장",
+      "savedSuccessfully": "AI 설정이 성공적으로 저장되었습니다",
+      "failedToSave": "설정을 저장하는 데 실패했습니다"
+    },
+    "theme": {
+      "licenseGate": {
+        "required": "활성 라이선스 필요",
+        "description": "테마 사용자 지정에는 활성 ZeroSort 라이선스가 필요합니다. 이 기능을 잠금 해제하려면 라이선스를 활성화하세요.",
+        "activateButton": "라이선스 설정으로 이동",
+        "featureLocked": "테마 사용자 지정에는 활성 라이선스가 필요합니다"
+      },
+      "editingMode": {
+        "label": "편집 모드",
+        "light": "라이트",
+        "dark": "다크"
+      },
+      "tabs": {
+        "presets": "사전 설정",
+        "colors": "색상",
+        "other": "기타"
+      },
+      "sections": {
+        "primaryColors": "기본 색상",
+        "secondaryColors": "보조 색상",
+        "accentColors": "강조 색상",
+        "baseColors": "바탕 색상",
+        "cardColors": "카드 색상",
+        "popoverColors": "팝오버 색상",
+        "mutedColors": "차분한 색상",
+        "destructiveColors": "위험 작업 색상",
+        "borderColors": "테두리 및 입력 색상",
+        "chartColors": "차트 색상",
+        "sidebarColors": "사이드바 색상",
+        "hslAdjustments": "HSL 조정",
+        "radius": "모서리 반경",
+        "spacing": "간격",
+        "letterSpacing": "자간",
+        "fonts": "글꼴",
+        "shadow": "그림자"
+      }
+    },
+    "models": {
+      "title": "모델 관리",
+      "modelSelect": "모델 선택",
+      "description": "ZeroSort를 구동하는 AI 모델을 구성하세요.",
+      "custom": "사용자 지정",
+      "providers": "프로바이더",
+      "addNew": "새로 추가",
+      "noProviderSelected": "선택된 프로바이더가 없습니다",
+      "selectOrCreate": "새 프로바이더를 만들거나 사이드바에서 선택하세요.",
+      "createProvider": "프로바이더 만들기",
+      "createDescription": "프로바이더 템플릿을 사용하여 새 구성을 만드세요.",
+      "templates": "프로바이더 템플릿",
+      "addModel": "모델 추가",
+      "editModel": "모델 편집",
+      "modelName": "모델 이름",
+      "modelId": "모델 ID",
+      "familyGroup": "모델 계열",
+      "providerName": "프로바이더 이름",
+      "providerNamePlaceholder": "예: 내 사용자 지정 프로바이더",
+      "testConnection": "연결 테스트",
+      "testing": "테스트 중...",
+      "connectionSuccess": "연결 성공",
+      "connectionFailed": "연결 실패: {{error}}"
+    }
+  },
+  "common": {
+    "title": "제목",
+    "add": "추가",
+    "alreadyAdded": "이미 추가됨",
+    "english": "영어",
+    "chinese": "중국어",
+    "languages": {
+      "ar": "아랍어",
+      "de": "독일어",
+      "en": "영어",
+      "es": "스페인어",
+      "fr": "프랑스어",
+      "it": "이탈리아어",
+      "ja": "일본어",
+      "ko": "한국어",
+      "pt": "포르투갈어",
+      "ru": "러시아어",
+      "zh": "중국어"
+    },
+    "tryAgain": "다시 시도",
+    "home": "홈",
+    "goBack": "뒤로 가기",
+    "cancel": "취소",
+    "delete": "삭제",
+    "export": "내보내기",
+    "exporting": "내보내는 중...",
+    "import": "가져오기",
+    "importing": "가져오는 중...",
+    "loading": "로딩 중...",
+    "cleaning": "정리 중...",
+    "save": "저장",
+    "saving": "저장 중...",
+    "close": "닫기",
+    "hide": "숨기기",
+    "comingSoon": "곧 제공 예정",
+    "uncategorized": "미분류",
+    "current": "현재",
+    "beforeUpdate": "업데이트 전",
+    "afterUpdate": "업데이트 후",
+    "on": "켜짐",
+    "off": "꺼짐",
+    "showMore": "더 보기",
+    "showLess": "접기",
+    "regenerating": "재생성 중",
+    "tags": "태그",
+    "sortBy": "정렬 기준",
+    "createdAt": "생성 날짜",
+    "updatedAt": "업데이트 날짜",
+    "months": {
+      "1": "1월",
+      "2": "2월",
+      "3": "3월",
+      "4": "4월",
+      "5": "5월",
+      "6": "6월",
+      "7": "7월",
+      "8": "8월",
+      "9": "9월",
+      "10": "10월",
+      "11": "11월",
+      "12": "12월"
+    },
+    "datePicker": {
+      "pickDate": "날짜 선택",
+      "clearFilter": "날짜 필터 지우기",
+      "modalTitle": "날짜로 필터링",
+      "noDateSelected": "날짜가 선택되지 않음",
+      "notesOnDate": "{{date}}의 노트 {{count}}개"
+    }
+  },
+  "folder": {
+    "newFolder": "새 폴더",
+    "renameFolder": "폴더 이름 변경",
+    "deleteFolder": "폴더 삭제",
+    "deleteConfirmation": "\"{{name}}\"을(를) 삭제하시겠습니까?",
+    "deleteWarning": "이 폴더 안의 노트를 어떻게 할지 선택하세요.",
+    "deleteOptionMoveToUncategorized": "노트를 미분류로 이동",
+    "deleteOptionDeleteAll": "모든 노트를 영구적으로 삭제",
+    "folderName": "폴더 이름",
+    "placeholder": "폴더 이름을 입력하세요...",
+    "create": "폴더 만들기",
+    "rename": "폴더 이름 변경",
+    "addSubfolder": "하위 폴더 추가",
+    "delete": "삭제",
+    "alreadyExists": "폴더가 이미 존재합니다",
+    "moveFolder": "폴더 이동",
+    "selectDestination": "대상 선택",
+    "root": "루트 (최상위)",
+    "move": "이동",
+    "noOtherFolders": "사용 가능한 다른 폴더가 없습니다"
+  },
+  "note": {
+    "moveNote": "노트 이동",
+    "searchDirectories": "폴더 검색...",
+    "noDirectoriesFound": "폴더를 찾을 수 없습니다",
+    "deleted": "노트가 삭제되었습니다",
+    "failedToDelete": "노트를 삭제하는 데 실패했습니다",
+    "deleteTitle": "노트를 삭제하시겠습니까?",
+    "deleteDescription": "이 작업은 되돌릴 수 없습니다. 이 노트를 삭제하시겠습니까?",
+    "editorPlaceholder": "작성을 시작하세요...",
+    "savedSuccessfully": "노트가 성공적으로 저장되었습니다",
+    "savedWithWarnings": "노트가 저장되었지만 일부 이미지 정리를 완료할 수 없습니다",
+    "failedToSave": "노트를 저장하는 데 실패했습니다",
+    "hideSummary": "요약 숨기기",
+    "showSummary": "요약 보기",
+    "summary": "요약",
+    "editTitle": "제목 편집",
+    "created": "생성됨",
+    "updated": "업데이트됨",
+    "editSummary": "요약 편집",
+    "editCreatedAt": "생성 날짜 편집",
+    "createdAtUpdated": "생성 날짜가 업데이트되었습니다",
+    "createdAtUpdatedWithWarnings": "생성 날짜가 업데이트되었지만 일부 이미지 정리를 완료할 수 없습니다",
+    "failedToUpdateCreatedAt": "생성 날짜를 업데이트하는 데 실패했습니다",
+    "createdAtHour": "시",
+    "createdAtMinute": "분",
+    "createdAtSecond": "초",
+    "createdAtHourPlaceholder": "HH",
+    "createdAtMinutePlaceholder": "MM",
+    "createdAtSecondPlaceholder": "SS",
+    "summaryPlaceholder": "요약을 입력하세요...",
+    "unsavedChanges": "저장되지 않은 변경 사항",
+    "unsavedChangesDescription": "노트에 저장되지 않은 변경 사항이 있습니다. 이동하기 전에 저장하시겠습니까?",
+    "saveAndContinue": "저장 및 계속",
+    "discardChanges": "변경 사항 무시",
+    "regenerateTitle": "제목 재생성",
+    "titleRegenerated": "제목이 재생성되었습니다",
+    "regenerateSummary": "요약 재생성",
+    "summaryRegenerated": "요약이 재생성되었습니다",
+    "regenerateCatalog": "폴더 계층 재생성",
+    "catalogRegenerated": "카탈로그가 재생성되었습니다",
+    "regenerateTags": "태그 재생성",
+    "tagsRegenerated": "태그가 재생성되었습니다",
+    "untitled": "제목 없음",
+    "sort": "정렬",
+    "regenerate": "재생성",
+    "regenerateAll": "모두 재생성",
+    "regenerateSelected": "선택한 항목 재생성",
+    "selectToRegenerate": "재생성할 필드 선택",
+    "regeneratedSuccessfully": "성공적으로 재생성되었습니다",
+    "reviewChanges": "변경 사항 검토",
+    "applyChanges": "변경 사항 적용",
+    "discardRegeneration": "무시",
+    "noChange": "변경 없음",
+    "createNote": "만들기"
+  },
+  "links": {
+    "title": "링크"
+  },
+  "backlinks": {
+    "loading": "백링크 로딩 중...",
+    "empty": "백링크가 아직 없습니다",
+    "hint": "이 노트를 가리키는 링크가 여기에 표시됩니다",
+    "title": "백링크",
+    "link": "링크",
+    "links": "링크",
+    "mention": "언급",
+    "mentions": "언급"
+  },
+  "outgoingLinks": {
+    "loading": "링크 로딩 중...",
+    "empty": "연결된 외부 링크가 없습니다",
+    "hint": "다른 노트를 연결하려면 [[노트 제목]]을 사용하세요",
+    "title": "외부 링크",
+    "link": "링크",
+    "links": "링크",
+    "broken": "끊어진 링크",
+    "valid": "유효한 링크",
+    "createNote": "만들기"
+  },
+  "wikiLinks": {
+    "noNotesFound": "노트를 찾을 수 없습니다"
+  },
+  "notFound": {
+    "description": "찾으시는 페이지가 존재하지 않습니다.",
+    "startOver": "처음부터 시작하기"
+  },
+  "sidebar": {
+    "folders": "폴더",
+    "expandAll": "모두 펼치기",
+    "collapseAll": "모두 접기",
+    "showSidebar": "사이드바 표시",
+    "hideSidebar": "사이드바 숨기기",
+    "searchPlaceholder": "노트 및 폴더 검색...",
+    "tags": "태그",
+    "clearTagFilters": "태그 필터 지우기",
+    "matchAll": "모두 일치",
+    "matchAny": "하나라도 일치",
+    "noTags": "태그가 아직 없습니다",
+    "manageTags": "태그 관리"
+  },
+  "tags": {
+    "title": "태그 관리자",
+    "filters": "활성 필터",
+    "allTags": "모든 태그",
+    "create": "태그 만들기",
+    "rename": "이름 변경",
+    "delete": "삭제",
+    "selectMultiple": "태그 선택",
+    "cancelSelection": "취소",
+    "selectAll": "모두 선택",
+    "clearSelection": "선택 지우기",
+    "selectedCount": "{{count}}개 선택됨",
+    "selectedCount_other": "{{count}}개 선택됨",
+    "deleteSelected": "선택 항목 삭제",
+    "deleteSelectedConfirm": "선택한 태그 {{count}}개를 삭제하시겠습니까? 모든 노트에서 제거됩니다.",
+    "deleteSelectedConfirm_other": "선택한 태그 {{count}}개를 삭제하시겠습니까? 모든 노트에서 제거됩니다.",
+    "deleteConfirm": "이 태그를 삭제하시겠습니까? 모든 노트에서 제거됩니다.",
+    "color": "색상",
+    "noTags": "아직 태그가 없습니다. 시작하려면 태그를 하나 만드세요.",
+    "namePlaceholder": "태그 이름...",
+    "noteCount": "노트 {{count}}개",
+    "noteCount_other": "노트 {{count}}개",
+    "searchPlaceholder": "태그 검색...",
+    "dateFilter": "{{date}}의 태그 표시 중"
+  },
+  "home": {
+    "tagline": "당신은 기록만, 정리는 AI가.",
+    "analyzing": "분석 중...",
+    "sorting": "카테고리로 분류 중...",
+    "noNotes": "아직 노트가 없습니다. 아래에서 만들기를 시작하세요!",
+    "notesCount": "노트 {{count}}개",
+    "viewMode": {
+      "timeline": "타임라인"
+    }
+  },
+  "about": {
+    "title": "정보",
+    "version": "버전",
+    "description": "ZeroSort는 생각을 쉽게 정리할 수 있도록 설계된 AI 기반 노트 작성 애플리케이션입니다. 생각만 하세요, 정리는 AI가 담당합니다.",
+    "website": "웹사이트",
+    "websiteDesc": "소식과 문서를 보려면 공식 웹사이트를 방문하세요.",
+    "visitWebsite": "zerosort.app 방문",
+    "updater": {
+      "title": "앱 업데이트",
+      "description": "새로운 데스크톱 빌드를 확인하고 ZeroSort를 벗어나지 않고 설치하세요.",
+      "releaseNotes": "릴리스 노트",
+      "releaseDate": "게시일: {{date}}",
+      "actions": {
+        "check": "업데이트 확인",
+        "install": "업데이트 설치"
+      },
+      "status": {
+        "idle": "업데이트를 확인할 준비가 되었습니다.",
+        "checking": "업데이트를 확인하는 중...",
+        "upToDate": "이미 최신 버전을 사용 중입니다.",
+        "available": "버전 {{version}}을 설치할 준비가 되었습니다.",
+        "availableUnknown": "새 업데이트를 사용할 수 있습니다.",
+        "downloading": "업데이트 패키지 다운로드 중...",
+        "installing": "업데이트 설치 중...",
+        "completed": "업데이트를 완료하기 위해 재시작 중...",
+        "unsupported": "업데이트는 데스크톱 앱에서만 사용할 수 있습니다."
+      },
+      "progress": {
+        "percent": "{{percent}}% 다운로드됨",
+        "unknown": "업데이트 다운로드 중..."
+      },
+      "toast": {
+        "upToDate": "ZeroSort는 이미 최신 버전입니다.",
+        "available": "업데이트 {{version}}을 사용할 수 있습니다."
+      },
+      "errors": {
+        "network": "업데이트 서버에 연결할 수 없습니다. 인터넷 연결을 확인하고 다시 시도하세요.",
+        "check": "업데이트를 확인하는 데 실패했습니다.",
+        "install": "업데이트를 설치하는 데 실패했습니다."
+      }
+    },
+    "footer": "© 2026 ZeroSort. 모든 권리 보유."
+  },
+  "editor": {
+    "undo": "실행 취소",
+    "redo": "다시 실행",
+    "heading1": "제목 1",
+    "heading2": "제목 2",
+    "heading3": "제목 3",
+    "bold": "굵게",
+    "italic": "기울임꼴",
+    "underline": "밑줄",
+    "strikethrough": "취소선",
+    "bulletList": "글머리 기호 목록",
+    "orderedList": "번호 매기기 목록",
+    "taskList": "작업 목록",
+    "indent": "들여쓰기 늘리기",
+    "outdent": "들여쓰기 줄이기",
+    "quote": "인용구",
+    "inlineCode": "인라인 코드",
+    "codeBlock": "코드 블록",
+    "horizontalRule": "가로줄",
+    "link": "링크",
+    "insertLink": "링크 삽입",
+    "removeLink": "링크 제거",
+    "insertTable": "표",
+    "image": "이미지",
+    "insertImage": "이미지 삽입",
+    "editImage": "이미지 편집",
+    "imageFromUrl": "URL에서 가져오기",
+    "imageFromFile": "파일에서 가져오기",
+    "imageUrl": "이미지 URL",
+    "imageSelectFile": "이미지 파일 선택",
+    "imageChooseFile": "파일 선택",
+    "imageDropHere": "여기에 이미지를 놓으세요",
+    "imageDropHint": "이 영역에 로컬 이미지를 끌어서 놓으세요",
+    "imageFileLimit": "최대 파일 크기: 5MB",
+    "imageFileTooLarge": "이미지 크기는 5MB 이하여야 합니다.",
+    "imageFileReadFailed": "이미지 파일을 읽는 데 실패했습니다.",
+    "imageFileSaveFailed": "이미지 파일을 저장하는 데 실패했습니다.",
+    "imageAlt": "대체 텍스트 (선택 사항)",
+    "deleteImage": "이미지 삭제",
+    "displayInline": "인라인",
+    "displayBlock": "블록",
+    "moreActions": "추가 작업",
+    "copyMarkdown": "마크다운으로 복사",
+    "copiedMarkdown": "노트 마크다운이 클립보드에 복사되었습니다",
+    "aiAssistant": "AI 어시스턴트",
+    "aiModeOffLabel": "AI 끄기",
+    "aiModeSelectionLabel": "선택 영역",
+    "aiModeAskAiLabel": "AI에게 질문",
+    "aiModeSelection": "AI: 선택 모드 (클릭하여 전환)",
+    "aiModeAskAi": "AI: AI에게 질문 모드 (클릭하여 전환)",
+    "inlineMath": "인라인 수식",
+    "blockMath": "블록 수식",
+    "enterLatex": "LaTeX 수식을 입력하세요:",
+    "highlight": "강조 표시",
+    "textColor": "텍스트 색상",
+    "removeColor": "색상 제거",
+    "applyColor": "적용",
+    "excalidraw": {
+      "insert": "Excalidraw 그리기",
+      "placeholder": "왼쪽 상단 모서리를 클릭하여 그리기를 시작하세요",
+      "edit": "편집",
+      "done": "완료",
+      "copy": "그리기 블록 복사",
+      "copied": "그리기 블록이 클립보드에 복사되었습니다",
+      "delete": "그리기 삭제",
+      "loading": "그리기 불러오는 중..."
+    },
+    "markmap": {
+      "zoomIn": "확대",
+      "zoomOut": "축소",
+      "fit": "화면에 맞추기",
+      "copy": "마인드맵 블록 복사",
+      "copied": "마인드맵 블록이 클립보드에 복사되었습니다",
+      "delete": "마인드맵 삭제"
+    },
+    "mermaid": {
+      "insert": "Mermaid 다이어그램",
+      "edit": "편집",
+      "preview": "미리보기",
+      "zoomIn": "확대",
+      "zoomOut": "축소",
+      "fit": "화면에 맞추기",
+      "copy": "다이어그램 블록 복사",
+      "copied": "다이어그램 블록이 클립보드에 복사되었습니다",
+      "delete": "다이어그램 삭제"
+    },
+    "chart": {
+      "copy": "차트 블록 복사",
+      "copied": "차트 블록이 클립보드에 복사되었습니다"
+    },
+    "calendar": {
+      "insert": "캘린더",
+      "blockLabel": "캘린더",
+      "copy": "캘린더 블록 복사",
+      "copied": "캘린더 블록이 클립보드에 복사되었습니다",
+      "delete": "캘린더 삭제",
+      "resize": "캘린더 크기 조절",
+      "previousMonth": "이전 달",
+      "nextMonth": "다음 달",
+      "newEvent": "새 이벤트",
+      "add": "추가",
+      "selectedDate": "선택한 날짜",
+      "titlePlaceholder": "이벤트 제목",
+      "descriptionPlaceholder": "메모",
+      "allDay": "종일",
+      "noEvents": "이 날짜에는 이벤트가 없습니다",
+      "deleteEvent": "이벤트 삭제",
+      "weekDays": {
+        "sun": "일",
+        "mon": "월",
+        "tue": "화",
+        "wed": "수",
+        "thu": "목",
+        "fri": "금",
+        "sat": "토"
+      },
+      "colors": {
+        "blue": "파란색",
+        "green": "초록색",
+        "yellow": "노란색",
+        "pink": "분홍색",
+        "purple": "보라색",
+        "orange": "주황색",
+        "red": "빨간색",
+        "teal": "청록색",
+        "indigo": "남색"
+      }
+    },
+    "copyFailed": "클립보드에 복사하는 데 실패했습니다",
+    "table": {
+      "addRowBefore": "위에 행 추가",
+      "addRowAfter": "아래에 행 추가",
+      "addColumnBefore": "왼쪽에 열 추가",
+      "addColumnAfter": "오른쪽에 열 추가",
+      "deleteRow": "행 삭제",
+      "deleteColumn": "열 삭제",
+      "mergeOrSplit": "셀 병합 또는 분할",
+      "deleteTable": "표 삭제",
+      "createChart": "표에서 차트 생성"
+    },
+    "characterCount": {
+      "characters": "글자 수",
+      "words": "단어 수"
+    },
+    "kanban": {
+      "insert": "칸반",
+      "blockLabel": "칸반",
+      "copy": "칸반 복사",
+      "copied": "칸반이 클립보드에 복사되었습니다",
+      "delete": "칸반 삭제",
+      "resize": "칸반 크기 조절"
+    }
+  },
+  "ai": {
+    "prompts": {
+      "system": "당신은 미니멀한 노트 정리 어시스턴트인 ZeroSort AI입니다.\n사용자 입력을 분석하여 구조화된 JSON 객체를 반환하세요.",
+      "input": "입력:",
+      "content": "내용:",
+      "contentBefore": "<Content>",
+      "contentAfter": "</Content>",
+      "regenerateTitle": "이 콘텐츠에 대해 짧고 명확한 제목(최대 6단어)을 재생성하세요.",
+      "regenerateSummary": "이 콘텐츠에 대해 2-3문장 분량의 요약/미리보기를 재생성하세요.",
+      "regenerateCatalog": "이 콘텐츠의 폴더 계층 구조(카탈로그)를 재생성하고 문자열 배열로 반환하세요. 최대 3단계까지만 허용됩니다. 예: [\"Work\", \"Meetings\", \"Summary\"] 또는 [\"Personal\", \"Recipes\", \"Salads\"]",
+      "regenerateTags": "이 콘텐츠에 관련된 태그를 제안하세요. 짧고 설명이 잘 되는 태그 이름(각 1-3단어)으로 구성된 평면 배열을 반환하세요. 주요 주제를 포착하는 태그 2-5개를 제안하세요.",
+      "existingDirectories": "사용자에게는 다음과 같은 폴더 구조가 있습니다: {{directories}} \n\n 현재 노트를 분류해 주세요. 다음 기준을 따라 주세요:\n 1. 노트 내용이 기존 폴더 주제와 잘 맞으면 해당 기존 폴더에 바로 분류하세요.\n 2. 노트가 기존 폴더의 특정 하위 분야에 속한다면 그 폴더 아래에 새 하위 폴더를 만들 수 있습니다.\n 3. 노트 주제가 어떤 기존 폴더와도 관련이 없다면 억지로 기존 폴더에 넣지 마세요. 이 노트를 위한 완전히 새롭고 독립적인 루트 폴더를 만들어야 합니다.",
+      "schema": {
+        "title": "노트의 짧고 명확한 이름입니다 (최대 6단어).",
+        "catalog": "이 콘텐츠에 대한 간결한 폴더 계층 구조(카탈로그)로, 문자열 배열 형태입니다. 최대 3단계까지만 허용됩니다. 예: [\"Work\", \"Meetings\", \"Summary\"] 또는 [\"Personal\", \"Recipes\", \"Salads\"]",
+        "summary": "노트 카드에 대한 2-3문장 분량의 미리보기입니다.",
+        "tags": "노트의 주요 주제를 포착하는 짧고 설명이 잘 되는 태그 이름(각 1-3단어, 2-5가지 태그)의 배열입니다."
+      }
+    },
+    "enabled": "AI 켜짐",
+    "disabled": "AI 꺼짐",
+    "includeExistingDirs": "폴더 참조",
+    "includeExistingDirsTooltip": "기존 폴더 구조 참조",
+    "noModelSelected": "설정에서 AI 모델을 선택해 주세요.",
+    "requestFailed": "AI 요청이 실패했습니다. 모델 설정을 확인한 후 다시 시도해 주세요."
+  },
+  "aiMenu": {
+    "editWithAi": "AI로 편집",
+    "placeholder": "AI에게 무엇이든 물어보세요...",
+    "send": "보내기",
+    "preview": "AI 응답",
+    "mindmapPreview": "마인드맵",
+    "mermaidPreview": "Mermaid 다이어그램",
+    "chartPreview": "차트",
+    "insertBelow": "아래에 삽입",
+    "insertMindmap": "마인드맵 삽입",
+    "insertMermaid": "다이어그램 삽입",
+    "insertChart": "차트 삽입",
+    "mindmapInserted": "마인드맵 삽입됨",
+    "mermaidInserted": "다이어그램 삽입됨",
+    "chartInserted": "차트 삽입됨",
+    "chartParseError": "차트 데이터를 파싱하는 데 실패했습니다",
+    "copy": "결과 복사",
+    "copied": "클립보드에 복사됨",
+    "discard": "무시",
+    "useFullContext": "전체 문서를 컨텍스트로 사용",
+    "sections": {
+      "suggested": "추천",
+      "charts": "차트",
+      "edit": "편집"
+    },
+    "actions": {
+      "improve": "글 다듬기",
+      "proofread": "교정",
+      "explain": "설명",
+      "translate": "번역하기",
+      "longer": "길게 작성",
+      "shorter": "짧게 작성",
+      "tone": "어조 변경",
+      "simplify": "언어 단순화",
+      "mindmap": "마인드맵 생성",
+      "mermaid": "Mermaid 생성",
+      "chart": "차트 생성"
+    },
+    "languages": {
+      "arabic": "아랍어",
+      "english": "영어",
+      "chinese": "중국어",
+      "italian": "이탈리아어",
+      "korean": "한국어",
+      "portuguese": "포르투갈어",
+      "russian": "러시아어",
+      "spanish": "스페인어",
+      "french": "프랑스어",
+      "german": "독일어",
+      "japanese": "일본어"
+    },
+    "chartTypes": {
+      "line": "꺾은선형 차트",
+      "bar": "막대 차트",
+      "pie": "원형 차트",
+      "radar": "방사형 차트",
+      "bubble": "버블 차트"
+    },
+    "tones": {
+      "professional": "전문적인",
+      "casual": "편안한",
+      "friendly": "친근한",
+      "confident": "자신감 있는",
+      "formal": "형식적인"
+    },
+    "generating": "생성 중...",
+    "loading": "AI가 생각 중입니다...",
+    "success": "텍스트가 업데이트되었습니다",
+    "errors": {
+      "noSelection": "먼저 텍스트를 선택해 주세요",
+      "failed": "AI 요청이 실패했습니다. 다시 시도해 주세요.",
+      "emptyResponse": "AI가 빈 응답을 반환했습니다"
+    },
+    "prompts": {
+      "contextPrefix": "여기에 참고할 전체 문서가 있습니다:\n\n{{fullDocument}}\n\n---\n\n이제 선택된 다음 부분에 초점을 맞추세요:\n\n",
+      "improve": "{{contextPrefix}}의미를 유지하면서 다음 텍스트를 개선해 주세요. 개선된 텍스트만 반환하고 설명은 제외하세요:\n\n{{text}}",
+      "proofread": "{{contextPrefix}}다음 텍스트의 문법, 철자 또는 구두점 오류를 교정하고 수정해 주세요. 수정된 텍스트만 반환하세요:\n\n{{text}}",
+      "translate": "{{contextPrefix}}다음 텍스트를 {{option}}로 번역해 주세요. 번역만 반환하세요:\n\n{{text}}",
+      "longer": "{{contextPrefix}}의미를 동일하게 유지하면서 다음 텍스트를 더 자세하게 확장해 주세요. 확장된 텍스트만 반환하세요:\n\n{{text}}",
+      "shorter": "{{contextPrefix}}의미를 유지하면서 다음 텍스트를 더 간결하게 만들어 주세요. 축약된 텍스트만 반환하세요:\n\n{{text}}",
+      "tone": "{{contextPrefix}}다음 텍스트를 {{option}} 어조로 재작성해 주세요. 다시 작성된 텍스트만 반환하세요:\n\n{{text}}",
+      "simplify": "{{contextPrefix}}이해하기 쉽게 다음 텍스트를 단순화해 주세요. 단순화된 텍스트만 반환하세요:\n\n{{text}}",
+      "explain": "{{contextPrefix}}다음 텍스트를 쉬운 용어로 설명해 주세요. 명확하고 간결한 설명을 제공하세요:\n\n{{text}}",
+      "mindmap": "마크다운을 사용하여 다음 텍스트를 계층적인 마인드맵 구조로 변환하세요. 주요 주제에는 제목(##, ###)을 사용하고 하위 주제에는 중첩된 글머리 기호(-)를 사용하세요. 간결하고 체계적으로 유지하세요. 설명 없이 마크다운만 반환하세요:\n\n{{text}}",
+      "mermaid": "다음 텍스트를 Mermaid 다이어그램으로 변환하세요. 가장 적합한 다이어그램 유형(flowchart, sequence, class, state, ER, gantt 또는 pie)을 선택하세요. 마크다운 코드 블록이나 설명 없이 유효한 Mermaid 구문만 반환하세요. 다이어그램 유형 키워드(예: graph TD, sequenceDiagram, classDiagram 등)로 시작하세요:\n\n{{text}}",
+      "custom": "{{contextPrefix}}{{option}}\n\n작업할 텍스트:\n{{text}}",
+      "chart": {
+        "base": "다음 텍스트를 분석하고 수치 데이터를 추출하여 Chart.js {{chartType}} 차트 구성을 만드세요. 마크다운 펜스나 설명 없이 유효한 JSON 객체만 반환하세요. JSON에는 \"type\" 필드가 \"{{chartType}}\"으로 설정되어 있어야 합니다. 텍스트에서 파생된 설명적인 레이블을 사용하세요. 데이터 계열이 여러 개인 경우 다양한 색상으로 여러 데이터셋을 만드세요. {{colorsHint}}"
+      }
+    }
+  },
+  "proFeatures": {
+    "licenseGate": {
+      "required": "활성 라이선스 키가 필요합니다",
+      "description": "{{feature}}은(는) Pro 기능입니다. ZeroSort 라이선스 키를 활성화하여 잠금을 해제하세요.",
+      "activateButton": "라이선스 설정으로 이동",
+      "featureLocked": "{{feature}}에는 활성 라이선스 키가 필요합니다",
+      "featureTooltip": "{{feature}}에는 Pro가 필요합니다"
+    }
+  },
+  "askAi": {
+    "title": "AI에게 질문",
+    "placeholder": "무엇이든 물어보세요... @를 입력하여 열려 있는 노트를 참조하세요",
+    "mentionHint": "@를 눌러 열려 있는 노트를 컨텍스트로 참조하세요",
+    "contextPrefix": "컨텍스트로 사용될 노트입니다:",
+    "pickLocation": "응답을 삽입할 에디터 위치를 클릭하세요",
+    "insertInNote": "노트에 삽입",
+    "insertResponse": "이 응답 삽입",
+    "inserted": "삽입됨",
+    "newChat": "새 채팅",
+    "noOpenNotes": "참조할 열려 있는 노트가 없습니다",
+    "noMatchingNotes": "일치하는 노트가 없습니다"
+  },
+  "license": {
+    "title": "라이선스",
+    "description": "ZeroSort의 소프트웨어 라이선스를 관리하세요.",
+    "status": "라이선스 상태",
+    "active": "활성",
+    "inactive": "라이선스 없음",
+    "invalid": "유효하지 않은 라이선스",
+    "machineId": "머신 ID",
+    "machineIdCopied": "머신 ID가 클립보드에 복사되었습니다",
+    "activate": "라이선스 활성화",
+    "activatePlaceholder": "여기에 라이선스 키를 붙여넣으세요...",
+    "activateButton": "활성화",
+    "purchaseLink": "라이선스 키 받기",
+    "activateSuccess": "라이선스가 성공적으로 활성화되었습니다",
+    "deactivate": "라이선스 비활성화",
+    "deactivateConfirm": "라이선스를 비활성화하시겠습니까?",
+    "deactivateSuccess": "라이선스가 비활성화되었습니다",
+    "errors": {
+      "invalidSignature": "유효하지 않은 라이선스 키 - 서명 확인 실패",
+      "expired": "라이선스 키가 만료되었습니다",
+      "hardwareMismatch": "이 기기에서 사용할 수 없는 라이선스입니다",
+      "clockTampered": "시스템 시계 조작이 감지되었습니다. 시스템 시간을 올바르게 수정해 주세요.",
+      "activationFailed": "라이선스 활성화에 실패했습니다"
+    }
+  },
+  "sync": {
+    "title": "클라우드 동기화",
+    "description": "백업 및 다중 기기 액세스를 위해 노트를 S3 호환 스토리지와 동기화하세요.",
+    "connected": "성공적으로 연결됨",
+    "notConnected": "S3에 연결되지 않음",
+    "connect": "연결",
+    "disconnect": "연결 끊기",
+    "upload": "클라우드로 업로드",
+    "download": "클라우드에서 다운로드",
+    "uploadSuccess": "백업이 성공적으로 업로드되었습니다",
+    "downloadSuccess": "백업이 성공적으로 다운로드되었습니다",
+    "syncing": "동기화 중...",
+    "connecting": "연결 중...",
+    "restoring": "연결 복원 중...",
+    "lastSync": "마지막 동기화: {{time}}",
+    "never": "안 함",
+    "syncNow": "동기화",
+    "preview": "미리보기",
+    "syncComplete": "동기화 완료: {{uploaded}}개 업로드됨, {{downloaded}}개 다운로드됨",
+    "recoveryComplete": "원격 복구 완료",
+    "refreshPartialTags": "동기화가 완료되었지만 태그를 새로 고칠 수 없습니다.",
+    "refreshFailed": "동기화가 완료되었지만 로컬 데이터를 새로 고칠 수 없습니다. 최신 변경 사항을 보려면 앱을 다시 로드하세요.",
+    "blockedBySafety": "안전 점검으로 인해 동기화가 차단되었습니다",
+    "recovery": {
+      "title": "원격 복구 권장",
+      "description": "ZeroSort가 로컬 동기화 상태가 예기치 않게 비어있음을 감지했습니다. 원격에서 복구하여 클라우드 데이터를 삭제하지 않고 로컬 데이터를 재건하세요.",
+      "action": "원격에서 복구"
+    },
+    "safetyDialog": {
+      "common": {
+        "totalItems": "총 항목 수",
+        "confirm": "계속 진행",
+        "cancel": "동기화 취소",
+        "close": "닫기"
+      },
+      "deletion": {
+        "title": "높은 삭제 비율 감지됨",
+        "description": "총 {{total}}개 항목 중 {{count}}개({{percentage}}%)가 삭제되어 안전 임계값인 {{threshold}}%를 초과하게 됩니다. 이는 설정 문제나 우발적인 데이터 손실을 의미할 수 있습니다.",
+        "localDeletes": "로컬 삭제",
+        "remoteDeletes": "원격 삭제"
+      },
+      "unsafe": {
+        "title": "안전하지 않은 로컬 상태로 인한 동기화 차단",
+        "description": "{{count}}개의 관리되는 항목이 로컬에서 참조되고 있지만 ZeroSort에서 해당 로컬 파일을 확인할 수 없습니다. 우발적인 데이터 손실을 방지하기 위해 동기화가 차단되었습니다.",
+        "unsafeItems": "안전하지 않은 항목",
+        "details": "세부 정보"
+      }
+    },
+    "noChanges": "동기화할 변경 사항이 없습니다",
+    "phase": {
+      "idle": "준비",
+      "connecting": "연결 중...",
+      "collecting": "데이터 수집 중...",
+      "planning": "변경 사항 계획 중...",
+      "executing": "동기화 중...",
+      "directories": "폴더 및 태그 준비 중...",
+      "uploading": "변경 사항 업로드 중...",
+      "downloading": "변경 사항 다운로드 중...",
+      "deleting": "오래된 항목 제거 중...",
+      "cleanup": "동기화 마무리 중...",
+      "completing": "동기화 완료 중..."
+    },
+    "progress": {
+      "preparing": "동기화 준비 중..."
+    },
+    "preview_section": {
+      "title": "동기화 미리보기",
+      "uploads": "업로드 대상",
+      "downloads": "다운로드 대상",
+      "deletes": "로컬 삭제 대상",
+      "remoteDeletes": "원격 삭제 대상",
+      "conflicts": "충돌",
+      "unsafe": "차단된 항목",
+      "unchanged": "변경되지 않음"
+    },
+    "configuration": {
+      "title": "S3 구성",
+      "label": "연결 이름",
+      "labelPlaceholder": "내 S3 백업",
+      "bucketName": "버킷 이름",
+      "bucketPlaceholder": "버킷 이름을 입력하세요...",
+      "accessKeyId": "액세스 키 ID",
+      "secretAccessKey": "시크릿 액세스 키",
+      "region": "리전",
+      "regionPlaceholder": "us-east-1",
+      "endpointUrl": "엔드포인트 URL",
+      "endpointPlaceholder": "https://s3.{region}.amazonaws.com 또는 사용자 지정 엔드포인트"
+    },
+    "concurrency": {
+      "title": "동기화 동시성",
+      "description": "동기화 중 병렬 작업 수입니다. 값이 높을수록 동기화가 빨라지지만 더 많은 대역폭을 사용합니다."
+    },
+    "encryption": {
+      "title": "암호화 비밀번호",
+      "description": "클라우드에 노트를 업로드하기 전에 암호화하는 데 사용되는 비밀번호입니다. 비밀번호를 안전하게 보관하세요 - 데이터를 복호화할 때 필요합니다.",
+      "configured": "암호화 비밀번호가 설정되어 있습니다",
+      "notConfigured": "구성되지 않음 - 동기화가 작동하지 않습니다",
+      "password": "비밀번호",
+      "confirmPassword": "비밀번호 확인",
+      "mismatch": "비밀번호가 일치하지 않습니다",
+      "tooShort": "비밀번호는 최소 8자 이상이어야 합니다",
+      "saved": "암호화 비밀번호가 저장되었습니다",
+      "changeWarning": "비밀번호를 변경하면 모든 노트의 전체 재동기화가 필요합니다",
+      "configure": "구성",
+      "change": "변경"
+    },
+    "buckets": {
+      "title": "버킷 선택",
+      "refresh": "새로 고침",
+      "noBuckets": "버킷을 찾을 수 없습니다",
+      "createBucket": "먼저 S3 콘솔에서 버킷을 생성하세요"
+    },
+    "errors": {
+      "connectionFailed": "S3에 연결하는 데 실패했습니다",
+      "uploadFailed": "백업을 업로드하는 데 실패했습니다",
+      "downloadFailed": "백업을 다운로드하는 데 실패했습니다",
+      "noBackups": "버킷에서 백업을 찾을 수 없습니다"
+    },
+    "licenseGate": {
+      "required": "활성 라이선스 필요",
+      "description": "클라우드 동기화에는 활성 ZeroSort 라이선스가 필요합니다. 이 기능을 잠금 해제하려면 라이선스를 활성화하세요.",
+      "activateButton": "라이선스 설정으로 이동",
+      "featureLocked": "클라우드 동기화에는 활성 라이선스가 필요합니다"
+    }
+  },
+  "batch": {
+    "multiSelect": "다중 선택",
+    "selectMonth": "이 달의 모든 노트 선택",
+    "deselectMonth": "이 달의 모든 노트 선택 해제",
+    "selectedCount": "{{count}}개 선택됨",
+    "regenerate": "재생성",
+    "regenerateTooltip": "선택한 노트의 필드 재생성",
+    "dialogTitle": "일괄 재생성",
+    "dialogDescription": "선택한 노트 {{count}}개에 대해 재생성할 필드를 선택하세요.",
+    "startRegeneration": "노트 {{count}}개 재생성",
+    "alreadyRunning": "일괄 작업이 이미 실행 중입니다",
+    "inProgress": "재생성 중...",
+    "cancelledTitle": "취소됨",
+    "completedTitle": "완료됨",
+    "progress": "{{completed}} / {{total}}",
+    "failedCount": "{{count}}개 실패",
+    "processing": "처리 중: {{title}}",
+    "processingMultiple": "노트 {{count}}개 처리 중...",
+    "stop": "중지",
+    "completed": "{{count}}개의 노트를 성공적으로 재생성했습니다",
+    "completedWithErrors": "{{completed}}개의 노트를 재생성했고, {{failed}}개가 실패했습니다",
+    "cancelled": "취소됨 — 노트 {{total}}개 중 {{completed}}개 재생성됨",
+    "concurrency": "동시성",
+    "concurrencyDescription": "동시에 처리할 노트 수입니다"
+  },
+  "event-calendar": {
+    "app": {
+      "title": "이벤트 캘린더"
+    },
+    "language": {
+      "select": "언어 선택"
+    },
+    "theme": {
+      "toggle": "테마 전환"
+    },
+    "nav": {
+      "previousPeriod": "이전 기간",
+      "nextPeriod": "다음 기간"
+    },
+    "controls": {
+      "selectDay": "일 선택",
+      "selectMonth": "월 선택",
+      "selectYear": "연도 선택"
+    },
+    "view": {
+      "day": "일",
+      "week": "주",
+      "month": "월",
+      "year": "년"
+    },
+    "display": {
+      "calendar": "캘린더 보기",
+      "list": "목록 보기",
+      "switchToCalendar": "캘린더 보기로 전환",
+      "switchToList": "목록 보기로 전환"
+    },
+    "period": {
+      "today": "오늘",
+      "tomorrow": "내일",
+      "thisWeek": "이번 주",
+      "thisMonth": "이번 달",
+      "thisYear": "올해"
+    },
+    "time": {
+      "twelveHour": "12시간",
+      "twentyFourHour": "24시간"
+    },
+    "filters": {
+      "filter": "필터",
+      "byColor": "색상별 필터"
+    },
+    "actions": {
+      "add": "추가",
+      "addEvent": "이벤트 추가",
+      "cancel": "취소",
+      "confirm": "확인",
+      "createEvent": "이벤트 만들기",
+      "delete": "삭제",
+      "reset": "초기화",
+      "saveEvent": "이벤트 저장"
+    },
+    "notice": {
+      "created": "이벤트가 생성됨",
+      "updated": "이벤트가 업데이트됨",
+      "deleted": "이벤트가 삭제됨"
+    },
+    "calendar": {
+      "allDay": "종일",
+      "allDayCompact": "종일",
+      "createEventAt": "{{time}}에 이벤트 만들기",
+      "createEventOn": "{{date}}에 이벤트 만들기",
+      "currentTime": "현재 시간: {{time}}",
+      "eventCount_one": "이벤트 {{count}}개",
+      "eventCount_other": "이벤트 {{count}}개",
+      "fullDayEvents_one": "종일 이벤트 ({{count}})",
+      "fullDayEvents_other": "종일 이벤트 ({{count}})",
+      "moreEvents_one": "+{{count}}개 더",
+      "moreEvents_other": "+{{count}}개 더",
+      "selectedTime": "선택한 시간: {{time}}"
+    },
+    "dialog": {
+      "addEvent": "이벤트 추가",
+      "allDayEvent": "종일 이벤트",
+      "color": "색상",
+      "description": "설명",
+      "descriptionPlaceholder": "메모, 안건 또는 세부 정보를 추가",
+      "editEvent": "이벤트 편집",
+      "endDate": "종료일",
+      "endTime": "종료 시간",
+      "eventTitle": "이벤트 제목",
+      "eventTitlePlaceholder": "이벤트 제목 입력",
+      "invalidEndTime": "종료 시간은 시작 시간보다 빠를 수 없습니다.",
+      "startDate": "시작일",
+      "startTime": "시작 시간"
+    },
+    "list": {
+      "emptyHint": "필터를 조정하거나 새 이벤트를 추가하세요",
+      "noEvents": "이벤트를 찾을 수 없습니다"
+    },
+    "colors": {
+      "blue": "파란색",
+      "green": "초록색",
+      "indigo": "남색",
+      "orange": "주황색",
+      "pink": "분홍색",
+      "purple": "보라색",
+      "red": "빨간색",
+      "teal": "청록색",
+      "yellow": "노란색"
+    },
+    "assistant": {
+      "confirmDeletion": "삭제 확인",
+      "notConfigured": "설정에서 AI 모델을 선택해 주세요.",
+      "serviceUnavailable": "지금은 AI 서비스에 연결할 수 없습니다: {{error}}",
+      "processingFailed": "지금은 해당 요청을 처리할 수 없습니다: {{error}}",
+      "tryAgain": "다시 시도해 주세요.",
+      "unknownError": "알 수 없는 오류",
+      "noPendingConfirm": "확인할 대기 중 작업이 없습니다.",
+      "deleteSuccess": "{{eventCount}}를 삭제했습니다.",
+      "deleteFailed": "이벤트를 삭제하지 못했습니다: {{error}}",
+      "noPendingCancel": "취소할 대기 중 작업이 없습니다.",
+      "deleteCanceled": "삭제를 취소했습니다.",
+      "unsupportedAction": "AI가 지원되지 않는 작업을 반환했습니다.",
+      "needsEventTitle": "일정을 만들 수 있지만 한 가지가 더 필요합니다. 이벤트 이름을 무엇으로 할까요?",
+      "suggestMeeting": "회의",
+      "suggestAppointment": "약속",
+      "suggestFocusTime": "집중 시간",
+      "needsEventDate": "일정을 만들 수 있지만 먼저 날짜가 필요합니다. 어느 날에 넣을까요?",
+      "needsEventTime": "일정을 만들기 전에 한 가지가 더 필요합니다. 몇 시에 시작하나요?",
+      "suggestShowToday": "오늘 일정 보여줘",
+      "suggestShowWeek": "이번 주 일정 보여줘",
+      "needsEventReferenceUpdate": "업데이트할 수 있지만 어떤 이벤트를 말하는지 알아야 합니다.",
+      "eventNotFoundUpdate": "그 이벤트를 더 이상 찾을 수 없습니다. 대신 어떤 이벤트를 업데이트할까요?",
+      "needsUpdateChange": "업데이트를 도와드릴 수 있지만 무엇을 바꿔야 하는지 알아야 합니다.",
+      "suggestMoveTomorrow": "내일로 옮기기",
+      "suggestRename": "이름 바꾸기",
+      "suggestChangeColor": "색상 변경",
+      "confirmDeleteWhichEvent": "무엇이든 삭제하기 전에 어떤 이벤트를 지울지 확인해 주세요.",
+      "eventNotFoundDelete": "삭제할 일치하는 이벤트를 찾지 못했습니다. 어떤 이벤트를 말하셨나요?",
+      "listPair": "{{first}} 및 {{second}}",
+      "conflictWarning": "{{message}}\n\n알림: 이 일정은 {{eventNames}}{{extraInfo}}와 겹칩니다.",
+      "conflictWarningExtra": " 외 {{count}}개",
+      "defaultPrompt": "캘린더를 도와드릴 수 있습니다. 무엇을 하시겠어요?",
+      "allDay": "종일",
+      "createdEventOnAllDay": "{{date}}에 \"{{title}}\" 일정을 만들었습니다. {{allDay}}입니다.",
+      "createdEventOnAtTime": "{{date}} {{time}}에 \"{{title}}\" 일정을 만들었습니다.",
+      "createdEventFromTo": "\"{{title}}\" 일정을 {{startDate}}부터 {{endDate}}까지 만들었습니다.",
+      "queryFoundOnDate": "{{date}}의 {{eventCount}}를 찾았습니다",
+      "queryFoundFromTo": "{{dateFrom}}부터 {{dateTo}}까지 {{eventCount}}를 찾았습니다",
+      "queryFoundThrough": "{{date}}까지 {{eventCount}}를 찾았습니다",
+      "queryFoundAny": "{{eventCount}}를 찾았습니다",
+      "eventDateTimeAllDay": "{{dateRange}}, {{allDay}}",
+      "eventDateTimeTimed": "{{dateRange}}, {{startTime}} - {{endTime}}",
+      "changeRenamed": "\"{{title}}\"로 이름 변경",
+      "changeDescriptionUpdated": "설명 업데이트",
+      "changeDescriptionCleared": "설명 삭제",
+      "changeRescheduled": "{{date}} {{time}}로 일정 변경",
+      "changeColor": "색상을 {{color}}(으)로 변경",
+      "changeMarkedAllDay": "종일 일정으로 표시",
+      "changeMarkedTimed": "시간 지정 일정으로 표시",
+      "updatedEvent": "\"{{title}}\"을(를) 업데이트했습니다: {{changes}}.",
+      "confirmDeleteSingle": "확인을 위해 묻습니다. {{date}}의 \"{{title}}\"을(를) 삭제할까요?",
+      "confirmDeleteMultiple": "확인을 위해 묻습니다. 이 {{eventCount}}를 삭제할까요?",
+      "eventOnDate": "{{date}}의 {{title}}",
+      "emptyResultsForSearch": "해당 검색에 맞는 일정이 없습니다.",
+      "emptyResultsFromTo": "{{dateFrom}}부터 {{dateTo}}까지 일정이 없습니다.",
+      "emptyResultsFromToMatching": "{{dateFrom}}부터 {{dateTo}}까지 \"{{searchTerm}}\"와 일치하는 일정이 없습니다.",
+      "emptyHint": "예: “내일 오후 2시에 회의 예약” 또는 “오늘 내 일정은?”",
+      "emptyResultsMatching": "\"{{searchTerm}}\"와 일치하는 일정이 없습니다.",
+      "emptyResultsOnDate": "{{date}}에 일정이 없습니다.",
+      "emptyResultsOnDateMatching": "{{date}}에 \"{{searchTerm}}\"와 일치하는 일정이 없습니다.",
+      "emptyResultsOnOrAfter": "{{date}} 이후 일정이 없습니다.",
+      "emptyResultsOnOrAfterMatching": "{{date}} 이후 \"{{searchTerm}}\"와 일치하는 일정이 없습니다.",
+      "emptyResultsThrough": "{{date}}까지 일정이 없습니다.",
+      "emptyResultsThroughMatching": "{{date}}까지 \"{{searchTerm}}\"와 일치하는 일정이 없습니다.",
+      "emptyTitle": "캘린더 관리를 요청하세요",
+      "openAriaLabel": "AI 캘린더 어시스턴트 열기",
+      "panelAriaLabel": "AI 캘린더 어시스턴트",
+      "title": "AI 캘린더 어시스턴트",
+      "subtitle": "이벤트를 생성, 업데이트, 삭제하고 찾기",
+      "closeAriaLabel": "AI 어시스턴트 닫기",
+      "thinking": "캘린더를 확인하는 중...",
+      "inputAriaLabel": "AI 캘린더 어시스턴트에 메시지 보내기",
+      "placeholder": "캘린더에 대해 물어보세요...",
+      "send": "보내기"
+    }
+  },
+  "kanban": {
+    "app": {
+      "eyebrow": "프로젝트 보드"
+    },
+    "language": {
+      "label": "언어",
+      "ariaLabel": "언어 변경"
+    },
+    "board": {
+      "ariaLabel": "칸반 보드",
+      "noCards": "카드 없음"
+    },
+    "summary": {
+      "ariaLabel": "보드 요약",
+      "columns": "열",
+      "cards": "카드"
+    },
+    "priority": {
+      "urgent": "긴급",
+      "high": "높음",
+      "medium": "보통",
+      "low": "낮음"
+    },
+    "actions": {
+      "addColumn": "열 추가",
+      "addCard": "카드 추가",
+      "cancel": "취소",
+      "clear": "지우기",
+      "confirm": "확인",
+      "deleteCard": "{{title}} 삭제",
+      "deleteColumn": "{{title}} 삭제",
+      "editCard": "{{title}} 편집",
+      "editColumn": "{{title}} 편집",
+      "reset": "초기화",
+      "save": "저장",
+      "send": "메시지 보내기"
+    },
+    "dialogs": {
+      "deleteCard": "\"{{title}}\"을(를) 삭제할까요?",
+      "deleteColumn_one": "\"{{title}}\" 및 카드 {{count}}개를 삭제할까요?",
+      "deleteColumn_other": "\"{{title}}\" 및 카드 {{count}}개를 삭제할까요?"
+    },
+    "forms": {
+      "assignee": "담당자",
+      "cardDescription": "카드 설명",
+      "cardTitle": "카드 제목",
+      "cardTitlePlaceholder": "카드 제목",
+      "columnColor": "열 색상",
+      "columnDescription": "열 설명",
+      "columnName": "열 이름",
+      "columnTitle": "열 제목",
+      "description": "설명",
+      "dueDate": "마감일",
+      "noDueDate": "마감일 없음",
+      "priority": "우선순위",
+      "tags": "태그",
+      "useColor": "{{color}} 사용"
+    },
+    "defaults": {
+      "newWorkflowStage": "새 워크플로 단계",
+      "unassigned": "미지정"
+    },
+    "aiService": {
+      "notConfigured": "AI가 설정되지 않았습니다. 도우미를 사용하려면 VITE_DEEPSEEK_API_KEY를 추가하세요.",
+      "providerUnavailable": "지금은 AI 서비스에 연결할 수 없습니다: {{message}}",
+      "processingFailed": "지금은 해당 요청을 처리할 수 없습니다: {{message}}",
+      "tryAgain": "다시 시도해 주세요.",
+      "noPendingConfirm": "확인할 대기 중 작업이 없습니다.",
+      "noPendingCancel": "취소할 대기 중 작업이 없습니다.",
+      "canceledDeletion": "삭제를 취소했습니다.",
+      "unsupportedAction": "AI가 지원되지 않는 작업을 반환했습니다.",
+      "confirmDelete": "{{items}}을(를) 삭제할까요?",
+      "confirmDeleteColumnsAndCards": "{{columns}} 및 {{cards}}을(를) 삭제할까요?",
+      "deleted": "{{items}}을(를) 삭제했습니다.",
+      "deletedColumnsAndCards": "{{columns}} 및 {{cards}}을(를) 삭제했습니다.",
+      "replyFallback": "칸반 보드를 도와드릴 수 있습니다. 무엇을 하시겠어요?",
+      "providerRequestFailed": "DeepSeek 요청이 상태 {{status}}로 실패했습니다.",
+      "providerEmptyResponse": "DeepSeek가 빈 응답을 반환했습니다.",
+      "providerInvalidJson": "DeepSeek가 올바르지 않은 JSON을 반환했습니다.",
+      "count": {
+        "card_one": "카드 {{count}}개",
+        "card_other": "카드 {{count}}개",
+        "column_one": "열 {{count}}개",
+        "column_other": "열 {{count}}개",
+        "matchingItem_one": "일치 항목 {{count}}개",
+        "matchingItem_other": "일치 항목 {{count}}개"
+      },
+      "createCard": {
+        "missingTitle": "카드는 추가할 수 있지만 제목은 무엇으로 할까요?",
+        "missingColumn": "어느 열에 카드를 추가할까요?",
+        "failed": "대상 열을 찾지 못해 해당 카드를 추가할 수 없었습니다.",
+        "success": "{{columnTitle}}에 \"{{title}}\" 카드를 만들었습니다.",
+        "examples": {
+          "launchChecklist": "출시 체크리스트 작성",
+          "followUpWithDesign": "디자인 팀에 후속 확인",
+          "reviewOpenBugs": "열린 버그 검토"
+        }
+      },
+      "createColumn": {
+        "missingTitle": "열은 추가할 수 있지만 이름은 무엇으로 할까요?",
+        "failed": "지금은 해당 열을 추가할 수 없었습니다.",
+        "success": "\"{{title}}\" 열을 만들었습니다.",
+        "examples": {
+          "backlog": "백로그",
+          "inProgress": "진행 중",
+          "readyForReview": "검토 준비 완료"
+        }
+      },
+      "updateCard": {
+        "missingCard": "어떤 카드를 업데이트할까요?",
+        "missingChanges": "그 카드에서 무엇을 바꿀까요?",
+        "missingAfterUpdate": "해당 카드를 더 이상 찾을 수 없습니다.",
+        "success": "\"{{title}}\" 카드를 업데이트했습니다.",
+        "examples": {
+          "rename": "이름 바꾸기",
+          "changePriority": "우선순위 변경",
+          "assignToSomeone": "담당자 지정"
+        }
+      },
+      "updateColumn": {
+        "missingColumn": "어떤 열을 업데이트할까요?",
+        "missingChanges": "그 열에서 무엇을 바꿀까요?",
+        "missingAfterUpdate": "해당 열을 더 이상 찾을 수 없습니다.",
+        "success": "\"{{title}}\" 열을 업데이트했습니다.",
+        "examples": {
+          "rename": "이름 바꾸기",
+          "changeColor": "색상 변경",
+          "updateDescription": "설명 업데이트"
+        }
+      },
+      "moveCard": {
+        "missingCard": "어떤 카드를 이동할까요?",
+        "missingColumn": "어느 열로 이동할까요?",
+        "failed": "지정한 위치로 해당 카드를 이동할 수 없었습니다.",
+        "success": "\"{{title}}\" 카드를 {{columnTitle}}(으)로 이동했습니다."
+      },
+      "moveColumn": {
+        "missingColumn": "어떤 열을 이동할까요?",
+        "failed": "지정한 위치로 해당 열을 이동할 수 없었습니다.",
+        "success": "\"{{title}}\" 열을 이동했습니다."
+      },
+      "deleteCard": {
+        "missingCard": "어떤 카드를 삭제할까요?"
+      },
+      "deleteColumn": {
+        "missingColumn": "어떤 열을 삭제할까요?"
+      },
+      "localQuery": {
+        "suggestions": {
+          "urgentCards": "긴급 카드 보기",
+          "assignedToSamRivera": "Sam Rivera에게 할당된 카드 보기",
+          "cardsDueToday": "오늘 마감인 카드 보기"
+        }
+      },
+      "query": {
+        "noResults": "이 보드에서 일치하는 항목을 찾지 못했습니다.",
+        "found": "{{items}}을(를) 찾았습니다:",
+        "columnsHeading": "열:",
+        "cardsHeading": "카드:",
+        "columnLine_one": "- {{title}} (카드 {{count}}개)",
+        "columnLine_other": "- {{title}} (카드 {{count}}개)",
+        "cardLine": "- {{columnTitle}}의 {{title}} ({{priority}}, {{assignee}})",
+        "shortened": "목록을 짧게 유지했습니다. 나머지를 보려면 검색 범위를 좁혀 주세요.",
+        "suggestions": {
+          "highPriority": "높은 우선순위 카드 보기",
+          "assignedToMe": "내게 할당된 항목은?"
+        }
+      }
+    },
+    "ai": {
+      "affectedCards_one": "카드 {{count}}개도 제거됩니다.",
+      "affectedCards_other": "카드 {{count}}개도 제거됩니다.",
+      "closeAriaLabel": "AI 어시스턴트 닫기",
+      "confirmDeletion": "삭제 확인",
+      "emptyHint": "\"To do에 높은 우선순위 카드 추가\" 또는 \"런칭 문구를 Review로 이동\"을 시도해 보세요.",
+      "emptyTitle": "이 보드를 다듬어 달라고 요청하세요.",
+      "inputAriaLabel": "AI 칸반 어시스턴트에 메시지",
+      "openAriaLabel": "AI 칸반 어시스턴트 열기",
+      "panelAriaLabel": "AI 칸반 어시스턴트",
+      "placeholder": "보드에 대해 질문...",
+      "subtitle": "작업을 만들고, 업데이트하고, 이동하고, 찾기",
+      "thinking": "보드를 살펴보는 중...",
+      "title": "AI 보드 어시스턴트"
+    }
+  }
+}
