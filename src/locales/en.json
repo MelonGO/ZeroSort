@@ -441,40 +441,6 @@
     "website": "Website",
     "websiteDesc": "Visit our official website for news and documentation.",
     "visitWebsite": "Visit zerosort.app",
-    "updater": {
-      "title": "App Updates",
-      "description": "Check for newer desktop builds and install them without leaving ZeroSort.",
-      "releaseNotes": "Release Notes",
-      "releaseDate": "Published: {{date}}",
-      "actions": {
-        "check": "Check for updates",
-        "install": "Install update"
-      },
-      "status": {
-        "idle": "Ready to check for updates.",
-        "checking": "Checking for updates...",
-        "upToDate": "You're already on the latest version.",
-        "available": "Version {{version}} is ready to install.",
-        "availableUnknown": "A new update is available.",
-        "downloading": "Downloading the update package...",
-        "installing": "Installing update...",
-        "completed": "Restarting to finish the update...",
-        "unsupported": "Updates are only available inside the desktop app."
-      },
-      "progress": {
-        "percent": "{{percent}}% downloaded",
-        "unknown": "Downloading update..."
-      },
-      "toast": {
-        "upToDate": "ZeroSort is already up to date.",
-        "available": "Update {{version}} is available."
-      },
-      "errors": {
-        "network": "Unable to reach the update server. Check your internet connection and try again.",
-        "check": "Failed to check for updates.",
-        "install": "Failed to install the update."
-      }
-    },
     "footer": "© 2026 ZeroSort. All rights reserved."
   },
   "editor": {

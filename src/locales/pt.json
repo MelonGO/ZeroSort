@@ -441,40 +441,6 @@
     "website": "Site",
     "websiteDesc": "Visite nosso site oficial para notícias e documentação.",
     "visitWebsite": "Visitar zerosort.app",
-    "updater": {
-      "title": "Atualizações do App",
-      "description": "Verifique se há novas compilações de desktop e instale-as sem sair do ZeroSort.",
-      "releaseNotes": "Notas de Lançamento",
-      "releaseDate": "Publicado: {{date}}",
-      "actions": {
-        "check": "Verificar atualizações",
-        "install": "Instalar atualização"
-      },
-      "status": {
-        "idle": "Pronto para verificar atualizações.",
-        "checking": "Verificando se há atualizações...",
-        "upToDate": "Você já está na versão mais recente.",
-        "available": "A versão {{version}} está pronta para ser instalada.",
-        "availableUnknown": "Uma nova atualização está disponível.",
-        "downloading": "Baixando o pacote de atualização...",
-        "installing": "Instalando atualização...",
-        "completed": "Reiniciando para concluir a atualização...",
-        "unsupported": "As atualizações estão disponíveis apenas no aplicativo para desktop."
-      },
-      "progress": {
-        "percent": "{{percent}}% baixado",
-        "unknown": "Baixando atualização..."
-      },
-      "toast": {
-        "upToDate": "O ZeroSort já está atualizado.",
-        "available": "A atualização {{version}} está disponível."
-      },
-      "errors": {
-        "network": "Não foi possível conectar ao servidor de atualizações. Verifique sua conexão à internet e tente novamente.",
-        "check": "Falha ao verificar atualizações.",
-        "install": "Falha ao instalar a atualização."
-      }
-    },
     "footer": "© 2026 ZeroSort. Todos os direitos reservados."
   },
   "editor": {

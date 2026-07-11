@@ -441,40 +441,6 @@
     "website": "网站",
     "websiteDesc": "访问我们的官方网站获取新闻和文档。",
     "visitWebsite": "访问 zerosort.app",
-    "updater": {
-      "title": "应用更新",
-      "description": "检查新的桌面版本，并在 ZeroSort 内直接完成安装。",
-      "releaseNotes": "更新说明",
-      "releaseDate": "发布时间：{{date}}",
-      "actions": {
-        "check": "检查更新",
-        "install": "安装更新"
-      },
-      "status": {
-        "idle": "可以开始检查更新。",
-        "checking": "正在检查更新...",
-        "upToDate": "当前已经是最新版本。",
-        "available": "版本 {{version}} 已可安装。",
-        "availableUnknown": "有新的更新可用。",
-        "downloading": "正在下载更新包...",
-        "installing": "正在安装更新...",
-        "completed": "正在重新启动以完成更新...",
-        "unsupported": "更新功能仅在桌面应用内可用。"
-      },
-      "progress": {
-        "percent": "已下载 {{percent}}%",
-        "unknown": "正在下载更新..."
-      },
-      "toast": {
-        "upToDate": "ZeroSort 已是最新版本。",
-        "available": "发现可用更新 {{version}}。"
-      },
-      "errors": {
-        "network": "无法连接到更新服务器。请检查网络连接后重试。",
-        "check": "检查更新失败。",
-        "install": "安装更新失败。"
-      }
-    },
     "footer": "© 2026 ZeroSort。保留所有权利。"
   },
   "editor": {

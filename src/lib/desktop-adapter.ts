@@ -63,9 +63,6 @@ const TAURI_COMMAND_MAP: Record<string, string> = {
   "window:is_focused": "window_is_focused",
   "shortcut:register": "shortcut_register",
   "shortcut:unregister": "shortcut_unregister",
-  "updater:check": "updater_check",
-  "updater:download_and_install": "updater_download_and_install",
-  "updater:quit_and_install": "updater_quit_and_install",
 };
 
 const OPTS_WRAPPED_COMMANDS = new Set([
@@ -116,7 +113,6 @@ export function unwrapHostResult<T = any>(result: any): T {
     if ("path" in result) return result.path;
     if ("rows" in result) return result.rows;
     if ("changes" in result) return result.changes;
-    if ("update" in result) return result.update;
     if ("version" in result) return result.version;
     if ("focused" in result) return result as T;
     if ("canceled" in result) return result as T;

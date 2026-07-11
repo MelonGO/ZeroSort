@@ -19,9 +19,7 @@ pub fn run() {
 
     #[cfg(desktop)]
     {
-        builder = builder
-            .plugin(tauri_plugin_global_shortcut::Builder::new().build())
-            .plugin(tauri_plugin_updater::Builder::new().build());
+        builder = builder.plugin(tauri_plugin_global_shortcut::Builder::new().build());
     }
 
     let app = builder
@@ -81,9 +79,6 @@ pub fn run() {
             commands::download_sync_object,
             commands::download_sync_binary,
             commands::delete_sync_objects_batch,
-            commands::updater_check,
-            commands::updater_download_and_install,
-            commands::updater_quit_and_install,
         ])
         .setup(move |app| {
             let app_data = crate::paths::ensure_app_data_dir(app.handle())

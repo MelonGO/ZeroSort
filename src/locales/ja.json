@@ -441,40 +441,6 @@
     "website": "ウェブサイト",
     "websiteDesc": "ニュースや公式ドキュメントはウェブサイトをご覧ください。",
     "visitWebsite": "zerosort.app にアクセス",
-    "updater": {
-      "title": "アプリのアップデート",
-      "description": "新しいデスクトップビルドを確認し、ZeroSortから離れずにインストールします。",
-      "releaseNotes": "リリースノート",
-      "releaseDate": "公開日: {{date}}",
-      "actions": {
-        "check": "アップデートを確認する",
-        "install": "アップデートをインストール"
-      },
-      "status": {
-        "idle": "アップデートを確認する準備ができました。",
-        "checking": "アップデートを確認中...",
-        "upToDate": "すでに最新バージョンです。",
-        "available": "バージョン {{version}} がインストール可能です。",
-        "availableUnknown": "新しいアップデートが利用可能です。",
-        "downloading": "アップデートパッケージをダウンロード中...",
-        "installing": "アップデートをインストール中...",
-        "completed": "再起動してアップデートを完了します...",
-        "unsupported": "アップデートはデスクトップアプリ内でのみ利用可能です。"
-      },
-      "progress": {
-        "percent": "{{percent}}% ダウンロード完了",
-        "unknown": "アップデートをダウンロード中..."
-      },
-      "toast": {
-        "upToDate": "ZeroSortはすでに最新です。",
-        "available": "アップデート {{version}} が利用可能です。"
-      },
-      "errors": {
-        "network": "アップデートサーバーに到達できません。インターネット接続を確認してもう一度お試しください。",
-        "check": "アップデートの確認に失敗しました。",
-        "install": "アップデートのインストールに失敗しました。"
-      }
-    },
     "footer": "© 2026 ZeroSort. All rights reserved."
   },
   "editor": {

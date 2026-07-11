@@ -441,40 +441,6 @@
     "website": "Site Web",
     "websiteDesc": "Visitez notre site officiel pour des nouvelles et de la documentation.",
     "visitWebsite": "Visitez zerosort.app",
-    "updater": {
-      "title": "Mises à jour de l'application",
-      "description": "Vérifiez les nouvelles versions de l'application de bureau et installez-les sans quitter ZeroSort.",
-      "releaseNotes": "Notes de mise à jour",
-      "releaseDate": "Publié le: {{date}}",
-      "actions": {
-        "check": "Vérifier les mises à jour",
-        "install": "Installer la mise à jour"
-      },
-      "status": {
-        "idle": "Prêt à vérifier les mises à jour.",
-        "checking": "Vérification des mises à jour...",
-        "upToDate": "Vous avez déjà la dernière version.",
-        "available": "La version {{version}} est prête à être installée.",
-        "availableUnknown": "Une nouvelle mise à jour est disponible.",
-        "downloading": "Téléchargement du package de mise à jour...",
-        "installing": "Installation de la mise à jour...",
-        "completed": "Redémarrage pour terminer la mise à jour...",
-        "unsupported": "Les mises à jour ne sont disponibles que dans l'application de bureau."
-      },
-      "progress": {
-        "percent": "{{percent}}% téléchargé",
-        "unknown": "Téléchargement de la mise à jour..."
-      },
-      "toast": {
-        "upToDate": "ZeroSort est déjà à jour.",
-        "available": "La mise à jour {{version}} est disponible."
-      },
-      "errors": {
-        "network": "Impossible d'atteindre le serveur de mise à jour. Vérifiez votre connexion Internet et réessayez.",
-        "check": "Échec de la vérification des mises à jour.",
-        "install": "Échec de l'installation de la mise à jour."
-      }
-    },
     "footer": "© 2026 ZeroSort. Tous droits réservés."
   },
   "editor": {
