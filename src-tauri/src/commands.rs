@@ -127,35 +127,6 @@ pub fn has_s3_config(state: State<'_, Arc<AppState>>) -> Value {
 }
 
 // ---------------------------------------------------------------------------
-// License
-// ---------------------------------------------------------------------------
-
-#[tauri::command]
-pub async fn activate_license(app: AppHandle, license_key: String) -> Value {
-    let state = app.state::<Arc<AppState>>().inner().clone();
-    let info = state.license.activate(&license_key).await;
-    ok(json!({ "info": info }))
-}
-
-#[tauri::command]
-pub fn get_license_status(state: State<'_, Arc<AppState>>) -> Value {
-    ok(json!({ "info": state.license.get_status() }))
-}
-
-#[tauri::command]
-pub fn deactivate_license(state: State<'_, Arc<AppState>>) -> Value {
-    match state.license.deactivate() {
-        Ok(()) => ok(json!({})),
-        Err(e) => err(e),
-    }
-}
-
-#[tauri::command]
-pub fn get_machine_id(state: State<'_, Arc<AppState>>) -> Value {
-    ok(json!({ "machineId": state.license.get_machine_id() }))
-}
-
-// ---------------------------------------------------------------------------
 // Images
 // ---------------------------------------------------------------------------
 

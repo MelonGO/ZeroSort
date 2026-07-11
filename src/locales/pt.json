@@ -147,12 +147,6 @@
       "failedToSave": "Falha ao salvar configurações"
     },
     "theme": {
-      "licenseGate": {
-        "required": "Licença ativa necessária",
-        "description": "A personalização de temas requer uma licença ativa do ZeroSort. Ative sua licença para desbloquear este recurso.",
-        "activateButton": "Ir para Configurações de Licença",
-        "featureLocked": "A personalização de tema requer uma licença ativa"
-      },
       "editingMode": {
         "label": "Modo de edição",
         "light": "Claro",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "Chave de licença ativa necessária",
-      "description": "{{feature}} é um recurso Pro. Ative sua chave de licença do ZeroSort para desbloqueá-lo.",
-      "activateButton": "Ir para as configurações da licença",
-      "featureLocked": "{{feature}} requer uma chave de licença ativa",
-      "featureTooltip": "{{feature}} requer Pro"
-    }
-  },
   "askAi": {
     "title": "Perguntar à IA",
     "placeholder": "Pergunte qualquer coisa... Digite @ para referenciar notas abertas",
@@ -734,31 +719,6 @@
     "newChat": "Novo chat",
     "noOpenNotes": "Nenhuma nota aberta para referência",
     "noMatchingNotes": "Nenhuma nota correspondente encontrada"
-  },
-  "license": {
-    "title": "Licença",
-    "description": "Gerencie sua licença de software do ZeroSort.",
-    "status": "Status da Licença",
-    "active": "Ativa",
-    "inactive": "Sem Licença",
-    "invalid": "Licença Inválida",
-    "machineId": "ID da Máquina",
-    "machineIdCopied": "ID da máquina copiado para a área de transferência",
-    "activate": "Ativar Licença",
-    "activatePlaceholder": "Cole a sua chave de licença aqui...",
-    "activateButton": "Ativar",
-    "purchaseLink": "Obter uma chave de licença",
-    "activateSuccess": "Licença ativada com sucesso",
-    "deactivate": "Desativar Licença",
-    "deactivateConfirm": "Tem certeza de que deseja desativar sua licença?",
-    "deactivateSuccess": "Licença desativada",
-    "errors": {
-      "invalidSignature": "Assinatura inválida. A licença não pôde ser verificada criptograficamente.",
-      "expired": "A licença expirou.",
-      "hardwareMismatch": "A licença é restrita a uma máquina diferente.",
-      "clockTampered": "O relógio do sistema parece ter sido alterado.",
-      "activationFailed": "A ativação falhou. Verifique sua conexão com a rede e tente novamente."
-    }
   },
   "sync": {
     "title": "Sincronização em Nuvem",
@@ -877,12 +837,6 @@
       "uploadFailed": "Falha ao fazer upload para o S3",
       "downloadFailed": "Falha ao fazer download do S3",
       "noBackups": "Nenhum backup encontrado no bucket"
-    },
-    "licenseGate": {
-      "required": "Licença Exigida",
-      "description": "A sincronização na nuvem requer uma licença ativa do ZeroSort. Ative sua licença para desbloquear este recurso.",
-      "activateButton": "Ir para Configurações de Licença",
-      "featureLocked": "A sincronização na nuvem exige uma licença ativa"
     }
   },
   "batch": {

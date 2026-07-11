@@ -147,12 +147,6 @@
       "failedToSave": "설정을 저장하는 데 실패했습니다"
     },
     "theme": {
-      "licenseGate": {
-        "required": "활성 라이선스 필요",
-        "description": "테마 사용자 지정에는 활성 ZeroSort 라이선스가 필요합니다. 이 기능을 잠금 해제하려면 라이선스를 활성화하세요.",
-        "activateButton": "라이선스 설정으로 이동",
-        "featureLocked": "테마 사용자 지정에는 활성 라이선스가 필요합니다"
-      },
       "editingMode": {
         "label": "편집 모드",
         "light": "라이트",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "활성 라이선스 키가 필요합니다",
-      "description": "{{feature}}은(는) Pro 기능입니다. ZeroSort 라이선스 키를 활성화하여 잠금을 해제하세요.",
-      "activateButton": "라이선스 설정으로 이동",
-      "featureLocked": "{{feature}}에는 활성 라이선스 키가 필요합니다",
-      "featureTooltip": "{{feature}}에는 Pro가 필요합니다"
-    }
-  },
   "askAi": {
     "title": "AI에게 질문",
     "placeholder": "무엇이든 물어보세요... @를 입력하여 열려 있는 노트를 참조하세요",
@@ -734,31 +719,6 @@
     "newChat": "새 채팅",
     "noOpenNotes": "참조할 열려 있는 노트가 없습니다",
     "noMatchingNotes": "일치하는 노트가 없습니다"
-  },
-  "license": {
-    "title": "라이선스",
-    "description": "ZeroSort의 소프트웨어 라이선스를 관리하세요.",
-    "status": "라이선스 상태",
-    "active": "활성",
-    "inactive": "라이선스 없음",
-    "invalid": "유효하지 않은 라이선스",
-    "machineId": "머신 ID",
-    "machineIdCopied": "머신 ID가 클립보드에 복사되었습니다",
-    "activate": "라이선스 활성화",
-    "activatePlaceholder": "여기에 라이선스 키를 붙여넣으세요...",
-    "activateButton": "활성화",
-    "purchaseLink": "라이선스 키 받기",
-    "activateSuccess": "라이선스가 성공적으로 활성화되었습니다",
-    "deactivate": "라이선스 비활성화",
-    "deactivateConfirm": "라이선스를 비활성화하시겠습니까?",
-    "deactivateSuccess": "라이선스가 비활성화되었습니다",
-    "errors": {
-      "invalidSignature": "유효하지 않은 라이선스 키 - 서명 확인 실패",
-      "expired": "라이선스 키가 만료되었습니다",
-      "hardwareMismatch": "이 기기에서 사용할 수 없는 라이선스입니다",
-      "clockTampered": "시스템 시계 조작이 감지되었습니다. 시스템 시간을 올바르게 수정해 주세요.",
-      "activationFailed": "라이선스 활성화에 실패했습니다"
-    }
   },
   "sync": {
     "title": "클라우드 동기화",
@@ -877,12 +837,6 @@
       "uploadFailed": "백업을 업로드하는 데 실패했습니다",
       "downloadFailed": "백업을 다운로드하는 데 실패했습니다",
       "noBackups": "버킷에서 백업을 찾을 수 없습니다"
-    },
-    "licenseGate": {
-      "required": "활성 라이선스 필요",
-      "description": "클라우드 동기화에는 활성 ZeroSort 라이선스가 필요합니다. 이 기능을 잠금 해제하려면 라이선스를 활성화하세요.",
-      "activateButton": "라이선스 설정으로 이동",
-      "featureLocked": "클라우드 동기화에는 활성 라이선스가 필요합니다"
     }
   },
   "batch": {

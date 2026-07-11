@@ -1,16 +1,13 @@
 import { KanbanBoard } from "@/components/kanban-pro/KanbanBoard";
 import { copyAtomNodeMarkdownToClipboard } from "@/components/tiptap/nodeClipboard";
-import { useLicenseGate } from "@/hooks/useLicenseGate";
 import {
   normalizeKanbanNodeData,
   serializeKanbanNodeData,
 } from "@/lib/kanban/kanbanData";
 import type { KanbanNodeData } from "@/lib/kanban/types";
-import { showProFeatureLockedToast } from "@/lib/proFeatureGate";
 import { cn } from "@/lib/utils";
-import { useNavigate } from "@tanstack/react-router";
 import { NodeViewWrapper, type ReactNodeViewProps } from "@tiptap/react";
-import { Copy, LockKeyhole, SquareKanban, Trash2 } from "lucide-react";
+import { Copy, SquareKanban, Trash2 } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
@@ -27,8 +24,6 @@ export function KanbanNodeView({
   selected,
 }: ReactNodeViewProps) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const { isLicensed } = useLicenseGate();
   const { kanbanData: kanbanDataString, height: nodeHeight } = node.attrs;
   const initialHeight = (nodeHeight as number) || DEFAULT_HEIGHT;
   const [kanbanData, setKanbanData] = useState<KanbanNodeData>(() =>
@@ -81,17 +76,6 @@ export function KanbanNodeView({
     },
     [kanbanData, persistKanbanData],
   );
-
-  const openLicenseSettings = useCallback(() => {
-    void navigate({ to: "/settings/license" });
-  }, [navigate]);
-
-  const handleLockedClick = useCallback(() => {
-    showProFeatureLockedToast(
-      t("editor.kanban.blockLabel"),
-      openLicenseSettings,
-    );
-  }, [openLicenseSettings, t]);
 
   const handleCopy = useCallback(async () => {
     const didCopy = await copyAtomNodeMarkdownToClipboard({
@@ -156,16 +140,14 @@ export function KanbanNodeView({
           {t("editor.kanban.blockLabel")}
         </span>
         <div className="ml-auto" />
-        {isLicensed && (
-          <button
-            type="button"
-            onClick={handleCopy}
-            className="rounded p-1 transition-colors hover:bg-accent hover:text-accent-foreground"
-            aria-label={t("editor.kanban.copy")}
-          >
-            <Copy size={16} />
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={handleCopy}
+          className="rounded p-1 transition-colors hover:bg-accent hover:text-accent-foreground"
+          aria-label={t("editor.kanban.copy")}
+        >
+          <Copy size={16} />
+        </button>
         <button
           type="button"
           onClick={deleteNode}
@@ -181,47 +163,17 @@ export function KanbanNodeView({
         style={{ height: `${currentHeight}px` }}
         contentEditable={false}
       >
-        {isLicensed ? (
-          <KanbanBoard data={kanbanData.board} onChange={handleBoardChange} />
-        ) : (
-          <div className="flex h-full min-h-60 items-center justify-center border border-t-0 border-border bg-muted/20 p-6 text-center">
-            <div className="max-w-sm space-y-3">
-              <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-300">
-                <LockKeyhole size={20} />
-              </div>
-              <div className="space-y-1">
-                <p className="text-sm font-semibold text-foreground">
-                  {t("proFeatures.licenseGate.required")}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {t("proFeatures.licenseGate.description", {
-                    feature: t("editor.kanban.blockLabel"),
-                  })}
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={handleLockedClick}
-                className="inline-flex items-center gap-2 rounded-md border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-xs font-medium text-amber-700 transition-colors hover:bg-amber-500/20 dark:text-amber-300"
-              >
-                <LockKeyhole size={14} />
-                <span>{t("proFeatures.licenseGate.activateButton")}</span>
-              </button>
-            </div>
-          </div>
-        )}
+        <KanbanBoard data={kanbanData.board} onChange={handleBoardChange} />
       </div>
 
-      {isLicensed && (
-        <button
-          type="button"
-          className={cn("kanban-resize-handle", isResizing && "resizing")}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          aria-label={t("editor.kanban.resize")}
-        />
-      )}
+      <button
+        type="button"
+        className={cn("kanban-resize-handle", isResizing && "resizing")}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        aria-label={t("editor.kanban.resize")}
+      />
     </NodeViewWrapper>
   );
 }

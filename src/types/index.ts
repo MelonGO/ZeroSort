@@ -259,11 +259,6 @@ export type AiMenuMode = "off" | "selection" | "askAi";
 export type SortBy = "createdAt" | "updatedAt";
 
 /**
- * License verification status.
- */
-export type LicenseStatus = "valid" | "invalid" | "none";
-
-/**
  * Represents a wiki-style link extracted from note content.
  */
 export interface WikiLink {
@@ -345,18 +340,6 @@ export interface BatchJob {
   currentNoteIds: string[];
   /** Current status of the batch job */
   status: BatchJobStatus;
-}
-
-/**
- * License information returned from the Rust backend after JWT verification.
- */
-export interface LicenseInfo {
-  /** Whether the license is currently valid */
-  isValid: boolean;
-  /** Licensed user identifier (email or user ID) */
-  user: string | null;
-  /** Error message if verification failed */
-  error: string | null;
 }
 
 /**
@@ -496,12 +479,6 @@ export interface ZeroSortState {
   // --- Batch Job ---
   /** Active batch regeneration job, or null if none is running */
   batchJob: BatchJob | null;
-
-  // --- License ---
-  /** Current license verification status */
-  licenseStatus: LicenseStatus;
-  /** Decoded license information from the verified JWT */
-  licenseInfo: LicenseInfo | null;
 
   // --- Actions ---
   setModelConfigs: (configs: ProviderConfig[]) => void;
@@ -662,14 +639,6 @@ export interface ZeroSortState {
   cancelBatchJob: () => void;
   /** Clears the completed/cancelled batch job */
   clearBatchJob: () => void;
-
-  // --- License Actions ---
-  /** Activates a license by verifying the JWT key via the Rust backend */
-  activateLicense: (key: string) => Promise<LicenseInfo>;
-  /** Checks the current license status (re-verifies stored key) */
-  checkLicense: () => Promise<void>;
-  /** Deactivates the current license */
-  deactivateLicense: () => Promise<void>;
 
   // --- Bidirectional Linking Actions ---
   /** Backlinks to the currently selected note */

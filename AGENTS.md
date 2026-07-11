@@ -47,7 +47,7 @@ The Tauri host lives in `src-tauri/` and shares the same React renderer. The ren
 - **Editor**: Tiptap 3 (math, tables, images, code blocks, tasks, markdown)
 - **AI**: Vercel AI SDK (Anthropic, OpenAI, Gemini, DeepSeek, Ollama, OpenRouter)
 - **Validation**: Zod 4 | **i18n**: i18next + react-i18next
-- **Desktop host**: Tauri v2 (Rust) — SQLite via rusqlite, S3 sync, credentials, license, images
+- **Desktop host**: Tauri v2 (Rust) — SQLite via rusqlite, S3 sync, credentials, images
 - **Command bridge**: renderer calls go through [`src/lib/desktop-adapter.ts`](src/lib/desktop-adapter.ts)
 
 ## Code Style
@@ -121,7 +121,7 @@ Use `@/` for all internal imports. Never use relative paths that go up more than
 
 ### State Management (Zustand)
 
-Single store in `src/store/useStore.ts` composed from 7 slices in `src/store/slices/`: settings, notes, tags, ui, sync, license, batchJob. Slices use arrow function factory pattern: `createNotesSlice(set, get) => ({...})`. Access state via `useStore` hook with selectors. State interface: `ZeroSortState` in `src/types/index.ts`.
+Single store in `src/store/useStore.ts` composed from slices in `src/store/slices/`: settings, notes, tags, ui, sync, batchJob, links. Slices use arrow function factory pattern: `createNotesSlice(set, get) => ({...})`. Access state via `useStore` hook with selectors. State interface: `ZeroSortState` in `src/types/index.ts`.
 
 ## Key Directories
 
@@ -133,11 +133,11 @@ src/
   lib/sync/      # S3 incremental sync (collector, planner, executor, guards)
   locales/       # i18n translation JSON (en.json, zh.json)
   routes/        # TanStack Router file-based routes
-  store/slices/  # Zustand slices (settings, notes, tags, ui, sync, license, batchJob)
+  store/slices/  # Zustand slices (settings, notes, tags, ui, sync, batchJob, links)
   styles/        # Tailwind CSS theme (app.css, OKLCH colors, light/dark via .dark)
   types/         # TypeScript type definitions by domain
 src-tauri/       # Tauri v2 Rust host (commands + plugins)
-  src/           # Rust services (credentials, db, images, license, store, sync)
+  src/           # Rust services (credentials, db, images, store, sync)
   tauri.conf.json
   capabilities/  # Permission grants for the main window
 ```

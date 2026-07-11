@@ -1,26 +1,17 @@
 //! Machine ID compatible with `node-machine-id` `machineIdSync(true)`.
 //!
 //! Returns the original (unhashed) platform machine identifier so existing
-//! `credentials.bin` and license `hardware_id` bindings keep working.
+//! `credentials.bin` bindings keep working.
 
 use std::process::Command;
 
 const CREDENTIAL_FALLBACK: &str = "zero-sort-fallback";
-const LICENSE_FALLBACK: &str = "fallback-machine-id";
 
 /// Returns the original machine ID, or a credential-compatible fallback.
 pub fn machine_id_or_credential_fallback() -> String {
     match machine_id() {
         Ok(id) if !id.is_empty() => id,
         _ => CREDENTIAL_FALLBACK.to_string(),
-    }
-}
-
-/// Returns the original machine ID, or a license-compatible fallback.
-pub fn machine_id_or_license_fallback() -> String {
-    match machine_id() {
-        Ok(id) if !id.is_empty() => id,
-        _ => LICENSE_FALLBACK.to_string(),
     }
 }
 

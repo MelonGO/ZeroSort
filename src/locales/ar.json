@@ -147,12 +147,6 @@
       "failedToSave": "فشل حفظ الإعدادات"
     },
     "theme": {
-      "licenseGate": {
-        "required": "يلزم ترخيص نشط",
-        "description": "يتطلب تخصيص السمة ترخيص ZeroSort نشطا. يرجى تفعيل ترخيصك لفتح هذه الميزة.",
-        "activateButton": "الانتقال إلى إعدادات الترخيص",
-        "featureLocked": "يتطلب تخصيص السمة ترخيصا نشطا"
-      },
       "editingMode": {
         "label": "وضع التحرير",
         "light": "فاتح",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "مطلوب مفتاح ترخيص نشط",
-      "description": "{{feature}} ميزة Pro. فعّل مفتاح ترخيص ZeroSort لفتحها.",
-      "activateButton": "الانتقال إلى إعدادات الترخيص",
-      "featureLocked": "تتطلب {{feature}} مفتاح ترخيص نشطا",
-      "featureTooltip": "تتطلب {{feature}} Pro"
-    }
-  },
   "askAi": {
     "title": "اسأل الذكاء الاصطناعي",
     "placeholder": "اسأل أي شيء... اكتب @ للإشارة إلى الملاحظات المفتوحة",
@@ -734,31 +719,6 @@
     "newChat": "محادثة جديدة",
     "noOpenNotes": "لا توجد ملاحظات مفتوحة للإشارة إليها",
     "noMatchingNotes": "لم يتم العثور على ملاحظات مطابقة"
-  },
-  "license": {
-    "title": "الترخيص",
-    "description": "إدارة ترخيص برنامج ZeroSort الخاص بك.",
-    "status": "حالة الترخيص",
-    "active": "نشط",
-    "inactive": "لا يوجد ترخيص",
-    "invalid": "ترخيص غير صالح",
-    "machineId": "معرف الجهاز",
-    "machineIdCopied": "تم نسخ معرف الجهاز إلى الحافظة",
-    "activate": "تفعيل الترخيص",
-    "activatePlaceholder": "الصق مفتاح الترخيص هنا...",
-    "activateButton": "تفعيل",
-    "purchaseLink": "احصل على مفتاح ترخيص",
-    "activateSuccess": "تم تفعيل الترخيص بنجاح",
-    "deactivate": "إلغاء تفعيل الترخيص",
-    "deactivateConfirm": "هل أنت متأكد أنك تريد إلغاء تفعيل ترخيصك؟",
-    "deactivateSuccess": "تم إلغاء تفعيل الترخيص",
-    "errors": {
-      "invalidSignature": "مفتاح ترخيص غير صالح - فشل التحقق من التوقيع",
-      "expired": "انتهت صلاحية مفتاح الترخيص",
-      "hardwareMismatch": "هذا الترخيص غير صالح لهذا الجهاز",
-      "clockTampered": "تم اكتشاف تلاعب بساعة النظام. يرجى تصحيح وقت النظام.",
-      "activationFailed": "فشل تفعيل الترخيص"
-    }
   },
   "sync": {
     "title": "المزامنة السحابية",
@@ -877,12 +837,6 @@
       "uploadFailed": "فشل رفع النسخة الاحتياطية",
       "downloadFailed": "فشل تنزيل النسخة الاحتياطية",
       "noBackups": "لم يتم العثور على نسخ احتياطية في الحاوية"
-    },
-    "licenseGate": {
-      "required": "يلزم ترخيص نشط",
-      "description": "تتطلب المزامنة السحابية ترخيص ZeroSort نشطا. يرجى تفعيل ترخيصك لفتح هذه الميزة.",
-      "activateButton": "الانتقال إلى إعدادات الترخيص",
-      "featureLocked": "تتطلب المزامنة السحابية ترخيصا نشطا"
     }
   },
   "batch": {

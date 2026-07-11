@@ -26,8 +26,6 @@ sha2 = "0.10"
 aes-gcm = "0.10"
 base64 = "0.22"
 rusqlite = { version = "0.32", features = ["bundled"] }
-reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
-ed25519-dalek = { version = "2", features = ["pkcs8", "pem"] }
 rust-s3 = { version = "0.35", default-features = false, features = ["tokio-rustls-tls", "with-tokio"] }
 tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync"] }
 parking_lot = "0.12"

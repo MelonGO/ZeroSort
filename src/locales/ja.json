@@ -147,12 +147,6 @@
       "failedToSave": "設定の保存に失敗しました"
     },
     "theme": {
-      "licenseGate": {
-        "required": "有効なライセンスが必要です",
-        "description": "テーマのカスタマイズには有効な ZeroSort ライセンスが必要です。この機能を解除するにはライセンスを有効化してください。",
-        "activateButton": "ライセンス設定へ",
-        "featureLocked": "テーマのカスタマイズには有効なライセンスが必要です"
-      },
       "editingMode": {
         "label": "編集モード",
         "light": "ライト",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "有効なライセンスキーが必要です",
-      "description": "{{feature}} は Pro 機能です。ZeroSort のライセンスキーを有効化してロックを解除してください。",
-      "activateButton": "ライセンス設定へ移動",
-      "featureLocked": "{{feature}} には有効なライセンスキーが必要です",
-      "featureTooltip": "{{feature}} には Pro が必要です"
-    }
-  },
   "askAi": {
     "title": "AIに聞く",
     "placeholder": "何でも質問してください... @と入力して開いているノートを参照",
@@ -734,31 +719,6 @@
     "newChat": "新しいチャット",
     "noOpenNotes": "参照できる開いているノートがありません",
     "noMatchingNotes": "一致するノートが見つかりません"
-  },
-  "license": {
-    "title": "ライセンス",
-    "description": "ZeroSortのソフトウェアライセンスを管理します。",
-    "status": "ライセンスのステータス",
-    "active": "有効",
-    "inactive": "ライセンスなし",
-    "invalid": "無効なライセンス",
-    "machineId": "マシンID",
-    "machineIdCopied": "マシンIDをクリップボードにコピーしました",
-    "activate": "ライセンスを有効化",
-    "activatePlaceholder": "ライセンスキーをここに貼り付けてください...",
-    "activateButton": "有効化",
-    "purchaseLink": "ライセンスキーを取得",
-    "activateSuccess": "ライセンスが正常に有効化されました",
-    "deactivate": "ライセンスを無効化",
-    "deactivateConfirm": "本当にライセンスを無効化しますか？",
-    "deactivateSuccess": "ライセンスが無効化されました",
-    "errors": {
-      "invalidSignature": "無効なライセンスキー - 署名の検証に失敗しました",
-      "expired": "ライセンスキーの有効期限が切れています",
-      "hardwareMismatch": "このライセンスはこのマシンでは有効ではありません",
-      "clockTampered": "システム時計の改ざんが検出されました。システムの時刻を修正してください。",
-      "activationFailed": "ライセンスのアクティベーションに失敗しました"
-    }
   },
   "sync": {
     "title": "クラウド同期",
@@ -877,12 +837,6 @@
       "uploadFailed": "バックアップのアップロードに失敗しました。",
       "downloadFailed": "バックアップのダウンロードに失敗しました。",
       "noBackups": "バケットにバックアップが見つかりません"
-    },
-    "licenseGate": {
-      "required": "有効なライセンスが必要です",
-      "description": "クラウド同期には有効な ZeroSort ライセンスが必要です。この機能を解除するにはライセンスを有効化してください。",
-      "activateButton": "ライセンス設定へ",
-      "featureLocked": "クラウド同期には有効なライセンスが必要です"
     }
   },
   "batch": {

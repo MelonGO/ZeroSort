@@ -271,7 +271,7 @@ Body text`);
     );
   });
 
-  it("Should strip imported calendar and kanban blocks for unlicensed users", async () => {
+  it("Should preserve imported calendar and kanban blocks", async () => {
     (open as any).mockResolvedValue(["/tmp/imported-note.md"]);
     (readTextFile as any).mockResolvedValue("Imported body");
     const importedJson = JSON.stringify({
@@ -300,7 +300,6 @@ Body text`);
     ).mockReturnValueOnce(importedJson);
 
     const store = {
-      licenseStatus: "none",
       syncFromDb: vi.fn(),
     } as any;
 
@@ -310,19 +309,7 @@ Body text`);
     expect(bulkSaveNotes).toHaveBeenCalledWith([
       expect.objectContaining({
         note: expect.objectContaining({
-          content: JSON.stringify({
-            type: "doc",
-            content: [
-              {
-                type: "paragraph",
-                content: [{ type: "text", text: "Before" }],
-              },
-              {
-                type: "paragraph",
-                content: [{ type: "text", text: "After" }],
-              },
-            ],
-          }),
+          content: importedJson,
         }),
       }),
     ]);

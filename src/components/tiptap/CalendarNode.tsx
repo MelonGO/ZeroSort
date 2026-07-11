@@ -4,10 +4,6 @@ import {
   serializeCalendarNodeData,
 } from "@/lib/calendar/calendarData";
 import type { CalendarNodeData } from "@/lib/calendar/types";
-import {
-  hasActiveLicense,
-  showProFeatureLockedToast,
-} from "@/lib/proFeatureGate";
 import { cn } from "@/lib/utils";
 import { mergeAttributes, Node } from "@tiptap/core";
 import {
@@ -104,11 +100,6 @@ export const CalendarNode = Node.create({
       insertCalendar:
         (calendarData?: Partial<CalendarNodeData>) =>
         ({ commands }) => {
-          if (!hasActiveLicense()) {
-            showProFeatureLockedToast("Calendar");
-            return false;
-          }
-
           const nextData = calendarData
             ? serializeCalendarNodeData({
                 ...createDefaultCalendarNodeData(),

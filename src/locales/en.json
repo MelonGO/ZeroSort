@@ -147,12 +147,6 @@
       "failedToSave": "Failed to save settings"
     },
     "theme": {
-      "licenseGate": {
-        "required": "Active license required",
-        "description": "Theme customization requires an active ZeroSort license. Please activate your license to unlock this feature.",
-        "activateButton": "Go to License Settings",
-        "featureLocked": "Theme customization requires an active license"
-      },
       "editingMode": {
         "label": "Editing mode",
         "light": "Light",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "Active license key required",
-      "description": "{{feature}} is a Pro feature. Activate your ZeroSort license key to unlock it.",
-      "activateButton": "Go to License Settings",
-      "featureLocked": "{{feature}} requires an active license key",
-      "featureTooltip": "{{feature}} requires Pro"
-    }
-  },
   "askAi": {
     "title": "Ask AI",
     "placeholder": "Ask anything... Type @ to reference open notes",
@@ -734,31 +719,6 @@
     "newChat": "New chat",
     "noOpenNotes": "No open notes to reference",
     "noMatchingNotes": "No matching notes found"
-  },
-  "license": {
-    "title": "License",
-    "description": "Manage your software license for ZeroSort.",
-    "status": "License Status",
-    "active": "Active",
-    "inactive": "No License",
-    "invalid": "Invalid License",
-    "machineId": "Machine ID",
-    "machineIdCopied": "Machine ID copied to clipboard",
-    "activate": "Activate License",
-    "activatePlaceholder": "Paste your license key here...",
-    "activateButton": "Activate",
-    "purchaseLink": "Get a license key",
-    "activateSuccess": "License activated successfully",
-    "deactivate": "Deactivate License",
-    "deactivateConfirm": "Are you sure you want to deactivate your license?",
-    "deactivateSuccess": "License deactivated",
-    "errors": {
-      "invalidSignature": "Invalid license key - signature verification failed",
-      "expired": "License key has expired",
-      "hardwareMismatch": "This license is not valid for this machine",
-      "clockTampered": "System clock tampering detected. Please correct your system time.",
-      "activationFailed": "Failed to activate license"
-    }
   },
   "sync": {
     "title": "Cloud Sync",
@@ -877,12 +837,6 @@
       "uploadFailed": "Failed to upload backup",
       "downloadFailed": "Failed to download backup",
       "noBackups": "No backups found in bucket"
-    },
-    "licenseGate": {
-      "required": "Active license required",
-      "description": "Cloud synchronization requires an active ZeroSort license. Please activate your license to unlock this feature.",
-      "activateButton": "Go to License Settings",
-      "featureLocked": "Cloud sync requires an active license"
     }
   },
   "batch": {

@@ -147,12 +147,6 @@
       "failedToSave": "Impossibile salvare le impostazioni"
     },
     "theme": {
-      "licenseGate": {
-        "required": "Licenza attiva richiesta",
-        "description": "La personalizzazione del tema richiede una licenza attiva di ZeroSort. Attiva la tua licenza per sbloccare questa funzione.",
-        "activateButton": "Vai alle Impostazioni Licenza",
-        "featureLocked": "La personalizzazione del tema richiede una licenza attiva"
-      },
       "editingMode": {
         "label": "Modalità di modifica",
         "light": "Chiaro",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "Chiave di licenza attiva richiesta",
-      "description": "{{feature}} è una funzionalità Pro. Attiva la tua chiave di licenza ZeroSort per sbloccarla.",
-      "activateButton": "Vai alle impostazioni della licenza",
-      "featureLocked": "{{feature}} richiede una chiave di licenza attiva",
-      "featureTooltip": "{{feature}} richiede Pro"
-    }
-  },
   "askAi": {
     "title": "Chiedi all'AI",
     "placeholder": "Fai una domanda... Usa @ per includere le note aperte",
@@ -734,31 +719,6 @@
     "newChat": "Nuova chat",
     "noOpenNotes": "Nessuna nota aperta da usare come contesto",
     "noMatchingNotes": "Nessuna nota corrispondente trovata"
-  },
-  "license": {
-    "title": "Licenza",
-    "description": "Gestisci la tua licenza software ZeroSort.",
-    "status": "Stato Licenza",
-    "active": "Attiva",
-    "inactive": "Nessuna licenza",
-    "invalid": "Licenza non valida",
-    "machineId": "ID Macchina",
-    "machineIdCopied": "ID macchina copiato negli appunti",
-    "activate": "Attiva Licenza",
-    "activatePlaceholder": "Incolla qui il tuo codice di licenza...",
-    "activateButton": "Attiva",
-    "purchaseLink": "Ottieni una chiave di licenza",
-    "activateSuccess": "Licenza attivata con successo",
-    "deactivate": "Disattiva Licenza",
-    "deactivateConfirm": "Sei sicuro di voler disattivare la licenza?",
-    "deactivateSuccess": "Licenza disattivata",
-    "errors": {
-      "invalidSignature": "Chiave di licenza non valida: verifica della firma non riuscita",
-      "expired": "La chiave di licenza è scaduta",
-      "hardwareMismatch": "Questa licenza non è valida per questo dispositivo",
-      "clockTampered": "Rilevata una modifica anomala dell'orologio di sistema. Correggi data e ora del dispositivo.",
-      "activationFailed": "Impossibile attivare la licenza"
-    }
   },
   "sync": {
     "title": "Sincronizzazione Cloud",
@@ -877,12 +837,6 @@
       "uploadFailed": "Impossibile caricare il backup",
       "downloadFailed": "Impossibile scaricare il backup",
       "noBackups": "Nessun backup trovato nel bucket"
-    },
-    "licenseGate": {
-      "required": "Licenza attiva richiesta",
-      "description": "La sincronizzazione cloud richiede una licenza ZeroSort attiva. Attiva la tua licenza per sbloccare questa funzione.",
-      "activateButton": "Vai alle Impostazioni Licenza",
-      "featureLocked": "La sincronizzazione cloud richiede una licenza attiva"
     }
   },
   "batch": {

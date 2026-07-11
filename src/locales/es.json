@@ -147,12 +147,6 @@
       "failedToSave": "Error al guardar ajustes"
     },
     "theme": {
-      "licenseGate": {
-        "required": "Se requiere licencia activa",
-        "description": "La personalización del tema requiere una licencia activa de ZeroSort. Por favor activa tu licencia para desbloquear esta función.",
-        "activateButton": "Ir a Ajustes de Licencia",
-        "featureLocked": "La personalización del tema requiere una licencia activa"
-      },
       "editingMode": {
         "label": "Modo de edición",
         "light": "Claro",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "Se requiere una clave de licencia activa",
-      "description": "{{feature}} es una función Pro. Activa tu clave de licencia de ZeroSort para desbloquearla.",
-      "activateButton": "Ir a Configuración de licencia",
-      "featureLocked": "{{feature}} requiere una clave de licencia activa",
-      "featureTooltip": "{{feature}} requiere Pro"
-    }
-  },
   "askAi": {
     "title": "Preguntar a la IA",
     "placeholder": "Pregunta cualquier cosa... Escribe @ para citar notas abiertas",
@@ -734,31 +719,6 @@
     "newChat": "Nuevo chat",
     "noOpenNotes": "No hay notas abiertas para usar como referencia",
     "noMatchingNotes": "No se han encontrado notas"
-  },
-  "license": {
-    "title": "Licencia",
-    "description": "Gestiona tu licencia de software para ZeroSort.",
-    "status": "Estado de Licencia",
-    "active": "Activa",
-    "inactive": "Sin Licencia",
-    "invalid": "Licencia Inválida",
-    "machineId": "ID de la Máquina",
-    "machineIdCopied": "ID de la máquina copiado al portapapeles",
-    "activate": "Activar Licencia",
-    "activatePlaceholder": "Pega tu clave de licencia aquí...",
-    "activateButton": "Activar",
-    "purchaseLink": "Obtener una clave de licencia",
-    "activateSuccess": "Licencia activada con éxito",
-    "deactivate": "Desactivar Licencia",
-    "deactivateConfirm": "¿Estás seguro de que quieres desactivar tu licencia?",
-    "deactivateSuccess": "Licencia desactivada",
-    "errors": {
-      "invalidSignature": "Clave de licencia no válida: falló la verificación de la firma",
-      "expired": "La clave de licencia ha expirado",
-      "hardwareMismatch": "Esta licencia no es válida para este equipo",
-      "clockTampered": "Reloj de sistema alterado. Por favor, corrígelo.",
-      "activationFailed": "Error al activar la licencia"
-    }
   },
   "sync": {
     "title": "Sincronización en la Nube",
@@ -877,12 +837,6 @@
       "uploadFailed": "No se pudo subir la copia de seguridad",
       "downloadFailed": "No se pudo descargar la copia de seguridad",
       "noBackups": "No se encontraron copias de seguridad en el bucket"
-    },
-    "licenseGate": {
-      "required": "Se requiere licencia activa",
-      "description": "La sincronización en la nube requiere una licencia activa de ZeroSort. Activa tu licencia para desbloquear esta función.",
-      "activateButton": "Ir a Ajustes de Licencia",
-      "featureLocked": "La sincronización en la nube requiere una licencia activa"
     }
   },
   "batch": {

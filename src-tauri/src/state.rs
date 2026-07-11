@@ -1,8 +1,8 @@
 //! Shared application state for Tauri commands.
 
 use crate::services::{
-    credentials::CredentialManager, db::DatabaseManager, images::ImageManager,
-    license::LicenseManager, store::StoreManager, sync::S3ConnectionManager,
+    credentials::CredentialManager, db::DatabaseManager, images::ImageManager, store::StoreManager,
+    sync::S3ConnectionManager,
 };
 use parking_lot::Mutex;
 use std::collections::HashMap;
@@ -14,7 +14,6 @@ pub struct AppState {
     pub store: StoreManager,
     pub db: DatabaseManager,
     pub credentials: CredentialManager,
-    pub license: LicenseManager,
     pub images: ImageManager,
     pub s3: S3ConnectionManager,
     pub allow_close: AtomicBool,
@@ -23,15 +22,13 @@ pub struct AppState {
 }
 
 impl AppState {
-    pub fn new(app_data: &Path, is_dev: bool) -> Result<Arc<Self>, String> {
+    pub fn new(app_data: &Path) -> Result<Arc<Self>, String> {
         let credential_machine_id = crate::machine_id::machine_id_or_credential_fallback();
-        let license_machine_id = crate::machine_id::machine_id_or_license_fallback();
 
         Ok(Arc::new(Self {
             store: StoreManager::new(app_data)?,
             db: DatabaseManager::new(app_data)?,
             credentials: CredentialManager::new(app_data, &credential_machine_id)?,
-            license: LicenseManager::new(app_data, &license_machine_id, is_dev)?,
             images: ImageManager::new(app_data)?,
             s3: S3ConnectionManager::new(),
             allow_close: AtomicBool::new(false),

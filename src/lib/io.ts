@@ -41,12 +41,6 @@ interface MarkdownImportItem {
   updatedAt: string;
 }
 
-interface TiptapImportNode {
-  type?: string;
-  content?: TiptapImportNode[];
-  [key: string]: unknown;
-}
-
 // Helper for generating deterministic or random IDs for imports
 const generateId = () => crypto.randomUUID();
 
@@ -135,39 +129,6 @@ function getImportedNoteTimestamps(fileInfo: {
   };
 }
 
-function stripUnlicensedProNodesFromContent(jsonContent: string): string {
-  const stripNode = (node: TiptapImportNode): TiptapImportNode | null => {
-    if (node.type === "calendar" || node.type === "kanban") {
-      return null;
-    }
-
-    if (!Array.isArray(node.content)) {
-      return node;
-    }
-
-    return {
-      ...node,
-      content: node.content
-        .map(stripNode)
-        .filter((child): child is TiptapImportNode => child !== null),
-    };
-  };
-
-  try {
-    const parsed = JSON.parse(jsonContent) as TiptapImportNode;
-    const stripped = stripNode(parsed);
-
-    if (!stripped) {
-      return JSON.stringify({ type: "doc", content: [] });
-    }
-
-    return JSON.stringify(stripped);
-  } catch (error) {
-    console.error("Failed to strip unlicensed pro nodes from import:", error);
-    return jsonContent;
-  }
-}
-
 async function importMarkdownItems(
   items: MarkdownImportItem[],
   store: ZeroSortState,
@@ -185,10 +146,7 @@ async function importMarkdownItems(
     const rawContent = await readTextFile(file.path);
     const { tags: tagNames, body } = parseFrontmatter(rawContent);
     const title = getImportedTitle(file.name);
-    const jsonContent =
-      store.licenseStatus === "valid"
-        ? markdownToTiptapJson(body)
-        : stripUnlicensedProNodesFromContent(markdownToTiptapJson(body));
+    const jsonContent = markdownToTiptapJson(body);
 
     notesToSave.push({
       note: {

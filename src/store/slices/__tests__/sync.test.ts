@@ -70,7 +70,6 @@ function createStoreState() {
   const slice = createSyncSlice(set, get);
 
   state = {
-    licenseStatus: "valid",
     sortBy: "updatedAt",
     syncConcurrency: 5,
     syncFromDb: vi.fn(),

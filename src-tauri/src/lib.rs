@@ -10,8 +10,6 @@ use tauri::{Emitter, Manager, RunEvent, WindowEvent};
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-    let is_dev = cfg!(debug_assertions);
-
     let mut builder = tauri::Builder::default()
         .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_opener::init())
@@ -38,10 +36,6 @@ pub fn run() {
             commands::get_s3_config,
             commands::delete_s3_config,
             commands::has_s3_config,
-            commands::activate_license,
-            commands::get_license_status,
-            commands::deactivate_license,
-            commands::get_machine_id,
             commands::save_image_file,
             commands::write_managed_image_file,
             commands::read_managed_image_file,
@@ -83,7 +77,7 @@ pub fn run() {
         .setup(move |app| {
             let app_data = crate::paths::ensure_app_data_dir(app.handle())
                 .map_err(|e| -> Box<dyn std::error::Error> { e.into() })?;
-            let app_state = AppState::new(&app_data, is_dev)
+            let app_state = AppState::new(&app_data)
                 .map_err(|e| -> Box<dyn std::error::Error> { e.into() })?;
             app.manage(app_state);
 

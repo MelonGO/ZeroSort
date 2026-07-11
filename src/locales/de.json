@@ -147,12 +147,6 @@
       "failedToSave": "Fehler beim Speichern der Einstellungen"
     },
     "theme": {
-      "licenseGate": {
-        "required": "Aktive Lizenz erforderlich",
-        "description": "Für die Designanpassung ist eine aktive ZeroSort-Lizenz erforderlich. Bitte aktivieren Sie Ihre Lizenz, um diese Funktion freizuschalten.",
-        "activateButton": "Zu den Lizenzeinstellungen",
-        "featureLocked": "Designanpassung erfordert eine aktive Lizenz"
-      },
       "editingMode": {
         "label": "Bearbeitungsmodus",
         "light": "Hell",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "Aktiver Lizenzschlüssel erforderlich",
-      "description": "{{feature}} ist eine Pro-Funktion. Aktivieren Sie Ihren ZeroSort-Lizenzschlüssel, um sie freizuschalten.",
-      "activateButton": "Zu den Lizenzeinstellungen",
-      "featureLocked": "{{feature}} erfordert einen aktiven Lizenzschlüssel",
-      "featureTooltip": "{{feature}} erfordert Pro"
-    }
-  },
   "askAi": {
     "title": "KI fragen",
     "placeholder": "Fragen Sie alles... Tippen Sie @, um auf offene Notizen zu verweisen",
@@ -734,31 +719,6 @@
     "newChat": "Neuer Chat",
     "noOpenNotes": "Keine offenen Notizen zum Referenzieren",
     "noMatchingNotes": "Keine übereinstimmenden Notizen gefunden"
-  },
-  "license": {
-    "title": "Lizenz",
-    "description": "Verwalten Sie Ihre Softwarelizenz für ZeroSort.",
-    "status": "Lizenzstatus",
-    "active": "Aktiv",
-    "inactive": "Keine Lizenz",
-    "invalid": "Ungültige Lizenz",
-    "machineId": "Maschinen-ID",
-    "machineIdCopied": "Maschinen-ID in die Zwischenablage kopiert",
-    "activate": "Lizenz aktivieren",
-    "activatePlaceholder": "Fügen Sie Ihren Lizenzschlüssel hier ein...",
-    "activateButton": "Aktivieren",
-    "purchaseLink": "Lizenzschlüssel erhalten",
-    "activateSuccess": "Lizenz erfolgreich aktiviert",
-    "deactivate": "Lizenz deaktivieren",
-    "deactivateConfirm": "Sind Sie sicher, dass Sie Ihre Lizenz deaktivieren möchten?",
-    "deactivateSuccess": "Lizenz deaktiviert",
-    "errors": {
-      "invalidSignature": "Ungültiger Lizenzschlüssel - Signaturüberprüfung fehlgeschlagen",
-      "expired": "Lizenzschlüssel ist abgelaufen",
-      "hardwareMismatch": "Diese Lizenz ist für diesen Computer nicht gültig",
-      "clockTampered": "Manipulation der Systemuhr erkannt. Bitte korrigieren Sie Ihre Systemzeit.",
-      "activationFailed": "Fehler beim Aktivieren der Lizenz"
-    }
   },
   "sync": {
     "title": "Cloud-Synchronisierung",
@@ -877,12 +837,6 @@
       "uploadFailed": "Backup hochladen fehlgeschlagen",
       "downloadFailed": "Backup herunterladen fehlgeschlagen",
       "noBackups": "Keine Backups im Bucket gefunden"
-    },
-    "licenseGate": {
-      "required": "Aktive Lizenz erforderlich",
-      "description": "Die Cloud-Synchronisierung erfordert eine aktive ZeroSort-Lizenz. Bitte aktivieren Sie Ihre Lizenz, um diese Funktion freizuschalten.",
-      "activateButton": "Zu den Lizenzeinstellungen",
-      "featureLocked": "Die Cloud-Synchronisierung erfordert eine aktive Lizenz"
     }
   },
   "batch": {

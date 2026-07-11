@@ -4,10 +4,6 @@ import {
   serializeKanbanNodeData,
 } from "@/lib/kanban/kanbanData";
 import type { KanbanNodeData } from "@/lib/kanban/types";
-import {
-  hasActiveLicense,
-  showProFeatureLockedToast,
-} from "@/lib/proFeatureGate";
 import { cn } from "@/lib/utils";
 import { mergeAttributes, Node } from "@tiptap/core";
 import {
@@ -101,11 +97,6 @@ export const KanbanNode = Node.create({
       insertKanban:
         (kanbanData?: Partial<KanbanNodeData>) =>
         ({ commands }) => {
-          if (!hasActiveLicense()) {
-            showProFeatureLockedToast("Kanban");
-            return false;
-          }
-
           const nextData = kanbanData
             ? serializeKanbanNodeData({
                 ...createDefaultKanbanNodeData(),

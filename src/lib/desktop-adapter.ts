@@ -31,10 +31,6 @@ const TAURI_COMMAND_MAP: Record<string, string> = {
   get_s3_config: "get_s3_config",
   delete_s3_config: "delete_s3_config",
   has_s3_config: "has_s3_config",
-  activate_license: "activate_license",
-  get_license_status: "get_license_status",
-  deactivate_license: "deactivate_license",
-  get_machine_id: "get_machine_id",
   save_image_file: "save_image_file",
   write_managed_image_file: "write_managed_image_file",
   read_managed_image_file: "read_managed_image_file",
@@ -108,8 +104,6 @@ export function unwrapHostResult<T = any>(result: any): T {
     if ("config" in result) return result.config;
     if ("exists" in result) return result.exists;
     if ("keys" in result) return result.keys;
-    if ("info" in result) return result.info;
-    if ("machineId" in result) return result.machineId;
     if ("path" in result) return result.path;
     if ("rows" in result) return result.rows;
     if ("changes" in result) return result.changes;
@@ -163,11 +157,6 @@ function buildTauriInvokeArgs(
   }
   if (cmd === "save_s3_config") {
     return { config: args.config ?? args };
-  }
-  if (cmd === "activate_license") {
-    return {
-      licenseKey: typeof args === "string" ? args : args.licenseKey,
-    };
   }
   if (
     cmd === "save_image_file" ||

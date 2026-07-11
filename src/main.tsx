@@ -125,13 +125,9 @@ if (!rootElement.innerHTML) {
       updateLoadingScreen(root, 20, "Initializing...");
       await initAllDatabases();
 
-      // Stage 3: Settings initialization (50% -> 80%)
+      // Stage 3: Settings initialization (50% -> 100%)
       updateLoadingScreen(root, 60, "Loading settings...");
       await useStore.getState().initSettings();
-
-      // Stage 4: License verification (80% -> 100%)
-      updateLoadingScreen(root, 80, "Verifying license...");
-      await useStore.getState().checkLicense();
 
       // Complete - render the main app
       updateLoadingScreen(root, 100, "Ready");

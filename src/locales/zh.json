@@ -147,12 +147,6 @@
       "failedToSave": "保存设置失败"
     },
     "theme": {
-      "licenseGate": {
-        "required": "需要有效许可证",
-        "description": "主题自定义需要有效的 ZeroSort 许可证。请激活您的许可证以解锁此功能。",
-        "activateButton": "前往许可证设置",
-        "featureLocked": "主题自定义需要有效许可证"
-      },
       "editingMode": {
         "label": "编辑模式",
         "light": "浅色",
@@ -713,15 +707,6 @@
       }
     }
   },
-  "proFeatures": {
-    "licenseGate": {
-      "required": "需要有效的许可证密钥",
-      "description": "{{feature}} 是 Pro 功能。激活你的 ZeroSort 许可证密钥即可解锁。",
-      "activateButton": "前往许可证设置",
-      "featureLocked": "{{feature}} 需要有效的许可证密钥",
-      "featureTooltip": "{{feature}} 需要 Pro"
-    }
-  },
   "askAi": {
     "title": "问 AI",
     "placeholder": "随便问点什么... 输入 @ 引用已打开的笔记",
@@ -734,31 +719,6 @@
     "newChat": "新对话",
     "noOpenNotes": "没有可引用的已打开笔记",
     "noMatchingNotes": "未找到匹配的笔记"
-  },
-  "license": {
-    "title": "许可证",
-    "description": "管理 ZeroSort 的软件许可证。",
-    "status": "许可证状态",
-    "active": "已激活",
-    "inactive": "无许可证",
-    "invalid": "无效许可证",
-    "machineId": "机器 ID",
-    "machineIdCopied": "机器 ID 已复制到剪贴板",
-    "activate": "激活许可证",
-    "activatePlaceholder": "在此粘贴您的许可证密钥...",
-    "activateButton": "激活",
-    "purchaseLink": "获取许可证密钥",
-    "activateSuccess": "许可证激活成功",
-    "deactivate": "停用许可证",
-    "deactivateConfirm": "您确定要停用您的许可证吗？",
-    "deactivateSuccess": "许可证已停用",
-    "errors": {
-      "invalidSignature": "无效的许可证密钥 - 签名验证失败",
-      "expired": "许可证密钥已过期",
-      "hardwareMismatch": "此许可证不适用于此机器",
-      "clockTampered": "检测到系统时钟篡改，请更正系统时间。",
-      "activationFailed": "许可证激活失败"
-    }
   },
   "sync": {
     "title": "云同步",
@@ -877,12 +837,6 @@
       "uploadFailed": "上传备份失败",
       "downloadFailed": "下载备份失败",
       "noBackups": "存储桶中未找到备份"
-    },
-    "licenseGate": {
-      "required": "需要有效许可证",
-      "description": "云同步功能需要有效的 ZeroSort 许可证。请激活您的许可证以解锁此功能。",
-      "activateButton": "前往许可证设置",
-      "featureLocked": "云同步需要有效的许可证"
     }
   },
   "batch": {

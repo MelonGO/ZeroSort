@@ -15,7 +15,6 @@ import { Route as SettingsIndexRouteImport } from './routes/settings/index'
 import { Route as SettingsThemeRouteImport } from './routes/settings/theme'
 import { Route as SettingsSyncRouteImport } from './routes/settings/sync'
 import { Route as SettingsModelsRouteImport } from './routes/settings/models'
-import { Route as SettingsLicenseRouteImport } from './routes/settings/license'
 import { Route as SettingsGeneralRouteImport } from './routes/settings/general'
 import { Route as SettingsEditorRouteImport } from './routes/settings/editor'
 import { Route as SettingsDataRouteImport } from './routes/settings/data'
@@ -51,11 +50,6 @@ const SettingsModelsRoute = SettingsModelsRouteImport.update({
   path: '/models',
   getParentRoute: () => SettingsRoute,
 } as any)
-const SettingsLicenseRoute = SettingsLicenseRouteImport.update({
-  id: '/license',
-  path: '/license',
-  getParentRoute: () => SettingsRoute,
-} as any)
 const SettingsGeneralRoute = SettingsGeneralRouteImport.update({
   id: '/general',
   path: '/general',
@@ -84,7 +78,6 @@ export interface FileRoutesByFullPath {
   '/settings/data': typeof SettingsDataRoute
   '/settings/editor': typeof SettingsEditorRoute
   '/settings/general': typeof SettingsGeneralRoute
-  '/settings/license': typeof SettingsLicenseRoute
   '/settings/models': typeof SettingsModelsRoute
   '/settings/sync': typeof SettingsSyncRoute
   '/settings/theme': typeof SettingsThemeRoute
@@ -96,7 +89,6 @@ export interface FileRoutesByTo {
   '/settings/data': typeof SettingsDataRoute
   '/settings/editor': typeof SettingsEditorRoute
   '/settings/general': typeof SettingsGeneralRoute
-  '/settings/license': typeof SettingsLicenseRoute
   '/settings/models': typeof SettingsModelsRoute
   '/settings/sync': typeof SettingsSyncRoute
   '/settings/theme': typeof SettingsThemeRoute
@@ -110,7 +102,6 @@ export interface FileRoutesById {
   '/settings/data': typeof SettingsDataRoute
   '/settings/editor': typeof SettingsEditorRoute
   '/settings/general': typeof SettingsGeneralRoute
-  '/settings/license': typeof SettingsLicenseRoute
   '/settings/models': typeof SettingsModelsRoute
   '/settings/sync': typeof SettingsSyncRoute
   '/settings/theme': typeof SettingsThemeRoute
@@ -125,7 +116,6 @@ export interface FileRouteTypes {
     | '/settings/data'
     | '/settings/editor'
     | '/settings/general'
-    | '/settings/license'
     | '/settings/models'
     | '/settings/sync'
     | '/settings/theme'
@@ -137,7 +127,6 @@ export interface FileRouteTypes {
     | '/settings/data'
     | '/settings/editor'
     | '/settings/general'
-    | '/settings/license'
     | '/settings/models'
     | '/settings/sync'
     | '/settings/theme'
@@ -150,7 +139,6 @@ export interface FileRouteTypes {
     | '/settings/data'
     | '/settings/editor'
     | '/settings/general'
-    | '/settings/license'
     | '/settings/models'
     | '/settings/sync'
     | '/settings/theme'
@@ -206,13 +194,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsModelsRouteImport
       parentRoute: typeof SettingsRoute
     }
-    '/settings/license': {
-      id: '/settings/license'
-      path: '/license'
-      fullPath: '/settings/license'
-      preLoaderRoute: typeof SettingsLicenseRouteImport
-      parentRoute: typeof SettingsRoute
-    }
     '/settings/general': {
       id: '/settings/general'
       path: '/general'
@@ -249,7 +230,6 @@ interface SettingsRouteChildren {
   SettingsDataRoute: typeof SettingsDataRoute
   SettingsEditorRoute: typeof SettingsEditorRoute
   SettingsGeneralRoute: typeof SettingsGeneralRoute
-  SettingsLicenseRoute: typeof SettingsLicenseRoute
   SettingsModelsRoute: typeof SettingsModelsRoute
   SettingsSyncRoute: typeof SettingsSyncRoute
   SettingsThemeRoute: typeof SettingsThemeRoute
@@ -261,7 +241,6 @@ const SettingsRouteChildren: SettingsRouteChildren = {
   SettingsDataRoute: SettingsDataRoute,
   SettingsEditorRoute: SettingsEditorRoute,
   SettingsGeneralRoute: SettingsGeneralRoute,
-  SettingsLicenseRoute: SettingsLicenseRoute,
   SettingsModelsRoute: SettingsModelsRoute,
   SettingsSyncRoute: SettingsSyncRoute,
   SettingsThemeRoute: SettingsThemeRoute,

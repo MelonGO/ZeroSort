@@ -14,11 +14,8 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useLicenseGate } from "@/hooks/useLicenseGate";
-import { showProFeatureLockedToast } from "@/lib/proFeatureGate";
 import { cn } from "@/lib/utils";
 import type { AiMenuMode, ToolbarGroupVisibility } from "@/types";
-import { useNavigate } from "@tanstack/react-router";
 import { Editor, useEditorState } from "@tiptap/react";
 import {
   ALargeSmall,
@@ -134,8 +131,6 @@ interface ToolbarButtonProps {
   tooltip: string;
   size?: "sm" | "md";
   activeColor?: string | null;
-  variant?: "default" | "pro";
-  showProBadge?: boolean;
 }
 
 interface EditorToolbarState {
@@ -278,8 +273,6 @@ const ToolbarButtonComponent: React.FC<ToolbarButtonProps> = ({
   children,
   tooltip,
   size = "md",
-  variant = "default",
-  showProBadge = false,
 }) => (
   <Tooltip>
     <TooltipTrigger asChild>
@@ -296,27 +289,11 @@ const ToolbarButtonComponent: React.FC<ToolbarButtonProps> = ({
           "relative",
           size === "sm" ? "p-1" : "p-2",
           "rounded-md transition-colors disabled:opacity-50",
-          variant === "pro"
-            ? "border border-amber-500/25 bg-amber-500/10 text-amber-700 shadow-[inset_0_1px_0_rgba(255,255,255,0.25)] hover:bg-amber-500/18 hover:text-amber-800 dark:text-amber-300 dark:hover:text-amber-200"
-            : "hover:bg-accent hover:text-accent-foreground",
-          isActive &&
-            (variant === "pro"
-              ? "border-amber-500/40 bg-amber-500/20 text-amber-800 dark:text-amber-200"
-              : "bg-accent text-accent-foreground"),
+          "hover:bg-accent hover:text-accent-foreground",
+          isActive && "bg-accent text-accent-foreground",
         )}
       >
         {children}
-        {showProBadge && (
-          <span
-            aria-hidden="true"
-            className={cn(
-              "pointer-events-none absolute rounded-full bg-amber-500 ring-2 ring-background",
-              size === "sm"
-                ? "top-0.5 right-0.5 h-1.5 w-1.5"
-                : "top-1 right-1 h-2 w-2",
-            )}
-          />
-        )}
       </button>
     </TooltipTrigger>
     <TooltipContent side="bottom">
@@ -332,9 +309,7 @@ const ToolbarButton = React.memo(ToolbarButtonComponent, (prev, next) => {
     prev.disabled === next.disabled &&
     prev.tooltip === next.tooltip &&
     prev.size === next.size &&
-    prev.activeColor === next.activeColor &&
-    prev.variant === next.variant &&
-    prev.showProBadge === next.showProBadge
+    prev.activeColor === next.activeColor
   );
 });
 
@@ -347,8 +322,6 @@ export const EditorToolbar: React.FC<EditorToolbarProps> = ({
   onInsertImage,
 }) => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  const { isLicensed } = useLicenseGate();
   const toolbarRef = useRef<HTMLDivElement>(null);
   const groupMeasureRefs = useRef<
     Partial<Record<ToolbarGroupKey, HTMLDivElement | null>>
@@ -370,38 +343,17 @@ export const EditorToolbar: React.FC<EditorToolbarProps> = ({
     "inline",
   );
 
-  const openLicenseSettings = useCallback(() => {
-    void navigate({ to: "/settings/license" });
-  }, [navigate]);
-
-  const handleLockedProFeature = useCallback(
-    (featureName: string) => {
-      showProFeatureLockedToast(featureName, openLicenseSettings);
-    },
-    [openLicenseSettings],
-  );
-
   const handleInsertCalendar = useCallback(() => {
-    if (!isLicensed) {
-      handleLockedProFeature(t("editor.calendar.blockLabel"));
-      return;
-    }
-
     setTimeout(() => {
       editor.chain().focus().insertCalendar().run();
     }, 0);
-  }, [editor, handleLockedProFeature, isLicensed, t]);
+  }, [editor]);
 
   const handleInsertKanban = useCallback(() => {
-    if (!isLicensed) {
-      handleLockedProFeature(t("editor.kanban.blockLabel"));
-      return;
-    }
-
     setTimeout(() => {
       editor.chain().focus().insertKanban().run();
     }, 0);
-  }, [editor, handleLockedProFeature, isLicensed, t]);
+  }, [editor]);
   const [mathLatex, setMathLatex] = useState("");
   const [highlightPickerOpen, setHighlightPickerOpen] = useState(false);
   const [textColorPickerOpen, setTextColorPickerOpen] = useState(false);
@@ -1144,29 +1096,15 @@ export const EditorToolbar: React.FC<EditorToolbarProps> = ({
               </ToolbarButton>
               <ToolbarButton
                 onClick={handleInsertCalendar}
-                tooltip={
-                  isLicensed
-                    ? t("editor.calendar.insert")
-                    : t("proFeatures.licenseGate.featureTooltip", {
-                        feature: t("editor.calendar.blockLabel"),
-                      })
-                }
+                tooltip={t("editor.calendar.insert")}
                 size={effectiveSize}
-                variant="pro"
               >
                 <CalendarDays size={iconSize} />
               </ToolbarButton>
               <ToolbarButton
                 onClick={handleInsertKanban}
-                tooltip={
-                  isLicensed
-                    ? t("editor.kanban.insert")
-                    : t("proFeatures.licenseGate.featureTooltip", {
-                        feature: t("editor.kanban.blockLabel"),
-                      })
-                }
+                tooltip={t("editor.kanban.insert")}
                 size={effectiveSize}
-                variant="pro"
               >
                 <SquareKanban size={iconSize} />
               </ToolbarButton>
