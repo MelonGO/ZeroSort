@@ -1,9 +1,10 @@
 [package]
 name = "zerosort"
-version = "1.0.1"
+version = "1.0.0"
 description = "ZeroSort desktop note-taking app"
 authors = ["ZeroSort"]
 edition = "2021"
+license = "MIT"
 rust-version = "1.77"
 
 [lib]
