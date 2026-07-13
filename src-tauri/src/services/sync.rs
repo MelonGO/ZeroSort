@@ -2,6 +2,7 @@
 
 use parking_lot::Mutex;
 use s3::creds::Credentials;
+use s3::serde_types::ObjectIdentifier;
 use s3::{Bucket, Region};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
@@ -305,22 +306,27 @@ impl S3ConnectionManager {
         }
 
         let entry = self.get_bucket(connection_id)?;
-        for key in keys {
-            match entry.bucket.delete_object(key).await {
-                Ok(response) if response.status_code() < 400 => {
-                    result.deleted_keys.push(key.clone());
-                }
-                Ok(response) => {
-                    result.failed_keys.push(key.clone());
-                    result
-                        .errors
-                        .push(format!("{key}: status {}", response.status_code()));
-                }
-                Err(e) => {
-                    result.failed_keys.push(key.clone());
-                    result.errors.push(format!("{key}: {e}"));
-                }
-            }
+        let objects = keys
+            .iter()
+            .map(|key| ObjectIdentifier::new(key.clone()))
+            .collect::<Vec<_>>();
+        let response = entry
+            .bucket
+            .delete_objects(objects)
+            .await
+            .map_err(|error| format!("Failed to delete objects: {error}"))?;
+
+        result.deleted_keys = response
+            .deleted
+            .into_iter()
+            .map(|object| object.key)
+            .collect();
+
+        for error in response.errors {
+            result.failed_keys.push(error.key.clone());
+            result
+                .errors
+                .push(format!("{}: {}: {}", error.key, error.code, error.message));
         }
 
         Ok(result)
